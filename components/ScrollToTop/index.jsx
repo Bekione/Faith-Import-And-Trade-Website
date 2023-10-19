@@ -35,7 +35,8 @@ export default function ScrollToTop() {
         <div
           onClick={scrollToTop}
           aria-label="scroll to top"
-          className="flex h-10 w-10 cursor-pointer items-center justify-center rounded-md bg-secondary text-white shadow-2xl border-primary border-solid border-[0.25px] transition duration-300 ease-in-out hover:border-0 hover:bg-opacity-80 hover:shadow-signUp"
+          style={{ boxShadow: "-4px 0px 23px -10px rgba(255,255,255,0.7)" }}
+          className="flex h-10 w-10 cursor-pointer items-center justify-center rounded-md bg-secondary text-white transform transition duration-300 ease-in-out hover:bg-opacity-80 hover:shadow-signUp hover:-translate-y-1"
         >
           <span className="mt-[6px] h-3 w-3 rotate-45 border-t border-l border-white"></span>
         </div>

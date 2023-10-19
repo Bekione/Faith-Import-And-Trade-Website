@@ -65,32 +65,35 @@ const Header = () => {
       >
         <div className="container">
           <div className="relative -mx-4 flex items-center justify-between">
-            <div className="w-65 max-w-full px-4 xl:mr-12">
+            <div className={`w-65 max-w-full px-4 xl:mr-12 ${
+                  sticky ? "py-5 lg:py-2" : "py-8"
+                }`}>
               <Link
                 href="/"
-                className={`header-logo block w-full ${
-                  sticky ? "py-5 lg:py-2" : "py-8"
-                } `}
+                className={`header-logo block `}
               >
+                {/* ${
+                  sticky ? "py-5 lg:py-2" : "py-8"
+                } */}
                 <Image
                   src="/images/logo/logo-dark.png"
                   alt="logo"
-                  width={250}
-                  height={100}
-                  className={`w-full ${sticky ? "hidden" : ""}`}
+                  width={200}
+                  height={85}
+                  className={`${sticky ? "hidden" : ""}`}
                   priority
                 />
                 <Image
                   src="/images/logo/logo-light.png"
                   alt="logo"
-                  width={250}
-                  height={100}
-                  className={`hidden w-full ${sticky ? "!block" : ""}`}
+                  width={200}
+                  height={85}
+                  className={`hidden ${sticky ? "!block" : ""}`}
                   priority
                 />
               </Link>
             </div>
-            <div className="flex w-full items-center justify-between px-4">
+            <div className="flex items-center justify-between px-4 mr-10">
               <div>
                 <button
                   onClick={navbarToggleHandler}
@@ -198,20 +201,6 @@ const Header = () => {
                   </ul>
                 </nav>
               </div>
-              {/* <div className="flex items-center justify-end pr-16 lg:pr-0">
-                <Link
-                  href="/signin"
-                  className="hidden py-3 px-7 text-base font-bold text-dark hover:opacity-70 dark:text-white md:block"
-                >
-                  Sign In
-                </Link>
-                <Link
-                  href="/signup"
-                  className="ease-in-up hidden rounded-md bg-primary py-3 px-8 text-base font-bold text-white transition duration-300 hover:bg-opacity-90 hover:shadow-signUp md:block md:px-9 lg:px-6 xl:px-9"
-                >
-                  Sign Up
-                </Link>
-              </div> */}
             </div>
           </div>
         </div>

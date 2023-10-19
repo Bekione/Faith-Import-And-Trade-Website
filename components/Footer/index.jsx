@@ -1,13 +1,26 @@
+"use client";
+
+import { useState, useEffect } from "react";
 import Image from "next/image";
 import Link from "next/link";
+import { usePathname } from "next/navigation";
 
 const Footer = () => {
+  const pathName = usePathname();
+  const [isContactPage, setIsContactPage] = useState(false);
+
+  useEffect(() => {
+    console.log("Current Path : ", pathName);
+    if (pathName === "/contact") setIsContactPage(true);
+    else setIsContactPage(false);
+  }, [pathName]);
+
   return (
     <>
       <footer className="footer relative z-10 bg-primary bg-opacity-5 mt-auto pt-16 md:pt-20 lg:pt-24 overflow-visible md:overflow-hidden lg:overflow-visible ">
         <div className="container">
           <div className="flex flex-wrap">
-            <div className="w-full md:w-1/2 lg:w-4/12 xl:w-4/12 flex xl:justify-center">
+            <div className="w-full flex-1 md:w-1/2 lg:w-4/12 xl:w-4/12 flex">
               <div className="mb-12 max-w-[360px] lg:mb-16">
                 <Link href="/" className="mb-8 inline-block">
                   <Image
@@ -243,41 +256,43 @@ const Footer = () => {
               </div>
             </div>
 
-            <div className="w-full px-4 md:w-1/2 lg:w-3/12 xl:w-3/12">
-              <div className="mb-12 lg:mb-16">
-                <h2 className="mb-10 text-xl font-bold text-black ">
-                  Subscribe to our news letter
-                </h2>
-                <form action="" className="form max-w-[300px]">
-                  <div class="relative mb-3" data-te-input-wrapper-init>
-                    <input
-                      type="email"
-                      class="peer block min-h-[auto] w-full rounded bg-transparent border border-secondary focus:border-transparent px-3 py-[0.32rem] leading-[1.6] outline-none focus:outline-2 focus:outline-secondary transition-all duration-200 ease-linear focus:placeholder:opacity-100 peer-focus:text-secondary data-[te-input-state-active]:placeholder:opacity-100 motion-reduce:transition-none [&:not([data-te-input-placeholder-active])]:placeholder:opacity-0"
-                      id="subscriberEmail"
-                      placeholder="Your email"
-                      required
-                    />
-                    <label
-                      htmlFor="subscriberEmail"
-                      className="pointer-events-none absolute left-3 top-0 mb-0 max-w-[90%] origin-[0_0] truncate pt-[0.37rem] leading-[1.6] text-body-color transition-all duration-200 ease-out peer-focus:px-[4px] peer-focus:bg-[#f3f3f4] peer-focus:-translate-y-[1rem] peer-focus:scale-[0.8] peer-focus:text-secondary peer-data-[te-input-state-active]:-translate-y-[0.9rem] peer-data-[te-input-state-active]:scale-[0.8] motion-reduce:transition-none"
+            {!isContactPage && (
+              <div className="w-full px-4 md:w-1/2 lg:w-3/12 xl:w-3/12">
+                <div className="mb-12 lg:mb-16">
+                  <h2 className="mb-10 text-xl font-bold text-black ">
+                    Subscribe to our news letter
+                  </h2>
+                  <form action="" className="form max-w-[300px]">
+                    <div className="relative mb-3" data-te-input-wrapper-init>
+                      <input
+                        type="email"
+                        className="peer block min-h-[auto] w-full rounded bg-transparent border border-secondary focus:border-transparent px-3 py-[0.32rem] leading-[1.6] outline-none focus:outline-2 focus:outline-secondary transition-all duration-200 ease-linear focus:placeholder:opacity-100 peer-focus:text-secondary data-[te-input-state-active]:placeholder:opacity-100 motion-reduce:transition-none [&:not([data-te-input-placeholder-active])]:placeholder:opacity-0"
+                        id="subscriberEmail"
+                        placeholder="Your email"
+                        required
+                      />
+                      <label
+                        htmlFor="subscriberEmail"
+                        className="pointer-events-none absolute left-3 top-0 mb-0 max-w-[90%] origin-[0_0] truncate pt-[0.37rem] leading-[1.6] text-body-color transition-all duration-200 ease-out peer-focus:px-[4px] peer-focus:bg-[#f3f3f4] peer-focus:-translate-y-[1rem] peer-focus:scale-[0.8] peer-focus:text-secondary peer-data-[te-input-state-active]:-translate-y-[0.9rem] peer-data-[te-input-state-active]:scale-[0.8] motion-reduce:transition-none"
+                      >
+                        Your email
+                      </label>
+                    </div>
+                    <button
+                      type="submit"
+                      className="w-full rounded relative inline-flex group items-center justify-center px-3.5 py-2 cursor-pointer border-b-4 border-l-2 active:border-b-6 outline-0 active:outline-primary  active:shadow-none shadow-lg bg-gradient-to-tr from-primary to-secondary border-primary text-white overflow-hidden"
                     >
-                      Your email
-                    </label>
-                  </div>
-                  <button
-                    type="submit"
-                    className="w-full rounded relative inline-flex group items-center justify-center px-3.5 py-2 cursor-pointer border-b-4 border-l-2 active:border-b-6 outline-0 active:outline-primary  active:shadow-none shadow-lg bg-gradient-to-tr from-primary to-secondary border-primary text-white overflow-hidden"
-                  >
-                    <span className="absolute w-0 h-0 transition-all duration-300 ease-out bg-white rounded-full group-hover:w-[300px] group-hover:h-[300px] opacity-10"></span>
-                    <span className="relative">Subscribe</span>
-                  </button>
-                </form>
+                      <span className="absolute w-0 h-0 transition-all duration-300 ease-out bg-white rounded-full group-hover:w-[300px] group-hover:h-[300px] opacity-10"></span>
+                      <span className="relative">Subscribe</span>
+                    </button>
+                  </form>
+                </div>
               </div>
-            </div>
+            )}
           </div>
         </div>
         <div className="bg-primary py-8">
-          <div className="container flex flex-col sm:flex-row justify-center flex-wrap ">
+          <div className="container flex flex-col sm:flex-row justify-center align-center flex-wrap ">
             <p className="text-center text-base text-body-color ">
               &copy;
               <a href="https://faithimports.com" rel="nofollow noopener">
@@ -285,8 +300,13 @@ const Footer = () => {
               </a>{" "}
               All right reserved.
             </p>
-            <span className="mx-2">•</span>
-            <p className="text-center text-base text-body-color ">Designed by <a href="#" className="transition hover:text-secondary">Bereket</a></p>
+            <span className="mx-2 block text-center">•</span>
+            <p className="text-center text-base text-body-color ">
+              Crafted with ❤️ by{" "}
+              <a href="#" className="transition hover:text-secondary">
+                Bereket
+              </a>
+            </p>
           </div>
         </div>
 

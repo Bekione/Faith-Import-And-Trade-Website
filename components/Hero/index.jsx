@@ -1,16 +1,18 @@
 import Link from "next/link";
+import HomeSlider from './HomeSlider'
+import HomeServices from "./HomeServices";
 
 const Hero = () => {
   return (
     <>
-      <section
-        id="home"
-        className="relative z-10 overflow-hidden pt-[120px] pb-16 md:pt-[150px] md:pb-[120px] xl:pt-[180px] xl:pb-[160px] 2xl:pt-[210px] 2xl:pb-[200px]"
-      >
+    <HomeSlider />
+    <HomeServices />
+      <section className="relative z-10 overflow-hidden pt-[120px] pb-16 md:pt-[150px] md:pb-[120px] xl:pt-[180px] xl:pb-[160px] 2xl:pt-[210px] 2xl:pb-[200px]" >
+        
         <div className="container">
           <div className="-mx-4 flex flex-wrap">
             <div className="w-full px-4">
-              {/* <div
+               <div
                 className="wow fadeInUp mx-auto max-w-[800px] text-center"
                 data-wow-delay=".2s"
               >
@@ -34,11 +36,11 @@ const Hero = () => {
                     Star on GitHub
                   </Link>
                 </div>
-              </div> */}
+              </div> 
             </div>
           </div>
         </div>
-        {/* <div className="absolute top-0 right-0 z-[-1] opacity-30 lg:opacity-100">
+        <div className="absolute top-0 right-0 z-[-1] opacity-30 lg:opacity-100">
           <svg
             width="450"
             height="556"
@@ -175,8 +177,8 @@ const Hero = () => {
               </linearGradient>
             </defs>
           </svg>
-        </div> */}
-        {/* <div className="absolute bottom-0 left-0 z-[-1] opacity-30 lg:opacity-100">
+        </div> 
+         <div className="absolute bottom-0 left-0 z-[-1] opacity-30 lg:opacity-100">
           <svg
             width="364"
             height="201"
@@ -278,7 +280,7 @@ const Hero = () => {
               </radialGradient>
             </defs>
           </svg>
-        </div> */}
+        </div> 
       </section>
     </>
   );

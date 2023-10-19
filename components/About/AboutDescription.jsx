@@ -45,14 +45,14 @@ const AboutDescription = () => {
         cutting-edge technology and products to meet your evolving needs.
       </p>
 
-      <p className="mb-5 text-justify  text-base font-normal leading-[1.5] text-body-dark sm:text-lg sm:leading-[1.5]">
+      {/* <p className="mb-5 text-justify  text-base font-normal leading-[1.5] text-body-dark sm:text-lg sm:leading-[1.5]">
         Experience the difference of working with Faith Import and Trade. Our
         dedicated team of skilled professionals is ready to assist you in
         finding the right IT solutions, sourcing top-quality stationary
         products, and ensuring the smooth operation of your systems through
         expert maintenance services. Trust is at the heart of our partnership
         with you.
-      </p>
+      </p> */}
 
       <p className="mb-5 text-justify  text-base font-normal leading-[1.5] text-body-dark sm:text-lg sm:leading-[1.5]">
         Choose Faith Import and Trade and embark on a journey built on Trust,

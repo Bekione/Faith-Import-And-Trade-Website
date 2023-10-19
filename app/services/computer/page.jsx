@@ -1,16 +1,22 @@
-import PageHeader from "@components/Common/PageHeader"
+import PageHeader from "@components/Common/PageHeader";
+import Breadcrumb from "@components/Common/Breadcrumb";
+
 const page = () => {
   return (
-    <div className="about relative z-10 overflow-hidden pb-16 md:pb-[120px] xl:pb-[160px] 2xl:pb-[200px]">
-      <PageHeader title="Computers & Accessories" />
+    <section className="relative z-10 overflow-hidden pb-16 md:pb-[120px] xl:pb-[140px] 2xl:pb-[160px]">
+      <PageHeader
+        title="Computers"
+        imgPath="/images/pages-head/bg-computer.avif"
+      />
 
-      <section className="company-profile px-10 pt-5 ">
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum natus recusandae itaque quibusdam expedita odit dignissimos distinctio id maxime nisi reprehenderit beatae ullam illo, adipisci quod voluptatum earum aspernatur veniam corrupti officiis. Animi distinctio qui nobis ut ab iusto tenetur assumenda debitis iure enim! Omnis perferendis nobis minima quasi debitis!</p>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum natus recusandae itaque quibusdam expedita odit dignissimos distinctio id maxime nisi reprehenderit beatae ullam illo, adipisci quod voluptatum earum aspernatur veniam corrupti officiis. Animi distinctio qui nobis ut ab iusto tenetur assumenda debitis iure enim! Omnis perferendis nobis minima quasi debitis!</p>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum natus recusandae itaque quibusdam expedita odit dignissimos distinctio id maxime nisi reprehenderit beatae ullam illo, adipisci quod voluptatum earum aspernatur veniam corrupti officiis. Animi distinctio qui nobis ut ab iusto tenetur assumenda debitis iure enim! Omnis perferendis nobis minima quasi debitis!</p>
-      </section>
-    </div>
-  )
-}
+      <div className="container px-5 md:px-10 pt-5 ">
+        <Breadcrumb paths={["services", "computer"]} />
+        <div className="flex flex-col lg:flex-row gap-10">
+          Computers
+        </div>
+      </div>
+    </section>
+  );
+};
 
-export default page
+export default page;

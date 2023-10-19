@@ -1,9 +1,21 @@
 const AboutCards = () => {
   return (
-    <div class="mx-[3%] mt-8 p-4 grid grid-cols-[repeat(auto-fit,minmax(300px,1fr))] grid-rows-[1fr] gap-x-6 gap-y-6 content-around justify-around">
-      <div class="h-full p-8 flex flex-col bg-secondary rounded-lg shadow-2xl">
-        <div class="flex itemx-center justify-center mb-[.85rem]">
-          <svg className="w-[80px] h-[80px] sm:w-[100px] sm:h-[100px]" viewBox="0 0 400.000000 400.000000">
+    <div className="mt-8">
+      <div className="mb-8">
+        <h3 className="text-secondary text-center font-bold text[1.2em] md:text-[1.3em]">
+          Why us?
+        </h3>
+        <h2 className="text-primary text-center font-bold text-[1.5em] sm:text-[1.6em] md:text-[1.8em]">
+          Essences
+        </h2>
+      </div>
+    <div className="mx-[3%] p-4 grid grid-cols-[repeat(auto-fit,minmax(300px,1fr))] grid-rows-[1fr] gap-x-6 gap-y-6 content-around justify-center">
+      <div className="group/card h-full p-8 flex flex-col bg-secondary rounded-lg shadow-2xl">
+        <div className="flex itemx-center justify-center mb-[.85rem]">
+          <svg
+            className="relative w-[80px] h-[80px] sm:w-[100px] sm:h-[100px] transform group-hover/card:scale-[1.1] transition"
+            viewBox="0 0 400.000000 400.000000"
+          >
             <g
               transform="translate(0.000000,400.000000) scale(0.100000,-0.100000)"
               fill="#ffffff"
@@ -49,7 +61,7 @@ const AboutCards = () => {
 212 83 365 78 88 -3 139 -10 190 -26z"
               />
               <path
-              fill="#151f34"
+                fill="#151f34"
                 d="M2385 2685 c-16 -9 -131 -117 -255 -240 -123 -124 -227 -225 -229
 -225 -3 0 -66 61 -141 135 -137 135 -137 135 -184 135 -36 0 -52 -5 -71 -24
 -29 -29 -40 -66 -30 -103 7 -31 332 -365 377 -389 15 -8 42 -14 60 -14 29 0
@@ -66,7 +78,6 @@ const AboutCards = () => {
 72 152 128 281 126 285 -3 4 -28 8 -55 8 l-50 0 -28 -62z"
               />
               <path
-              
                 d="M2738 1255 c-3 -4 32 -88 79 -188 171 -363 183 -392 170 -395 -12 -2
 -170 51 -330 112 -133 51 -146 40 -232 -194 -93 -256 -84 -236 -100 -219 -7 8
 -48 90 -89 182 -42 93 -84 184 -94 204 l-19 35 -27 -64 -27 -64 91 -194 c51
@@ -77,25 +88,29 @@ const AboutCards = () => {
             </g>
           </svg>
         </div>
-        <div class="mb-1rem">
-          <h2 className="text-center text-primary font-bold text-2xl">Quality Product</h2>
+        <div className="mb-1rem">
+          <h2 className="text-center text-primary font-bold text-2xl">
+            Quality Product
+          </h2>
         </div>
-        <div class="mx-2 sm:mx-[1.5rem]">
+        <div className="mx-2 sm:mx-[1.5rem]">
           <p className="text-base text-center text-[#ffffff98] leading-relaxed">
-          Unleash your potential with our premium, high-quality products.
+            Unleash your potential with our premium, high-quality products.
           </p>
         </div>
       </div>
-      <div class="h-full p-8 flex flex-col bg-primary rounded-lg shadow-2xl">
-        <div class="flex itemx-center justify-center mb-[.85rem]">
-          <svg width="100" height="100" viewBox="0 0 248.000000 246.000000">
+      <div className="group/card h-full p-8 flex flex-col bg-primary rounded-lg shadow-2xl">
+        <div className="flex itemx-center justify-center mb-[.85rem]">
+          <svg
+            viewBox="0 0 248.000000 246.000000"
+            className="relative w-[80px] h-[80px] sm:w-[100px] sm:h-[100px] transform group-hover/card:scale-[1.1] transition"
+          >
             <g
               transform="translate(0.000000,246.000000) scale(0.100000,-0.100000)"
               fill="#ffffff"
               stroke="none"
             >
               <path
-              
                 d="M80 2351 c-16 -31 -14 -1322 3 -1344 11 -14 63 -16 492 -21 264 -3
 481 -5 483 -6 6 -1 1 -130 -6 -130 -4 0 -28 20 -52 45 -44 45 -75 56 -98 33
 -28 -28 -12 -59 73 -147 l85 -88 0 -93 c0 -84 -2 -91 -17 -85 -69 29 -103 37
@@ -117,7 +132,7 @@ c100 -42 38 -190 -65 -154 -67 23 -71 125 -5 154 38 16 31 16 70 0z m-287
 -59 -34 72 -14 143 54 184 41 26 112 26 153 1z"
               />
               <path
-              fill="#04AA82"
+                fill="#04AA82"
                 d="M476 2144 c-9 -8 -16 -27 -16 -42 -1 -66 -77 -142 -142 -142 -56 0
 -58 -8 -58 -280 0 -278 -1 -272 71 -284 58 -9 116 -67 125 -125 12 -74 -6 -71
 389 -71 349 0 354 0 369 21 15 22 11 48 -8 61 -6 4 -154 8 -328 8 l-317 0 -26
@@ -126,7 +141,7 @@ c100 -42 38 -190 -65 -154 -67 23 -71 125 -5 154 38 16 31 16 70 0z m-287
 264 48 0 15 -5 33 -12 40 -9 9 -104 12 -364 12 -307 0 -355 -2 -368 -16z"
               />
               <path
-              fill="#04AA82"
+                fill="#04AA82"
                 d="M1557 2142 c-37 -41 -11 -74 61 -78 26 -1 106 -3 178 -3 l131 -1 17
 -44 c20 -52 87 -118 139 -137 l37 -13 0 -187 0 -187 -34 -12 c-52 -17 -112
 -75 -141 -135 -25 -53 -27 -55 -66 -55 -32 0 -41 -4 -51 -25 -9 -21 -8 -28 7
@@ -135,7 +150,7 @@ c100 -42 38 -190 -65 -154 -67 23 -71 125 -5 154 38 16 31 16 70 0z m-287
 0 -209 -2 -224 -18z"
               />
               <path
-              fill="#04AA82"
+                fill="#04AA82"
                 d="M1135 1958 c-176 -63 -248 -289 -142 -445 37 -55 113 -109 164 -119
 30 -6 40 -3 54 15 26 32 13 58 -40 82 -59 26 -89 54 -112 104 -33 72 -19 166
 34 224 12 13 46 34 75 47 46 21 52 27 52 54 0 19 -7 33 -19 40 -23 12 -27 12
@@ -147,7 +162,6 @@ c100 -42 38 -190 -65 -154 -67 23 -71 125 -5 154 38 16 31 16 70 0z m-287
 -94 c34 -34 -6 -90 -48 -68 -35 19 -20 80 20 80 9 0 21 -5 28 -12z"
               />
               <path
-              
                 d="M1790 1803 c-73 -38 -100 -124 -60 -191 57 -94 183 -94 240 0 68 112
 -63 252 -180 191z m88 -95 c7 -7 12 -22 12 -35 0 -28 -36 -46 -62 -31 -34 17
 -16 78 22 78 9 0 21 -5 28 -12z"
@@ -155,49 +169,73 @@ c100 -42 38 -190 -65 -154 -67 23 -71 125 -5 154 38 16 31 16 70 0z m-287
             </g>
           </svg>
         </div>
-        <div class="mb-1rem">
-          <h2 className="text-center text-secondary font-bold text-2xl">Fair price</h2>
+        <div className="mb-1rem">
+          <h2 className="text-center text-secondary font-bold text-2xl">
+            Fair price
+          </h2>
         </div>
-        <div class="mx-2 sm:mx-[1.5rem]">
-          <p className="text-base text-center text-[#ffffff98] leading-relaxed">You will be more happy by our relatively low price.</p>
+        <div className="mx-2 sm:mx-[1.5rem]">
+          <p className="text-base text-center text-[#ffffff98] leading-relaxed">
+            You will be more happy by our relatively low price.
+          </p>
         </div>
       </div>
-      <div class="h-full p-8 flex flex-col bg-secondary rounded-lg shadow-xl">
-        <div class="flex itemx-center justify-center mb-[.85rem]">
+      <div className="group/card h-full p-8 flex flex-col bg-secondary rounded-lg shadow-xl">
+        <div className="flex itemx-center justify-center mb-[.85rem]">
           <svg
-            width="100"
-            height="100"
             viewBox="0 0 350.000000 308.000000"
+            className="relative w-[80px] h-[80px] sm:w-[100px] sm:h-[100px] transform group-hover/card:scale-[1.1] transition"
           >
             <g
               transform="translate(0.000000,308.000000) scale(0.100000,-0.100000)"
               fill="#ffffff"
               stroke="none"
             >
-              <path fill="#151f34" d="M2162 2868 l3 -73 143 -3 142 -3 0 76 0 75 -145 0 -146 0 3 -72z" />
+              <path
+                fill="#151f34"
+                d="M2162 2868 l3 -73 143 -3 142 -3 0 76 0 75 -145 0 -146 0 3 -72z"
+              />
               <path d="M2232 2703 l3 -58 73 -3 72 -3 0 61 0 60 -75 0 -76 0 3 -57z" />
-              <path  d="M2298 2615 c-2 -1 -266 -13 -588 -26 -638 -26 -652 -30 -165 -49 165 6 301 -13 303 -14 1 -2 -32 -21 -74 -42 -41 -21 -115 -69 -163 -105 l-87 -66 -219 -12 c-121 -7 -221 -14 -223 -15 -1 -2 73 -6 165 -10 92 -4 180 -9 196 -12 l27 -6 -32 -40 c-18 -22 -56 -72 -84 -111 l-50 -72 -208 -12 c-114 -6 -212 -13 -219 -16 -7 -2 62 -7 153 -11 91 -4 184 -9 207 -12 l42 -6 -16 -32 c-9 -17 -29 -67 -44 -111 l-27 -80 -78 -7 c-44 -3 -142 -10 -219 -14 l-140 -8 130 -8 c298 -18 297 -18 291 -41 -3 -12 -9 -59 -12 -103 l-7 -81 -71 -6 c-39 -4 -204 -12 -366 -19 -338 -14 -324 -19 110 -37 157 -7 294 -14 306 -16 18 -4 22 -17 32 -94 7 -50 15 -96 18 -104 6 -17 -71 -23 -446 -34 -135 -4 -232 -9 -217 -11 15 -2 174 -9 353 -15 l326 -12 27 -75 c16 -41 36 -90 45 -108 10 -19 16 -35 14 -37 -4 -3 -226 -13 -486 -21 -122 -4 -221 -8 -220 -9 2 -2 170 -8 373 -15 l370 -13 47 -66 c26 -36 63 -84 83 -107 l35 -41 -192 -6 c-106 -4 -336 -10 -511 -14 -174 -3 -316 -7 -314 -9 1 -1 198 -7 437 -13 239 -6 484 -13 543 -16 107 -5 109 -6 162 -45 30 -22 80 -56 111 -74 l55 -34 -148 -6 c-81 -4 -447 -16 -813 -27 -365 -11 -666 -21 -667 -23 -2 -2 111 -6 249 -10 139 -3 606 -18 1038 -32 829 -27 1000 -27 1118 1 73 17 83 27 60 57 -12 15 -24 15 -107 5 -70 -8 -120 -8 -202 1 -398 45 -726 267 -895 607 -87 176 -120 355 -103 550 22 237 122 442 304 620 136 134 291 217 489 262 112 25 348 23 458 -5 165 -41 290 -106 399 -209 l69 -66 57 36 c32 19 59 39 61 45 4 14 -138 136 -220 189 -161 104 -344 161 -565 177 -34 2 -63 3 -65 1z" />
-              <path fill="#151f34" d="M2290 2335 c0 -42 3 -55 15 -55 12 0 15 13 15 55 0 42 -3 55 -15 55 -12 0 -15 -13 -15 -55z" />
+              <path d="M2298 2615 c-2 -1 -266 -13 -588 -26 -638 -26 -652 -30 -165 -49 165 6 301 -13 303 -14 1 -2 -32 -21 -74 -42 -41 -21 -115 -69 -163 -105 l-87 -66 -219 -12 c-121 -7 -221 -14 -223 -15 -1 -2 73 -6 165 -10 92 -4 180 -9 196 -12 l27 -6 -32 -40 c-18 -22 -56 -72 -84 -111 l-50 -72 -208 -12 c-114 -6 -212 -13 -219 -16 -7 -2 62 -7 153 -11 91 -4 184 -9 207 -12 l42 -6 -16 -32 c-9 -17 -29 -67 -44 -111 l-27 -80 -78 -7 c-44 -3 -142 -10 -219 -14 l-140 -8 130 -8 c298 -18 297 -18 291 -41 -3 -12 -9 -59 -12 -103 l-7 -81 -71 -6 c-39 -4 -204 -12 -366 -19 -338 -14 -324 -19 110 -37 157 -7 294 -14 306 -16 18 -4 22 -17 32 -94 7 -50 15 -96 18 -104 6 -17 -71 -23 -446 -34 -135 -4 -232 -9 -217 -11 15 -2 174 -9 353 -15 l326 -12 27 -75 c16 -41 36 -90 45 -108 10 -19 16 -35 14 -37 -4 -3 -226 -13 -486 -21 -122 -4 -221 -8 -220 -9 2 -2 170 -8 373 -15 l370 -13 47 -66 c26 -36 63 -84 83 -107 l35 -41 -192 -6 c-106 -4 -336 -10 -511 -14 -174 -3 -316 -7 -314 -9 1 -1 198 -7 437 -13 239 -6 484 -13 543 -16 107 -5 109 -6 162 -45 30 -22 80 -56 111 -74 l55 -34 -148 -6 c-81 -4 -447 -16 -813 -27 -365 -11 -666 -21 -667 -23 -2 -2 111 -6 249 -10 139 -3 606 -18 1038 -32 829 -27 1000 -27 1118 1 73 17 83 27 60 57 -12 15 -24 15 -107 5 -70 -8 -120 -8 -202 1 -398 45 -726 267 -895 607 -87 176 -120 355 -103 550 22 237 122 442 304 620 136 134 291 217 489 262 112 25 348 23 458 -5 165 -41 290 -106 399 -209 l69 -66 57 36 c32 19 59 39 61 45 4 14 -138 136 -220 189 -161 104 -344 161 -565 177 -34 2 -63 3 -65 1z" />
+              <path
+                fill="#151f34"
+                d="M2290 2335 c0 -42 3 -55 15 -55 12 0 15 13 15 55 0 42 -3 55 -15 55 -12 0 -15 -13 -15 -55z"
+              />
               <path d="M1837 2264 c-12 -12 44 -103 59 -97 18 7 18 11 -8 61 -22 40 -36 50 -51 36z" />
               <path d="M2742 2258 c-10 -14 -42 -74 -42 -81 0 -3 6 -7 14 -10 17 -7 71 77 61 93 -8 14 -21 13 -33 -2z" />
-              <path fill="#151f34" d="M2645 1860 l-250 -219 -61 6 c-45 4 -68 1 -92 -11 -71 -37 -107 -110 -91 -186 8 -33 5 -38 -46 -90 -30 -31 -55 -60 -55 -65 0 -5 14 -24 32 -42 l32 -33 61 60 60 60 37 -12 c68 -21 160 24 188 92 8 19 11 53 7 89 l-5 59 219 252 c193 221 227 263 217 259 -2 0 -115 -99 -253 -219z m-291 -321 c51 -40 22 -122 -44 -122 -66 0 -95 82 -44 122 15 12 34 21 44 21 10 0 29 -9 44 -21z" />
-              <path fill="#151f34" d="M1507 1933 c-14 -13 -6 -23 36 -48 51 -29 53 -30 60 -11 4 10 -9 24 -38 40 -48 29 -49 29 -58 19z" />
+              <path
+                fill="#151f34"
+                d="M2645 1860 l-250 -219 -61 6 c-45 4 -68 1 -92 -11 -71 -37 -107 -110 -91 -186 8 -33 5 -38 -46 -90 -30 -31 -55 -60 -55 -65 0 -5 14 -24 32 -42 l32 -33 61 60 60 60 37 -12 c68 -21 160 24 188 92 8 19 11 53 7 89 l-5 59 219 252 c193 221 227 263 217 259 -2 0 -115 -99 -253 -219z m-291 -321 c51 -40 22 -122 -44 -122 -66 0 -95 82 -44 122 15 12 34 21 44 21 10 0 29 -9 44 -21z"
+              />
+              <path
+                fill="#151f34"
+                d="M1507 1933 c-14 -13 -6 -23 36 -48 51 -29 53 -30 60 -11 4 10 -9 24 -38 40 -48 29 -49 29 -58 19z"
+              />
               <path d="M1380 1465 c0 -12 13 -15 55 -15 42 0 55 3 55 15 0 12 -13 15 -55 15 -42 0 -55 -3 -55 -15z" />
-              <path fill="#151f34" d="M1538 1044 c-38 -24 -46 -38 -29 -48 13 -8 103 44 98 58 -6 19 -31 16 -69 -10z" />
+              <path
+                fill="#151f34"
+                d="M1538 1044 c-38 -24 -46 -38 -29 -48 13 -8 103 44 98 58 -6 19 -31 16 -69 -10z"
+              />
               <path d="M1856 723 c-25 -44 -23 -75 3 -58 17 10 53 84 46 95 -12 19 -23 10 -49 -37z" />
-              <path fill="#151f34" d="M2290 595 c0 -42 3 -55 15 -55 12 0 15 13 15 55 0 42 -3 55 -15 55 -12 0 -15 -13 -15 -55z" />
+              <path
+                fill="#151f34"
+                d="M2290 595 c0 -42 3 -55 15 -55 12 0 15 13 15 55 0 42 -3 55 -15 55 -12 0 -15 -13 -15 -55z"
+              />
             </g>
           </svg>
         </div>
-        <div class="mb-1rem">
-          <h2 className="text-center text-primary font-bold text-2xl">On Time Delivery</h2>
+        <div className="mb-1rem">
+          <h2 className="text-center text-primary font-bold text-2xl">
+            On Time Delivery
+          </h2>
         </div>
-        <div class="mx-2 sm:mx-[1.5rem]">
+        <div className="mx-2 sm:mx-[1.5rem]">
           <p className="text-base text-center text-[#ffffff98] leading-relaxed">
             We will deliver your orders on time. Just leave the shipment for us.
           </p>
         </div>
       </div>
+    </div>
     </div>
   );
 };

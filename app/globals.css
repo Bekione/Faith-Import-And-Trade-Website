@@ -1,8 +1,31 @@
-@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap");
+/* @import url("https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap"); */
 
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+*::selection {
+  background: rgba(19, 128, 113, 0.834);
+  color: white;
+}
+/* width */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #151f34;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #151f34bd;
+}
 
 @layer base {
   body {
@@ -32,6 +55,17 @@
   }
 }
 
+.zmblo {
+  box-shadow: 10px -10px 10px -10px red;
+}
+.shadow-corner-r {
+  box-shadow: -2px -2px 25px 7px rgba(4, 170, 130, 0.1);
+}
+
+.shadow-corner-l {
+  box-shadow: -2px 2px 25px 7px rgba(4, 170, 130, 0.1);
+}
+
 .page_header::after {
   position: absolute;
   content: "";
@@ -50,6 +84,181 @@
   margin-top: -3px !important;
 }
 
-.page-title{
+.page-title {
   text-shadow: 2px 2px 4px #151f34bd;
+}
+
+.customers_slider .swiper-pagination-bullet,
+.home_services .swiper-pagination-bullet {
+  transition: all 300ms ease-in-out !important;
+}
+
+.customers_slider .swiper-pagination-bullet-active,
+.home_services .swiper-pagination-bullet-active {
+  border-radius: 3px !important;
+  transition: all 300ms ease-in-out !important;
+  transform: scaleX(3) scaleY(1.2);
+  transform-origin: center center !important;
+  top: 60% !important;
+}
+
+.customers_slider .swiper-pagination-bullet-active {
+  transform: scaleX(3) scaleY(1.2);
+}
+.home_services .swiper-pagination-bullet-active {
+  transform: scaleX(1.2) scaleY(2);
+}
+
+.home_slider .swiper-pagination {
+  position: absolute !important;
+  bottom: 20% !important;
+  left: 20% !important;
+  transform: none !important;
+}
+
+.home_slider .swiper-pagination-bullet {
+  width: 35px !important;
+  height: 35px !important;
+  border-radius: 50% !important;
+  border: 2px solid #ffffff !important;
+  background: transparent !important;
+  box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.4), inset 0 0 5px 0 rgba(0, 0, 0, 0.3);
+}
+.home_slider .swiper-pagination-bullet-active {
+  border: 2px solid #04aa82 !important;
+  position: relative;
+}
+
+.home_slider .swiper-pagination-bullet-active::before {
+  position: absolute;
+  content: "";
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: #04aa82;
+  box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.4);
+}
+
+.slider_title {
+  text-shadow: 3px 3px 2px #ffffff !important;
+}
+
+.cta {
+  /* display: flex;
+  padding: 11px 33px;
+  text-decoration: none;
+  font-family: "Poppins", sans-serif;
+  font-size: 25px;
+  color: white;
+  background: #151f34;
+  transition: 1s; */
+  box-shadow: 6px 6px 0 white;
+  /* transform: skewX(-15deg); */
+}
+
+.cta:focus {
+  outline: none;
+}
+
+.cta:hover {
+  transition: 0.5s;
+  box-shadow: 10px 10px 0 #04aa82;
+}
+
+.cta .second {
+  transition: 0.5s;
+  margin-right: 0px;
+}
+
+.cta:hover .second {
+  transition: 0.5s;
+  margin-right: 45px;
+}
+
+.span {
+  transform: skewX(15deg);
+}
+
+/* .second {
+  width: 20px;
+  margin-left: 30px;
+  position: relative;
+  top: 15%;
+} */
+
+.one {
+  transition: 0.4s;
+  transform: translateX(-60%);
+}
+
+.two {
+  transition: 0.5s;
+  transform: translateX(-30%);
+}
+
+.cta:hover .three {
+  animation: color_anim 1s infinite 0.2s;
+}
+
+.cta:hover .one {
+  transform: translateX(0%);
+  animation: color_anim 1s infinite 0.6s;
+}
+
+.cta:hover .two {
+  transform: translateX(0%);
+  animation: color_anim 1s infinite 0.4s;
+}
+
+@keyframes color_anim {
+  0% {
+    fill: white;
+  }
+
+  50% {
+    fill: #04aa82;
+  }
+
+  100% {
+    fill: white;
+  }
+}
+
+.home_services .swiper-pagination {
+  position: absolute !important;
+  right: 2% !important;
+  top: 50%;
+  transform: translateY(-50%) translateX(0);
+}
+
+@keyframes back-spin {
+  0% {
+    transform: rotate(0deg);
+    transform-origin: center center;
+  }
+  100% {
+    transform: rotate(-360deg);
+    transform-origin: center center;
+  }
+}
+
+@keyframes for-spin {
+  0% {
+    transform: rotate(0deg);
+    transform-origin: center center;
+  }
+  100% {
+    transform: rotate(360deg);
+    transform-origin: center center;
+  }
+}
+
+.animate-spin-neg {
+  animation: back-spin 1.5s ease-in-out;
+}
+.animate-spin-pos {
+  animation: for-spin 1.5s ease-in-out;
 }
