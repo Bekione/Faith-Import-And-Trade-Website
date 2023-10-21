@@ -1,8 +1,9 @@
 "use client";
 
-import { useState, useEffect, useRef } from "react";
+import { useState, useRef } from "react";
 import { HomeSliderData } from "./HomeSliderData";
 import HomeServicesLogo from "./HomeServicesLogo";
+import SectionTitle from "@components/Common/SectionTitle";
 import Image from "next/image";
 import Link from "next/link";
 import { Swiper, SwiperSlide } from "swiper/react";
@@ -18,43 +19,69 @@ const HomeServices = () => {
 
   const handleTransitionStart = (swiper) => {
     setCurrentSlide(swiper.realIndex);
-
     if (logoRef.current) {
-      let animationClass = "";
+      const animationClasses = {
+        "0,2": "animate-spin-neg",
+        "2,0": "animate-spin-pos",
+        ">": "animate-spin-neg",
+        "<": "animate-spin-pos",
+      };
 
-      if (swiper.realIndex === 0 && swiper.previousRealIndex === 2) {
-        animationClass = "animate-spin-neg";
-      } else if (swiper.realIndex === 2 && swiper.previousRealIndex === 0) {
-        animationClass = "animate-spin-pos";
-      } else if (swiper.realIndex > swiper.previousRealIndex) {
-        animationClass = "animate-spin-neg";
-      } else if (swiper.realIndex < swiper.previousRealIndex) {
-        animationClass = "animate-spin-pos";
+      const getAnimationClassKey = (current, previous) => {
+        if (current === 0 && previous === 2) {
+          return "0,2";
+        } else if (current === 2 && previous === 0) {
+          return "2,0";
+        } else if (current > previous) {
+          return ">";
+        } else if (current < previous) {
+          return "<";
+        }
+      };
+
+      const animationClassKey = getAnimationClassKey(
+        swiper.realIndex,
+        swiper.previousRealIndex
+      );
+
+      let animationClass = animationClasses[animationClassKey];
+
+      // Reverse the logic for smaller screen orientation
+      if (window.innerWidth < 768) {
+        if (animationClass === "animate-spin-neg") {
+          animationClass = "animate-spin-pos";
+        } else if (animationClass === "animate-spin-pos") {
+          animationClass = "animate-spin-neg";
+        }
       }
 
-      if (animationClass !== "") {
+      if (animationClass !== undefined) {
         logoRef.current.classList.add(animationClass);
-        setTimeout(() => {
+        swiper.once("transitionEnd", () => {
           logoRef.current.classList.remove(animationClass);
-        }, 1500);
+        });
       }
     }
   };
 
+  const breakpoints = {
+    0: {
+      direction: "horizontal",
+    },
+    768: {
+      direction: "vertical",
+    },
+  };
+
   return (
-    <section className="home_services my-8 w-11/12 min-h-[450px] h-[450px] mx-auto flex flex-col justify-center">
-      <div className="text-4xl font-extrabold text-center mb-2">
-        <span className="bg-clip-text text-transparent bg-gradient-to-r from-primary to-secondary">
-          Our Services
-        </span>
-      </div>
+    <section className="home_services mt-20 w-11/12  h-fit md:h-[430px] lg:h-[400px] xl:h-[380px] mx-auto flex flex-col justify-center">
+      <SectionTitle title="Our Services" />
       <div
-        className="rounded-xl my-[35rem] w-10/12 lg:w-9/12 h-fit min-h-[360px] mx-auto flex flex-col md:flex-row justify-center items-center gap-5"
+        className="relative rounded-xl w-10/12 lg:w-9/12 min-h-[450px] md:min-h-fit h-auto md:h-full mx-auto flex flex-col md:flex-row justify-center items-center gap-5"
         style={{ boxShadow: "0px 14px 80px rgba(34, 35, 58, 0.2)" }}
-        onWheel={(e) => e.preventDefault()}
       >
         <div
-          className={`relative bg-primary rounded-xl md:ml-[-11%] mt-[-11%] md:mt-0 !h-[300px] md:h-[75%] w-[75%] max-w-[300px] md:w-[300px]`}
+          className={`relative bg-primary rounded-xl md:ml-[-11%] mt-[-11%] md:mt-0 h-[180px] sm:h-[200px] md:h-[75%] w-[75%] max-w-[300px] md:w-[300px]`}
           style={{
             boxShadow: "4px 13px 30px 1px rgba(4, 169, 114, 0.2)",
           }}
@@ -88,14 +115,13 @@ const HomeServices = () => {
           ></div>
           <div
             ref={logoRef}
-            className={`absolute bottom-[-35px] right-[-50px] w-[140px] h-[140px] z-[10] transform transition-transform duration-[1500ms] ease-in-out`}
+            className={`absolute bottom-[-35px] right-[-50px] w-[110px] h-[110px] sm:w-[130px] sm:h-[130px] md:w-[140px] md:h-[140px] z-[10] transform transition-transform duration-[1500ms] ease-in-out`}
           >
             <HomeServicesLogo />
           </div>
         </div>
         <Swiper
-          className="outline h-full w-[78%] mt-[250px] md:mt-0 md:!mx-0 md:!ml-auto"
-          direction={"vertical"}
+          breakpoints={breakpoints}
           spaceBetween={50}
           slidesPerView={1}
           speed={1500}
@@ -109,6 +135,7 @@ const HomeServices = () => {
           }}
           modules={[Autoplay, Pagination, Mousewheel]}
           onTransitionStart={handleTransitionStart}
+          className="min-h-[350px] md:min-h-[250px] max-h-fit h-full w-full"
           style={{
             "--swiper-pagination-color": "#04AA82",
             "--swiper-pagination-bullet-inactive-color": "#151f34",
@@ -121,8 +148,11 @@ const HomeServices = () => {
           {HomeSliderData.map((data, index) => {
             if (index === 0) return null;
             return (
-              <SwiperSlide key={data.id} className="w-[92%] h-full p-4">
-                <div className="mr-10 mt-5 flex flex-col my-auto">
+              <SwiperSlide
+                key={data.id}
+                className="w-full md:w-[92%] h-full p-4"
+              >
+                <div className="md:mr-10 mt-2 sm:mt-4 md:mt-5 flex flex-col my-auto">
                   <h3 className="mb-5 text-primary font-bold text-2xl">
                     {data.title}
                   </h3>
@@ -130,8 +160,8 @@ const HomeServices = () => {
                     {data.bodyText}
                   </p>
                   <Link
-                    href="#"
-                    className="block w-fit mt-8 px-6 py-4 rounded-xl font-bold text-white bg-secondary hover:bg-primary transition duration-500"
+                    href={data.actionPath}
+                    className="block w-fit mt-5 sm:mt-8 px-6 py-4 rounded-xl font-bold text-white bg-secondary hover:bg-primary transition duration-500"
                     style={{
                       boxShadow: "3px 10px 20px 1px rgba(4, 169, 114, 0.2)",
                     }}

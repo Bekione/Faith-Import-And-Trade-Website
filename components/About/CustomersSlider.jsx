@@ -1,15 +1,18 @@
 "use client";
 
 import Image from "next/image";
+import { usePathname } from "next/navigation";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Autoplay, Pagination } from "swiper/modules";
 import { customersList } from "./CustomersList";
-
+import AboutSectionTitle from "./AboutSectionTitle";
 import "swiper/css";
 import "swiper/css/pagination";
 import "swiper/css/navigation";
 
 const CustomersSlider = () => {
+  const currentPath = usePathname();
+
   const breakpoints = {
     0: {
       slidesPerView: 1,
@@ -27,14 +30,9 @@ const CustomersSlider = () => {
 
   return (
     <div className="customers_slider mt-20 w-full px-6">
-      <div className="mb-8">
-        <h3 className="text-secondary text-center font-bold text[1.2em] md:text-[1.3em]">
-          Trust & Worth
-        </h3>
-        <h2 className="text-primary text-center font-bold text-[1.5em] sm:text-[1.6em] md:text-[1.8em]">
-          Our Clients
-        </h2>
-      </div>
+      {currentPath !== '/' && (
+        <AboutSectionTitle title="Our clients" subTitle="Trust & worth" />
+      )}
       <Swiper
         breakpoints={breakpoints}
         spaceBetween={30}

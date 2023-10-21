@@ -1,13 +1,22 @@
 import Link from "next/link";
-import HomeSlider from './HomeSlider'
+import HomeSlider from "./HomeSlider";
 import HomeServices from "./HomeServices";
+import HomeContactUs from "./HomeContactUs"
+import HomeAboutUs from "./HomeAboutUs";
+import Testimonials from "./Testimonials";
+import HomeCustomers from "./HomeCustomers";
 
 const Hero = () => {
   return (
     <>
-    <HomeSlider />
-    <HomeServices />
-      <section className="relative z-10 overflow-hidden pt-[120px] pb-16 md:pt-[150px] md:pb-[120px] xl:pt-[180px] xl:pb-[160px] 2xl:pt-[210px] 2xl:pb-[200px]" >
+      <HomeSlider />
+      <HomeAboutUs />
+      <HomeServices />
+      
+      <HomeContactUs />
+      <HomeCustomers />
+      <Testimonials />
+      {/* <section className="relative z-10 overflow-hidden pt-[120px] pb-16 md:pt-[150px] md:pb-[120px] xl:pt-[180px] xl:pb-[160px] 2xl:pt-[210px] 2xl:pb-[200px]" >
         
         <div className="container">
           <div className="-mx-4 flex flex-wrap">
@@ -281,7 +290,7 @@ const Hero = () => {
             </defs>
           </svg>
         </div> 
-      </section>
+      </section> */}
     </>
   );
 };

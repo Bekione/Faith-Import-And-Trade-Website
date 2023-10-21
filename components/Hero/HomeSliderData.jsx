@@ -13,7 +13,7 @@ export const HomeSliderData = [
     id: "slider-2",
     title: "Computer & Accessories",
     bodyText:
-      "Discover a wide range of high-quality computers and accessories to enhance your productivity. From powerful laptops to cutting-edge peripherals, we have everything you need for a seamless computing experience.",
+      "Discover a wide range of high-quality computers and accessories to enhance your productivity. From powerful laptops to cutting-edge peripherals, we have got you covered.",
     actionPath: "/services/computer",
     bgImgPath: "/images/hero/bg-computer-slider.avif",
   },

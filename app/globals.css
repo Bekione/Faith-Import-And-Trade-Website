@@ -108,6 +108,14 @@
 .home_services .swiper-pagination-bullet-active {
   transform: scaleX(1.2) scaleY(2);
 }
+@media only screen and (max-width: 768px) {
+  .home_services .swiper-pagination {
+    top: 94% !important;
+  }
+  .home_services .swiper-pagination-bullet-active {
+    transform: scaleX(2) scaleY(1.2);
+  }
+}
 
 .home_slider .swiper-pagination {
   position: absolute !important;
