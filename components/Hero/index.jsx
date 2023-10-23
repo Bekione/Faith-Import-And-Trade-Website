@@ -1,10 +1,12 @@
 import Link from "next/link";
-import HomeSlider from "./HomeSlider";
+import HomeSlider from "./carousel/HomeSlider";
 import HomeServices from "./HomeServices";
-import HomeContactUs from "./HomeContactUs"
+import HomeContactUs from "./HomeContactUs";
 import HomeAboutUs from "./HomeAboutUs";
 import Testimonials from "./Testimonials";
 import HomeCustomers from "./HomeCustomers";
+import HomeManifesto from "./manifesto scrollytelling/HomeManifesto";
+
 
 const Hero = () => {
   return (
@@ -12,7 +14,7 @@ const Hero = () => {
       <HomeSlider />
       <HomeAboutUs />
       <HomeServices />
-      
+      <HomeManifesto />
       <HomeContactUs />
       <HomeCustomers />
       <Testimonials />

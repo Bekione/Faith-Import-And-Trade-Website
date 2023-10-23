@@ -270,3 +270,40 @@
 .animate-spin-pos {
   animation: for-spin 1.5s ease-in-out;
 }
+
+.sticky {
+  position: sticky;
+  top: 0;
+  background-color: #f7f7f7;
+  height: 48px; /* Adjust the height as needed */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 10;
+}
+
+.single-manifesto {
+  height: fit-content;
+}
+.single-manifesto:not(:last-child)::before {
+  content: "";
+  position: absolute;
+  bottom: 1px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 50%;
+  height: 1px;
+  background: #04aa82;
+}
+
+@media only screen and (min-width: 560px) {
+  .single-manifesto {
+    height: calc(100vh - 122.03px);
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .single-manifesto {
+    height: calc(100vh - 98.03px);
+  }
+}

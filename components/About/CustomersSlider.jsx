@@ -30,13 +30,14 @@ const CustomersSlider = () => {
 
   return (
     <div className="customers_slider mt-20 w-full px-6">
-      {currentPath !== '/' && (
+      {currentPath !== "/" && (
         <AboutSectionTitle title="Our clients" subTitle="Trust & worth" />
       )}
       <Swiper
         breakpoints={breakpoints}
         spaceBetween={30}
         centeredSlides={false}
+        speed={1500}
         loop={true}
         autoplay={{
           delay: 3500,
@@ -52,7 +53,7 @@ const CustomersSlider = () => {
           "--swiper-pagination-size": "7px",
           "--swiper-pagination-bullet-horizontal-gap": "6px",
           "--swiper-pagination-bullet-active-width": "18px", // Set the width of the active bullet
-    "--swiper-pagination-bullet-active-height": "10px", // Set the height of the active bullet
+          "--swiper-pagination-bullet-active-height": "10px", // Set the height of the active bullet
         }}
       >
         {customersList.map((customer) => {

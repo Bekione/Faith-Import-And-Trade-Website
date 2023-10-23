@@ -1,8 +1,8 @@
 "use client";
 
 import { useState, useRef } from "react";
-import { HomeSliderData } from "./HomeSliderData";
-import HomeServicesLogo from "./HomeServicesLogo";
+import { HomeSliderData } from "./carousel/HomeSliderData";
+import HomeServicesLogo from "../Common/FaithLogoIcon";
 import SectionTitle from "@components/Common/SectionTitle";
 import Image from "next/image";
 import Link from "next/link";

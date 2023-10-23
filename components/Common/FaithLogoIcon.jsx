@@ -1,4 +1,4 @@
-const HomeServicesLogo = () => {
+const FaithLogoIcon = ({ color }) => {
   return (
     <svg
       width="100%"
@@ -13,6 +13,7 @@ const HomeServicesLogo = () => {
         stroke="none"
       >
         <path
+          fill={color ? color : "#04aa82"}
           d="M8112 19217 c-46 -14 -98 -76 -116 -138 -28 -94 -20 -132 48 -219 82
 -104 76 -57 76 -645 0 -491 1 -526 18 -543 10 -10 143 -96 296 -192 193 -121
 282 -182 292 -201 12 -24 14 -219 14 -1296 0 -741 -4 -1274 -9 -1282 -12 -19
@@ -2208,4 +2209,4 @@ c-19 0 -51 -5 -70 -11z"
   );
 };
 
-export default HomeServicesLogo;
+export default FaithLogoIcon;

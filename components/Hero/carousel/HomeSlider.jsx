@@ -196,7 +196,7 @@ export default function HomeSlider() {
                   </defs>
                 </svg>
               </div>
-              <div className="absolute top-[20%] md:top-1/2 transform md:-translate-y-1/2 w-[85%] h-[] md:h-[320px] md:w-8/12 lg:w-7/12 pt-20 px-5 md:px-10 lg:px-20 flex flex-col">
+              <div className="absolute top-[20%] md:top-1/2 transform md:-translate-y-1/2 w-[85%] md:h-[320px] md:w-8/12 lg:w-7/12 pt-20 px-5 md:px-10 flex flex-col">
                 <div className="w-full">
                   <h2
                     className={`${mokoto.className} slider_title mb-4 text-primary text-[1.9rem] font-bold !leading-tight sm:text-4xl md:text-[45px] xl:text-[50px]`}
