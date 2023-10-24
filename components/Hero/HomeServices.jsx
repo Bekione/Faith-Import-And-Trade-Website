@@ -99,8 +99,6 @@ const HomeServices = () => {
                     ? "opacity-100 z-[8]"
                     : "opacity-0 z-0"
                 }`}
-                objectFit="cover"
-                objectPosition="center"
                 alt={data.title}
               />
             );

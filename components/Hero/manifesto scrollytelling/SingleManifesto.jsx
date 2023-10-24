@@ -12,7 +12,7 @@ const SingleManifesto = ({ manifesto }) => {
         </h3>
         <p className="text-base font-medium leading-relaxed text-body-color">
           {typeof paragLong === "object"
-            ? paragLong.map((text) => <span className="block">{text}</span>)
+            ? paragLong.map((text, idx) => <span className="block" key={idx}>{text}</span>)
             : paragLong}
         </p>
       </div>
