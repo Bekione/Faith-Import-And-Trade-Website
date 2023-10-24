@@ -4,7 +4,7 @@ import AboutDescription from "@components/About/AboutDescription";
 import Manifesto from "@components/About/Manifesto";
 import Slogan from "@components/About/Slogan";
 import AboutCards from "@components/About/AboutCards";
-import CustomersSlider from "@components/About/CustomersSlider";
+import CustomersSlider from "@components/Customers/CustomersSlider";
 
 const page = () => {
   return (

@@ -1,18 +1,15 @@
 "use client";
 
 import Image from "next/image";
-import { usePathname } from "next/navigation";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Autoplay, Pagination } from "swiper/modules";
-import { customersList } from "./CustomersList";
-import AboutSectionTitle from "./AboutSectionTitle";
+import { customersData } from "./CustomersData";
+
 import "swiper/css";
 import "swiper/css/pagination";
 import "swiper/css/navigation";
 
 const CustomersSlider = () => {
-  const currentPath = usePathname();
-
   const breakpoints = {
     0: {
       slidesPerView: 1,
@@ -29,10 +26,7 @@ const CustomersSlider = () => {
   };
 
   return (
-    <div className="customers_slider mt-20 w-full px-6">
-      {currentPath !== "/" && (
-        <AboutSectionTitle title="Our clients" subTitle="Trust & worth" />
-      )}
+    <div className="customers_slider w-full px-0 sm:px-4 md:px-8">
       <Swiper
         breakpoints={breakpoints}
         spaceBetween={30}
@@ -45,7 +39,7 @@ const CustomersSlider = () => {
         }}
         pagination={{ clickable: true }}
         modules={[Autoplay, Pagination]}
-        className="w-full h-fit px-4"
+        className="w-full h-fit"
         style={{
           "--swiper-pagination-color": "#04AA82",
           "--swiper-pagination-bullet-inactive-color": "#151f34",
@@ -56,17 +50,20 @@ const CustomersSlider = () => {
           "--swiper-pagination-bullet-active-height": "10px", // Set the height of the active bullet
         }}
       >
-        {customersList.map((customer) => {
+        {customersData.map((customer) => {
           return (
             <SwiperSlide
               key={customer.id}
               className="min-w-[140px] !h-[100px] !p-2 mb-16 bg-white rounded-lg shadow-lg"
             >
-              <div className="relative w-full h-full p-2 py-4">
+              <div
+                className="relative w-full h-full p-2 py-4"
+                title={customer.title}
+              >
                 <Image
                   src={customer.path}
-                  alt={customer.alt}
-                  layout="fill"
+                  alt={customer.title}
+                  fill
                   className="object-contain"
                 />
               </div>

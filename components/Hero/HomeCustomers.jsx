@@ -1,5 +1,5 @@
-import CustomersSlider from "@components/About/CustomersSlider"
-import SectionTitle from "@components/Common/SectionTitle"
+import CustomersSlider from "@components/Customers/CustomersSlider";
+import SectionTitle from "@components/Common/SectionTitle";
 
 const HomeCustomers = () => {
   return (
@@ -7,7 +7,7 @@ const HomeCustomers = () => {
       <SectionTitle title="Our customers" />
       <CustomersSlider />
     </div>
-  )
-}
+  );
+};
 
-export default HomeCustomers
+export default HomeCustomers;
