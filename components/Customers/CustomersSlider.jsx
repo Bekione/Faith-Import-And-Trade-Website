@@ -46,8 +46,6 @@ const CustomersSlider = () => {
           "--swiper-pagination-bullet-inactive-opacity": ".35",
           "--swiper-pagination-size": "7px",
           "--swiper-pagination-bullet-horizontal-gap": "6px",
-          "--swiper-pagination-bullet-active-width": "18px", // Set the width of the active bullet
-          "--swiper-pagination-bullet-active-height": "10px", // Set the height of the active bullet
         }}
       >
         {customersData.map((customer) => {

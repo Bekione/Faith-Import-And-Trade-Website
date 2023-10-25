@@ -1,12 +1,11 @@
 import Link from "next/link";
-import HomeSlider from "./carousel/HomeSlider";
+import HomeSlider from "./Carousel";
 import HomeServices from "./HomeServices";
 import HomeContactUs from "./HomeContactUs";
 import HomeAboutUs from "./HomeAboutUs";
-import Testimonials from "./Testimonials";
+import Testimonials from "@components/Testimonials";
 import HomeCustomers from "./HomeCustomers";
-import HomeManifesto from "./manifesto scrollytelling/HomeManifesto";
-
+import HomeManifesto from "./Manifesto scrollytelling";
 
 const Hero = () => {
   return (

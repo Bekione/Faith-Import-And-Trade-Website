@@ -70,7 +70,8 @@
   position: absolute;
   content: "";
   inset: 0;
-  background: red;
+  background: #3deac1;
+  color: #04aa82;
   z-index: 10;
 }
 
@@ -89,12 +90,14 @@
 }
 
 .customers_slider .swiper-pagination-bullet,
-.home_services .swiper-pagination-bullet {
+.home_services .swiper-pagination-bullet,
+.testimonials_slider .swiper-pagination-bullet {
   transition: all 300ms ease-in-out !important;
 }
 
 .customers_slider .swiper-pagination-bullet-active,
-.home_services .swiper-pagination-bullet-active {
+.home_services .swiper-pagination-bullet-active,
+.testimonials_slider .swiper-pagination-bullet-active {
   border-radius: 3px !important;
   transition: all 300ms ease-in-out !important;
   transform: scaleX(3) scaleY(1.2);
@@ -102,8 +105,12 @@
   top: 60% !important;
 }
 
-.customers_slider .swiper-pagination-bullet-active {
+.customers_slider .swiper-pagination-bullet-active,
+.testimonials_slider .swiper-pagination-bullet-active {
   transform: scaleX(3) scaleY(1.2);
+}
+.testimonials_slider .swiper-pagination {
+  bottom: 6% !important;
 }
 .home_services .swiper-pagination-bullet-active {
   transform: scaleX(1.2) scaleY(2);
@@ -306,4 +313,7 @@
   .single-manifesto {
     height: calc(100vh - 98.03px);
   }
+}
+.fancybox__container{
+  z-index: 999999 !important;
 }

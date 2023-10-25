@@ -65,7 +65,8 @@ const Footer = () => {
                     </svg>
                   </a>
                   <a
-                    href="/"
+                    href="https://t.me/faithimports"
+                    target="_blank"
                     aria-label="social-link"
                     className="mr-6 text-secondary hover:opacity-80"
                   >
@@ -81,7 +82,7 @@ const Footer = () => {
                     </svg>
                   </a>
                   <a
-                    href="/"
+                    href="www.linkedin.com/in/faithimports" targer="_blank"
                     aria-label="social-link"
                     className="mr-6 text-secondary hover:opacity-80"
                   >

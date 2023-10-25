@@ -1,7 +1,7 @@
 "use client";
 
 import { useState, useRef } from "react";
-import { HomeSliderData } from "./carousel/HomeSliderData";
+import { HomeSliderData } from "./Carousel/HomeSliderData";
 import HomeServicesLogo from "../Common/FaithLogoIcon";
 import SectionTitle from "@components/Common/SectionTitle";
 import Image from "next/image";
@@ -100,6 +100,7 @@ const HomeServices = () => {
                     : "opacity-0 z-0"
                 }`}
                 alt={data.title}
+                style={{ objectFit: "cover", objectPosition: "center" }}
               />
             );
           })}
