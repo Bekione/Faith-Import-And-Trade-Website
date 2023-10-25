@@ -103,7 +103,7 @@ const TestimonialsSlider = () => {
                 data-fancybox="letter-image"
                 title={"Fullscreen"}
                 className="group/link invisible group-hover:visible block absolute top-1 right-1 py-px px-[2px] rounded-sm bg-primary/10 backdrop-blur-lg hover:bg-secondary"
-              >
+              > 
                 <svg
                   viewBox="0.00 0.00 130.00 130.00"
                   className="h-[20px] w-[20px] fill-[#231f20] group-hover/link:fill-white"
