@@ -5,7 +5,7 @@ import HomeContactUs from "./HomeContactUs";
 import HomeAboutUs from "./HomeAboutUs";
 import Testimonials from "@components/Testimonials";
 import HomeCustomers from "./HomeCustomers";
-import HomeManifesto from "./Manifesto scrollytelling";
+import HomeManifesto from "./ManifestoScrollytelling";
 
 const Hero = () => {
   return (
