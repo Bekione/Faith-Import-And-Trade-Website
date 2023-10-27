@@ -4,8 +4,7 @@ import AboutDescription from "@components/About/AboutDescription";
 import Manifesto from "@components/About/Manifesto";
 import Slogan from "@components/About/Slogan";
 import AboutCards from "@components/About/AboutCards";
-import CustomersSlider from "@components/Customers/CustomersSlider";
-
+import AboutCustomers from "@components/About/AboutCustomers";
 const page = () => {
   return (
     <section className="relative z-10 overflow-hidden pb-16 md:pb-[120px] xl:pb-[140px] 2xl:pb-[160px]">

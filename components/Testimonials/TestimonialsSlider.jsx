@@ -78,7 +78,7 @@ const TestimonialsSlider = () => {
             key={testimonial.id}
             className="!h-[350px] !w-[250px] mt-4 flex items-center justify-center"
           >
-            <div className="group flex items-center justify-center h-full w-full relative ">
+            <div className="group flex items-center justify-center h-full w-full relative bg-secondary/50 ">
               <Image
                 src={testimonial.imgPath}
                 alt={testimonial.alt}

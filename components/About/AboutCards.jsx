@@ -1,14 +1,8 @@
+import PageHeader from "@components/Common/PageHeader";
 const AboutCards = () => {
   return (
     <div className="mt-8">
-      <div className="mb-8">
-        <h3 className="text-secondary text-center font-bold text[1.2em] md:text-[1.3em]">
-          Why us?
-        </h3>
-        <h2 className="text-primary text-center font-bold text-[1.5em] sm:text-[1.6em] md:text-[1.8em]">
-          Essences
-        </h2>
-      </div>
+      <PageHeader title="Essences" subTitle="Why Us?" />
     <div className="mx-[3%] p-4 grid grid-cols-[repeat(auto-fit,minmax(300px,1fr))] grid-rows-[1fr] gap-x-6 gap-y-6 content-around justify-center">
       <div className="group/card h-full p-8 flex flex-col bg-secondary rounded-lg shadow-2xl">
         <div className="flex itemx-center justify-center mb-[.85rem]">
