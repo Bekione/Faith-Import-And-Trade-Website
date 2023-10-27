@@ -18,7 +18,7 @@ const page = () => {
         </div>
       </div>
       <Slogan />
-      <CustomersSlider />
+      <AboutCustomers />
       <AboutCards />
     </section>
   );
