@@ -1,4 +1,3 @@
-import Link from "next/link";
 import HomeSlider from "./Carousel";
 import HomeServices from "./HomeServices";
 import HomeContactUs from "./HomeContactUs";
