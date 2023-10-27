@@ -82,7 +82,8 @@ const Footer = () => {
                     </svg>
                   </a>
                   <a
-                    href="www.linkedin.com/in/faithimports" targer="_blank"
+                    href="www.linkedin.com/in/faithimports"
+                    targer="_blank"
                     aria-label="social-link"
                     className="mr-6 text-secondary hover:opacity-80"
                   >
@@ -303,7 +304,7 @@ const Footer = () => {
             </p>
             <span className="mx-2 block text-center">•</span>
             <p className="text-center text-base text-body-color ">
-              Crafted with ❤️ by{" "}
+              Crafted by{" "}
               <a href="#" className="transition hover:text-secondary">
                 Bereket
               </a>
