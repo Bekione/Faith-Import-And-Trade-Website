@@ -16,6 +16,7 @@ export const HomeSliderData = [
       "Discover a wide range of high-quality computers and accessories to enhance your productivity. From powerful laptops to cutting-edge peripherals, we have got you covered.",
     actionPath: "/services/computer",
     bgImgPath: "/images/home/bg-computer-slider.avif",
+    imgPath: "/images/home/computer-slider.avif",
   },
   {
     id: "slider-3",
@@ -24,6 +25,7 @@ export const HomeSliderData = [
       "Explore our collection of premium stationary materials that will inspire your creativity and keep you organized. From elegant notebooks to vibrant pens and markers, we offer the tools to bring your ideas to life.",
     actionPath: "/services/stationary",
     bgImgPath: "/images/home/bg-stationary-slider.avif",
+    imgPath: "/images/home/stationary-slider.avif",
   },
   {
     id: "slider-4",
@@ -32,5 +34,6 @@ export const HomeSliderData = [
       "Ensure your equipment and devices are in top condition with our professional maintenance services. Our experienced technicians will provide reliable support and keep your systems running smoothly.",
     actionPath: "/services/maintenance",
     bgImgPath: "/images/home/bg-maintenance-slider.avif",
+    imgPath: "/images/home/maintenance-slider.avif",
   },
 ];

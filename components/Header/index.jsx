@@ -65,13 +65,12 @@ const Header = () => {
       >
         <div className="container">
           <div className="relative -mx-4 flex items-center justify-between">
-            <div className={`w-65 max-w-full px-4 xl:mr-12 ${
-                  sticky ? "py-5 lg:py-2" : "py-8"
-                }`}>
-              <Link
-                href="/"
-                className={`header-logo block `}
-              >
+            <div
+              className={`w-65 max-w-full px-4 xl:mr-12 ${
+                sticky ? "py-5 lg:py-2" : "py-8"
+              }`}
+            >
+              <Link href="/" className={`header-logo block `}>
                 {/* ${
                   sticky ? "py-5 lg:py-2" : "py-8"
                 } */}
@@ -132,7 +131,7 @@ const Header = () => {
                           <Link
                             href={menuItem.path}
                             className={`flex my-1 py-1 text-base hover:opacity-70 lg:mr-0 lg:inline-flex lg:my-4 lg:py-2 lg:px-0 ${
-                              sticky ? "text-white" : "text-dark"
+                              sticky ? "text-dark lg:text-white" : "text-dark"
                             } ${
                               menuItem.path == currentRoute
                                 ? "active-link !text-secondary font-bold"
@@ -147,7 +146,9 @@ const Header = () => {
                               <Link
                                 href={menuItem.path}
                                 className={`flex cursor-pointer items-center justify-between my-1 py-1 text-base hover:opacity-70 lg:mr-0 lg:inline-flex lg:my-4 lg:py-2 lg:px-0 ${
-                                  sticky ? "text-white" : "text-dark"
+                                  sticky
+                                    ? "text-dark lg:text-white"
+                                    : "text-dark"
                                 } ${
                                   menuItem.path == currentRoute
                                     ? "!text-secondary font-bold"
@@ -184,7 +185,7 @@ const Header = () => {
                                 <Link
                                   href={submenuItem.path}
                                   key={submenuItem.id}
-                                  className={`block rounded pl-3 md:pl-0 py-2.5 text-sm text-dark hover:opacity-70 dark:text-white lg:px-3 ${
+                                  className={`block rounded pl-3 lg:pl-0 py-2.5 text-sm text-dark hover:opacity-70 dark:text-white lg:px-3 ${
                                     submenuItem.path == currentRoute
                                       ? "!text-secondary font-bold"
                                       : ""

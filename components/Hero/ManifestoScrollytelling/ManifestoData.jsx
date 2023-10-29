@@ -119,7 +119,7 @@ export const manifestoData = [
     paragShort:
       "Delivering quality solutions and services as a trusted provider in the industry.",
     paragLong:
-      "Delivering quality solutions and services as a trusted provider in the industry. Delivering quality solutions and services as a trusted provider in the industry.",
+      "Achieving the reputation of being a quality-driven, high-standard, and reliable solution and service provider in the industry. We are committed to offering top-notch products, exceptional customer service, and comprehensive preventive and curative maintenance solutions to ensure our clients' satisfaction.",
   },
   {
     id: "m2",
@@ -203,7 +203,7 @@ export const manifestoData = [
     paragShort:
       "Ensuring 100% customer satisfaction through affordable, top-quality products and services.",
     paragLong:
-      "Ensuring 100% customer satisfaction through affordable, top-quality products and services.Delivering quality solutions and services as a trusted provider in the industry.",
+      "Attaining 100% customer satisfaction by consistently delivering superior products and services at affordable costs. We strive to be the preferred choice for individuals and businesses seeking cutting-edge technology, reliable accessories, and professional maintenance services, while making a positive impact on the growth and development of the African market.",
   },
   {
     id: "m3",

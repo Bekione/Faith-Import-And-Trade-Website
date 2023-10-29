@@ -92,8 +92,9 @@ const HomeServices = () => {
             return (
               <Image
                 key={data.id}
-                src={data.bgImgPath}
+                src={data.imgPath}
                 fill
+                // placeholder="blur"
                 className={`absolute inset-0 rounded-xl transition-opacity duration-[1500ms] ease-in-out ${
                   currentSlide === index - 1
                     ? "opacity-100 z-[8]"

@@ -11,7 +11,7 @@ const HomeAboutUs = () => {
           <div className="flex-1 md:flex-0 max-w-9/12 md:max-w-[65%] p-4 z-[1]">
             <p className="text-justify line-clamp-[10] text-base font-normal leading-[1.5] text-body-dark sm:text-lg sm:leading-[1.5] mix-blend-difference">
               Faith Import and Trade: Where Trust, Excellence, and Global Reach
-              Meet. Welcome to a world of IT solutions, stationary, and
+              meet. Welcome to a world of IT solutions, stationary, and
               maintenance services provided by Faith Import and Trade. As a
               leading company in the industry, Faith is dedicated to delivering
               reliable and top-quality products and services to meet your
@@ -39,7 +39,7 @@ const HomeAboutUs = () => {
               <Image
                 src="/images/about/home-about-animated.gif"
                 fill
-                alt="something nice"
+                alt="Faith animated logo"
                 className="object-cover object-bottom object-left"
               />
               {/* <div className="absolute inset-0"></div> */}

@@ -15,7 +15,7 @@ const AboutDescription = () => {
         <span className={`${mokoto.className} text-secondary font-bold`}>
           F
         </span>
-        aith Import and Trade: Where Trust, Excellence, and Global Reach Meet.
+        aith Import and Trade: Where Trust, Excellence, and Global Reach meet.
         Welcome to a world of IT solutions, stationary, and maintenance services
         provided by Faith Import and Trade. As a leading company in the
         industry, Faith is dedicated to delivering reliable and top-quality
