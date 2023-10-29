@@ -39,6 +39,7 @@ const HomeAboutUs = () => {
               <Image
                 src="/images/about/home-about-animated.gif"
                 fill
+                quality={100}
                 alt="Faith animated logo"
                 className="object-cover object-bottom object-left"
               />
