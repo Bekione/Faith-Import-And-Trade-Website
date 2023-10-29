@@ -1,4 +1,4 @@
-const CornerImage = ({styles}) => {
+const CornerImage = ({ styles }) => {
   return (
     <div className={styles}>
       <svg

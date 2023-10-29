@@ -88,13 +88,13 @@ const TestimonialsSlider = () => {
                 className="h-full w-full"
               />
 
-              <CornerImage style="absolute -top-1 -right-1" />
+              <CornerImage styles="absolute -top-1 -right-1" />
 
-              <CornerImage style="absolute -top-1 -left-1 transform scale-x-[-1]" />
+              <CornerImage styles="absolute -top-1 -left-1 transform scale-x-[-1]" />
 
-              <CornerImage style="absolute -bottom-1 -right-1 transform scale-y-[-1]" />
+              <CornerImage styles="absolute -bottom-1 -right-1 transform scale-y-[-1]" />
 
-              <CornerImage style="absolute -bottom-1 -left-1 transform scale-x-[-1] scale-y-[-1]" />
+              <CornerImage styles="absolute -bottom-1 -left-1 transform scale-x-[-1] scale-y-[-1]" />
 
               <a
                 href={testimonial.imgPath}
