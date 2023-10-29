@@ -41,9 +41,8 @@ const HomeAboutUs = () => {
                 fill
                 quality={100}
                 alt="Faith animated logo"
-                className="object-cover object-bottom object-left"
+                className="object-contain object-bottom object-left"
               />
-              {/* <div className="absolute inset-0"></div> */}
             </div>
           </div>
         </div>

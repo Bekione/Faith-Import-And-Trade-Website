@@ -1,9 +1,7 @@
-"use client";
-
 import { mokoto } from "@utils/font/font";
 import { manifestoData } from "./ManifestoData";
 import SingleManifesto from "./SingleManifesto";
-import HomeServicesLogo from "../../Common/FaithLogoIcon";
+import Image from "next/image";
 
 const HomeManifesto = () => {
   return (
@@ -13,8 +11,13 @@ const HomeManifesto = () => {
         style={{ minHeight: "calc(100vh - 98.03px)" }}
       >
         <div className="sm:max-w-[80%] -mt-5 flex flex-col items-center justify-center">
-          <figure className="w-48 h-48 sm:w-56 sm:h-56 md:w-64 md:h-64">
-            <HomeServicesLogo color="#ffffff" />
+          <figure className="relative w-48 h-48 sm:w-56 sm:h-56 md:w-64 md:h-64 text-secondary">
+            <Image
+              src="/images/logo/icon-logo.svg"
+              alt="Faith Import And Trade Logo"
+              fill
+              style={{ objectFit: "contain" }}
+            />
           </figure>
           <h2
             className={`${mokoto.className} text-center my-4 text-secondary tracking-wide uppercase text-[1.5rem] font-bold leading-relaxed sm:text-2xl md:text-[30px] xl:text-[35px]`}

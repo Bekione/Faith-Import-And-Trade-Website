@@ -2,7 +2,6 @@
 
 import { useState, useRef } from "react";
 import { HomeSliderData } from "./Carousel/HomeSliderData";
-import HomeServicesLogo from "../Common/FaithLogoIcon";
 import SectionTitle from "@components/Common/SectionTitle";
 import Image from "next/image";
 import Link from "next/link";
@@ -117,7 +116,12 @@ const HomeServices = () => {
             ref={logoRef}
             className={`absolute bottom-[-35px] right-[-50px] w-[110px] h-[110px] sm:w-[130px] sm:h-[130px] md:w-[140px] md:h-[140px] z-[10] transform transition-transform duration-[1500ms] ease-in-out`}
           >
-            <HomeServicesLogo />
+            <Image
+              src="/images/logo/logo-icon-rotate.svg"
+              alt="Logo icon"
+              fill
+              style={{ objectFit: "contain", pointerEvents: 'none' }}
+            />
           </div>
         </div>
         <Swiper
