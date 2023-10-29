@@ -11,7 +11,6 @@ const Footer = () => {
   const [isContactPage, setIsContactPage] = useState(false);
 
   useEffect(() => {
-    console.log("Current Path : ", pathName);
     if (pathName === "/contact") setIsContactPage(true);
     else setIsContactPage(false);
   }, [pathName]);

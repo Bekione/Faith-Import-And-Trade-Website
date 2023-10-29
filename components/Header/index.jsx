@@ -71,9 +71,6 @@ const Header = () => {
               }`}
             >
               <Link href="/" className={`header-logo block `}>
-                {/* ${
-                  sticky ? "py-5 lg:py-2" : "py-8"
-                } */}
                 <Image
                   src="/images/logo/logo-dark.png"
                   alt="logo"

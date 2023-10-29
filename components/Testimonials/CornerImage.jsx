@@ -1,6 +1,6 @@
-const CornerImage = () => {
+const CornerImage = ({styles}) => {
   return (
-    <div>
+    <div className={styles}>
       <svg
         viewBox="0.00 0.00 240.00 240.00"
         className="!w-16 !h-16 fill-secondary"

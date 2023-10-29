@@ -87,18 +87,15 @@ const TestimonialsSlider = () => {
                 height={340}
                 className="h-full w-full"
               />
-              <div className="absolute -top-1 -right-1">
-                <CornerImage />
-              </div>
-              <div className="absolute -top-1 -left-1 transform scale-x-[-1]">
-                <CornerImage />
-              </div>
-              <div className="absolute -bottom-1 -right-1 transform scale-y-[-1]">
-                <CornerImage />
-              </div>
-              <div className="absolute -bottom-1 -left-1 transform scale-x-[-1] scale-y-[-1]">
-                <CornerImage />
-              </div>
+
+              <CornerImage style="absolute -top-1 -right-1" />
+
+              <CornerImage style="absolute -top-1 -left-1 transform scale-x-[-1]" />
+
+              <CornerImage style="absolute -bottom-1 -right-1 transform scale-y-[-1]" />
+
+              <CornerImage style="absolute -bottom-1 -left-1 transform scale-x-[-1] scale-y-[-1]" />
+
               <a
                 href={testimonial.imgPath}
                 data-fancybox="letter-image"
