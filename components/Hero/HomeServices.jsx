@@ -109,7 +109,7 @@ const HomeServices = () => {
             className="absolute inset-0 rounded-xl opacity-80 z-[9]"
             style={{
               backgroundImage:
-                "linear-gradient(147deg, #0db280d8 0%, #151f34e5 74%)",
+                "linear-gradient(147deg, #0db280ea 0%, #151f34e8 74%)",
             }}
           ></div>
           <div
@@ -120,7 +120,7 @@ const HomeServices = () => {
               src="/images/logo/logo-icon-rotate.svg"
               alt="Logo icon"
               fill
-              style={{ objectFit: "contain", pointerEvents: 'none' }}
+              style={{ objectFit: "contain", pointerEvents: "none" }}
             />
           </div>
         </div>

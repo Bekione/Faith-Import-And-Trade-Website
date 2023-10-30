@@ -4,7 +4,6 @@ import { useState, useEffect } from "react";
 import Image from "next/image";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
-import FooterMap from "./FooterMap";
 
 const Footer = () => {
   const pathName = usePathname();
@@ -36,7 +35,7 @@ const Footer = () => {
               </p>
               <div className="flex items-center">
                 <a
-                  href="/"
+                  href="https://www.facebook.com/faithimports"
                   aria-label="social-link"
                   className="mr-6 text-secondary hover:opacity-80 relative transform hover:rotate-y-[360deg]"
                 >
@@ -50,8 +49,7 @@ const Footer = () => {
                   </svg>
                 </a>
                 <a
-                  href="/"
-                  aria-label="social-link"
+                  href="#"
                   className="mr-6 text-secondary hover:opacity-80"
                 >
                   <svg
@@ -133,7 +131,7 @@ const Footer = () => {
                   </div>
                   <div>
                     <a
-                      href="/about"
+                      href="/services"
                       className="inline-block text-base font-medium text-primary hover:text-body-color"
                     >
                       {" "}
@@ -149,7 +147,7 @@ const Footer = () => {
                   </div>
                   <div>
                     <a
-                      href="/about"
+                      href="/gallery"
                       className="inline-block text-base font-medium text-primary hover:text-body-color"
                     >
                       {" "}
@@ -299,7 +297,15 @@ const Footer = () => {
         </div>
       </div>
 
-      <FooterMap />
+      <div className="absolute transform -top-20 left-0 w-full h-fit md:top-[120px] lg:top-[-140px] xl:top-[-180px] xl:h-[570px] xl:overflow-hidden md:scale-[1.1] lg:scale-100 z-[-1]">
+      <div className="w-full h-full transform md:scale-[1.1] lg:scale-100">
+        <object
+          data="/images/footer-map.svg"
+          type="image/svg+xml"
+          className="h-full w-full pointer-events-none"
+        ></object>
+      </div>
+    </div>
     </footer>
   );
 };

@@ -1,11 +1,13 @@
+<?xml version="1.0" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 20010904//EN"
+ "http://www.w3.org/TR/2001/REC-SVG-20010904/DTD/svg10.dtd">
 
-const FooterMap = () => {
-  return (
-    <div className="absolute transform -top-20 left-0 w-full h-fit md:top-[120px] lg:top-[-140px] xl:top-[-180px] xl:h-[570px] xl:overflow-hidden z-[-1]">
-          <svg
+<svg
+ version="1.0" xmlns="http://www.w3.org/2000/svg"
             viewBox="0.00 0.00 709.00 352.00"
             fill="#69739016"
-            className="transform md:scale-[1.1] lg:scale-100"
+            width="100%"
+            height="100%"                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                 
           >
             <circle cx="178.96" cy="17.84" r="3.36" />
             <circle cx="188.40" cy="17.83" r="3.35" />
@@ -938,8 +940,3 @@ const FooterMap = () => {
             <circle cx="207.71" cy="339.68" r="3.45" />
             <circle cx="198.10" cy="339.72" r="3.49" />
           </svg>
-        </div>
-  )
-}
-
-export default FooterMap
