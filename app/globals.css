@@ -118,7 +118,7 @@
 .home_services .swiper-pagination-bullet-active {
   transform: scaleX(1.2) scaleY(2);
 }
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 767px) {
   .home_services .swiper-pagination {
     top: 94% !important;
   }
@@ -337,4 +337,3 @@
 .fancybox__container {
   z-index: 999999 !important;
 }
-

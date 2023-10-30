@@ -197,7 +197,7 @@ export default function HomeSlider() {
                 </svg>
               </div>
               <div
-                className={`absolute top-[20%] md:top-1/2 transform md:-translate-y-1/2 w-[85%] md:h-[320px] md:w-8/12 lg:w-7/12 pt-20 px-5 md:px-10 ${
+                className={`absolute top-[20%] md:top-1/2 transform md:-translate-y-1/2  w-[85%] md:h-[320px] md:w-10/12 lg:w-7/12 pt-20 px-5 md:px-10 ${
                   index !== 1 ? "lg:px-16" : ""
                 } flex flex-col`}
               >

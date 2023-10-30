@@ -80,7 +80,7 @@ const HomeServices = () => {
         style={{ boxShadow: "0px 14px 80px rgba(34, 35, 58, 0.2)" }}
       >
         <div
-          className={`relative bg-primary rounded-xl md:ml-[-11%] mt-[-11%] md:mt-0 h-[180px] sm:h-[200px] md:h-[75%] w-[75%] max-w-[300px] md:w-[300px]`}
+          className={`relative bg-primary rounded-xl md:ml-[-11%] mt-[-11%] md:mt-0 h-[180px] sm:h-[200px] md:h-[75%] md:max-h-[300px] w-[75%] max-w-[300px] md:w-[300px]`}
           style={{
             boxShadow: "4px 13px 30px 1px rgba(4, 169, 114, 0.2)",
           }}

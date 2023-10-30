@@ -34,14 +34,14 @@ const HomeAboutUs = () => {
             </Link>
           </div>
 
-          <div className="md:absolute z-0 -mt-20 md:mt-0 -bottom-20 right-0 w-[350px] sm:w-[450px] md:w-[500px] flex items-center justify-center">
-            <div className="about-image relative w-[65%] h-[150px] sm:w-[75%] sm:h-[280px] md:w-[500px] md:h-[357px] bg-secondary rounded-md overflow-hidden">
+          <div className="md:absolute z-0 -mt-20 md:mt-0 -bottom-20 right-0 w-[350px] sm:w-[450px] md:w-[450px] lg:w-[500px] flex items-center justify-center">
+            <div className="about-image relative w-[65%] h-[150px] sm:w-[75%] sm:h-[280px] md:w-[450px] md:h-[357px] bg-secondary overflow-hidden">
               <Image
                 src="/images/about/home-about-animated.gif"
                 fill
                 quality={100}
                 alt="Faith animated logo"
-                className="object-contain object-bottom object-left"
+                className="object-bottom object-left "
               />
             </div>
           </div>
