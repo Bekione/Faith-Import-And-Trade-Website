@@ -3,7 +3,7 @@ import Link from "next/link";
 const HomeContactUs = () => {
   return (
     <div className="mt-24 w-full px-10 md:px-4 py-12 sm:py-16 md:py-20 flex flex-col sm:flex-row justify-center items-center gap-5 bg-primary">
-      <h2 className="text-base font-bold text-xl text-body-color italic leading-md ">
+      <h2 className="text-base text-center font-bold text-xl text-body-color italic leading-md ">
         You purchased an item from us and want maintenance?
       </h2>
       <Link
