@@ -26,7 +26,7 @@ export const brandsData = [
   },
   {
     id: "img006",
-    path: "/images/brands/brand-6.png",
+    path: "/images/brands/brand-6.webp",
     title: "Logitech",
   },
   {

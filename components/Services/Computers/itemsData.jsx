@@ -50,8 +50,6 @@ export const LaptopsDesktops = [
   },
 ];
 
-// Add more categories and items as needed
-
 export const MonitorsDisplays = [
   {
     id: "item001",
@@ -82,6 +80,57 @@ export const MonitorsDisplays = [
   },
 ];
 
+export const NetworkingDevices = [
+  {
+    id: "item001",
+    itemName: "Routers",
+    brand: "various brands",
+    price: 849.99,
+    description: "Seamlessly connect networks for efficient data transfer.",
+    image: "/images/computers/monitor-1.avif",
+  },
+  {
+    id: "item002",
+    itemName: "Switches",
+    brand: "various brands",
+    price: 99.99,
+    description: "Effortlessly connect and manage devices within your network.",
+    image: "/images/computers/monitor-1.avif",
+  },
+  {
+    id: "item003",
+    itemName: "Wireless Access Points",
+    brand: "various brands",
+    price: 99.99,
+    description: "Extend wireless connectivity and internet access.",
+    image: "/images/computers/monitor-1.avif",
+  },
+  {
+    id: "item004",
+    itemName: "Modems",
+    brand: "various brands",
+    price: 99.99,
+    description: "Fast and stable internet connections made easy",
+    image: "/images/computers/monitor-1.avif",
+  },
+  {
+    id: "item005",
+    itemName: "Network Security Devices",
+    brand: "various brands",
+    price: 99.99,
+    description: "Protect your network from unauthorized access and threats.",
+    image: "/images/computers/monitor-1.avif",
+  },
+  {
+    id: "item006",
+    itemName: "Network Storage Devices",
+    brand: "various brands",
+    price: 99.99,
+    description:
+      "Centralize and secure your data with our network storage devices. ",
+    image: "/images/computers/monitor-1.avif",
+  },
+];
 export const Accessories = [
   {
     id: "item001",
@@ -120,26 +169,6 @@ export const SoftwareProducts = [
     image: "path/to/image.jpg",
   },
   // Add more software product items as needed
-];
-
-export const NetworkingEquipment = [
-  {
-    id: "item001",
-    itemName: "Cisco Catalyst 2960X",
-    brand: "Cisco Systems",
-    price: 849.99,
-    description: "24-Port Gigabit Ethernet Switch",
-    image: "path/to/image.jpg",
-  },
-  {
-    id: "item002",
-    itemName: "TP-Link Archer C9",
-    brand: "TP-Link",
-    price: 99.99,
-    description: "AC1900 Wireless Dual Band Gigabit Router",
-    image: "path/to/image.jpg",
-  },
-  // Add more networking equipment items as needed
 ];
 
 export const OfficeEquipment = [
