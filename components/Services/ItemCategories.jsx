@@ -2,7 +2,7 @@ import Image from "next/image";
 
 const ItemCategories = ({ category, items }) => {
   return (
-    <div className="mt-10 mb-5">
+    <div className="my-10 px-10">
       <div className="relative py-8">
         <div className="ml-32 text-3xl font-extrabold capitalize">
           <h1 className="bg-clip-text text-transparent bg-gradient-to-r from-primary to-secondary">
@@ -11,11 +11,11 @@ const ItemCategories = ({ category, items }) => {
         </div>
         <div className="absolute top-1/2 transform -transform-y-1/2 h-1 w-28 bg-secondary transform skew-x-[40deg]"></div>
       </div>
-      <div className="px-12 border border-secondary w-full h-42 flex flex-wrap gap-5 items-center justify-center">
+      <div className=" w-full max-w-[1500px] mx-auto flex flex-wrap gap-8 items-center justify-center">
         {items.map((item) => {
           return (
             <div
-              className="relative bg-secondary/30 flex flex-col !w-[24rem] h-[18rem] shadow-xl rounded-md"
+              className="relative bg-secondary/30 flex flex-col !w-[22rem] h-[15rem] shadow-xl rounded-md"
               key={item.id}
             >
               <div className="group w-full h-full rounded-md overflow-hidden">
@@ -35,7 +35,7 @@ const ItemCategories = ({ category, items }) => {
               </div> */}
                 <div className="absolute bottom-0 left-0 w-full h-[64px] group-hover:h-full bg-gradient-to-r from-secondary group-hover:bg-gradient-to-b group-hover:from-secondary group-hover:via-secondary group-hover:rounded-md rounded-b-md transition-background duration-500 ease-in-out transition-height duration-500 ease-in-out overflow-hidden">
                   <p
-                    className={`absolute !w-[${item.itemName.length}ch] !whitespace-no-wrap top-1/2 left-8 transform -translate-y-1/2 group-hover:left-1/2 group-hover:-translate-x-1/2 group-hover:-translate-x-1/2 group-hover:top-14 text-white text-base font-normal group-hover:font-bold text-md group-hover:text-2xl transition-all duration-[500ms] ease-in-out`}
+                    className={`absolute w-fit break-normal top-1/2 left-8 transform -translate-y-1/2 group-hover:left-1/2 group-hover:-translate-x-1/2 group-hover:-translate-x-1/2 group-hover:top-14 text-white text-base font-semibold group-hover:font-bold text-md group-hover:text-2xl transition-all duration-[500ms] ease-in-out`}
                   >
                     {item.itemName}
                   </p>

@@ -160,6 +160,11 @@
   box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.4);
 }
 
+.brands_slider .swiper-wrapper{
+  -webkit-transition-timing-function:linear!important;
+  transition-timing-function:linear!important; 
+}
+
 .slider_title {
   text-shadow: 3px 3px 2px #ffffff !important;
 }

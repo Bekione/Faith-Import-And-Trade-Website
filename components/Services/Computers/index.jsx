@@ -1,10 +1,13 @@
 import ItemCategories from "../ItemCategories";
-import { LaptopsDesktops } from "./itemsData";
+import { LaptopsDesktops, MonitorsDisplays } from "./itemsData";
+import BrandsSlider from "@components/Brands/BrandsSlider";
 
 const index = () => {
   return (
     <div className="">
       <ItemCategories category="Laptops & Desktops" items={LaptopsDesktops} />
+      <ItemCategories category="Monitors & Displays" items={MonitorsDisplays} />
+      <BrandsSlider />
     </div>
   );
 };

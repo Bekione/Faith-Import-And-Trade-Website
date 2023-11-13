@@ -10,9 +10,9 @@ const page = () => {
         imgPath="/images/pages-head/bg-computer.avif"
       />
 
-      <div className="container px-5 md:px-10 pt-5 ">
-        <Breadcrumb paths={["services", "computer"]} />
-        <div className="mt-8 w-8/12">
+      <div className="pt-5 ">
+        <Breadcrumb paths={["services", "computer"]} className="pr-4" />
+        <div className="mt-8 w-8/12 px-10 md:px-16">
           <p className="mb-5 text-justify text-base font-normal leading-[1.5] text-body-dark sm:text-lg sm:leading-[1.5]">
             Discover our wide range of computer solutions and equipment designed
             to meet your technology needs. We offer top-quality computers and
