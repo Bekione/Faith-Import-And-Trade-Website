@@ -24,7 +24,7 @@ const BrandsSlider = () => {
   };
 
   return (
-    <div className="brands_slider w-full my-16 ">
+    <div className="brands_slider w-full mt-16 mb-10 ">
       <div className="mb-6 text-3xl font-extrabold capitalize">
         <h1 className="bg-clip-text w-fit mx-auto text-transparent bg-gradient-to-r from-primary to-secondary">
           Featured Brands

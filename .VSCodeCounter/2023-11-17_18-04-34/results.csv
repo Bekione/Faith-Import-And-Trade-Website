@@ -1,0 +1,78 @@
+"filename", "language", "JavaScript", "Markdown", "XML", "JSON", "JSON with Comments", "JavaScript JSX", "CSS", "comment", "blank", "total"
+"h:\Client Projects\faith-import-trade\README.md", "Markdown", 0, 1, 0, 0, 0, 0, 0, 0, 0, 1
+"h:\Client Projects\faith-import-trade\app\about\page.jsx", "JavaScript JSX", 0, 0, 0, 0, 0, 25, 0, 0, 3, 28
+"h:\Client Projects\faith-import-trade\app\api\contact.js", "JavaScript", 0, 0, 0, 0, 0, 0, 0, 0, 1, 1
+"h:\Client Projects\faith-import-trade\app\contact\page.jsx", "JavaScript JSX", 0, 0, 0, 0, 0, 20, 0, 0, 4, 24
+"h:\Client Projects\faith-import-trade\app\gallery\page.jsx", "JavaScript JSX", 0, 0, 0, 0, 0, 19, 0, 0, 4, 23
+"h:\Client Projects\faith-import-trade\app\globals.css", "CSS", 0, 0, 0, 0, 0, 0, 274, 21, 51, 346
+"h:\Client Projects\faith-import-trade\app\layout.js", "JavaScript", 22, 0, 0, 0, 0, 0, 0, 0, 4, 26
+"h:\Client Projects\faith-import-trade\app\page.js", "JavaScript", 8, 0, 0, 0, 0, 0, 0, 0, 2, 10
+"h:\Client Projects\faith-import-trade\app\services\computer\page.jsx", "JavaScript JSX", 0, 0, 0, 0, 0, 48, 0, 0, 4, 52
+"h:\Client Projects\faith-import-trade\app\services\maintenance\page.jsx", "JavaScript JSX", 0, 0, 0, 0, 0, 17, 0, 0, 4, 21
+"h:\Client Projects\faith-import-trade\app\services\page.jsx", "JavaScript JSX", 0, 0, 0, 0, 0, 19, 0, 0, 4, 23
+"h:\Client Projects\faith-import-trade\app\services\stationary\page.jsx", "JavaScript JSX", 0, 0, 0, 0, 0, 19, 0, 0, 4, 23
+"h:\Client Projects\faith-import-trade\components\About\AboutCards.jsx", "JavaScript JSX", 0, 0, 0, 0, 0, 237, 0, 0, 2, 239
+"h:\Client Projects\faith-import-trade\components\About\AboutCustomers.jsx", "JavaScript JSX", 0, 0, 0, 0, 0, 12, 0, 0, 3, 15
+"h:\Client Projects\faith-import-trade\components\About\AboutDescription.jsx", "JavaScript JSX", 0, 0, 0, 0, 0, 55, 0, 8, 6, 69
+"h:\Client Projects\faith-import-trade\components\About\AboutSectionTitle.jsx", "JavaScript JSX", 0, 0, 0, 0, 0, 13, 0, 0, 2, 15
+"h:\Client Projects\faith-import-trade\components\About\Manifesto.jsx", "JavaScript JSX", 0, 0, 0, 0, 0, 335, 0, 0, 2, 337
+"h:\Client Projects\faith-import-trade\components\About\Slogan.jsx", "JavaScript JSX", 0, 0, 0, 0, 0, 131, 0, 0, 2, 133
+"h:\Client Projects\faith-import-trade\components\Brands\BrandsData.jsx", "JavaScript JSX", 0, 0, 0, 0, 0, 77, 0, 0, 1, 78
+"h:\Client Projects\faith-import-trade\components\Brands\BrandsSlider.jsx", "JavaScript JSX", 0, 0, 0, 0, 0, 65, 0, 0, 6, 71
+"h:\Client Projects\faith-import-trade\components\Common\Breadcrumb.jsx", "JavaScript JSX", 0, 0, 0, 0, 0, 33, 0, 0, 3, 36
+"h:\Client Projects\faith-import-trade\components\Common\PageHeader.jsx", "JavaScript JSX", 0, 0, 0, 0, 0, 53, 0, 0, 3, 56
+"h:\Client Projects\faith-import-trade\components\Common\SectionTitle.jsx", "JavaScript JSX", 0, 0, 0, 0, 0, 10, 0, 0, 2, 12
+"h:\Client Projects\faith-import-trade\components\Contact\ContactInfo.jsx", "JavaScript JSX", 0, 0, 0, 0, 0, 72, 0, 0, 4, 76
+"h:\Client Projects\faith-import-trade\components\Contact\LocationPin.jsx", "JavaScript JSX", 0, 0, 0, 0, 0, 10, 0, 0, 2, 12
+"h:\Client Projects\faith-import-trade\components\Contact\Map.jsx", "JavaScript JSX", 0, 0, 0, 0, 0, 40, 0, 1, 8, 49
+"h:\Client Projects\faith-import-trade\components\Contact\NewsLetter.jsx", "JavaScript JSX", 0, 0, 0, 0, 0, 175, 0, 5, 3, 183
+"h:\Client Projects\faith-import-trade\components\Contact\index.jsx", "JavaScript JSX", 0, 0, 0, 0, 0, 94, 0, 0, 3, 97
+"h:\Client Projects\faith-import-trade\components\Contact\locationData.jsx", "JavaScript JSX", 0, 0, 0, 0, 0, 7, 0, 0, 1, 8
+"h:\Client Projects\faith-import-trade\components\Customers\CustomersData.jsx", "JavaScript JSX", 0, 0, 0, 0, 0, 52, 0, 0, 1, 53
+"h:\Client Projects\faith-import-trade\components\Customers\CustomersSlider.jsx", "JavaScript JSX", 0, 0, 0, 0, 0, 70, 0, 0, 6, 76
+"h:\Client Projects\faith-import-trade\components\Footer\index.jsx", "JavaScript JSX", 0, 0, 0, 0, 0, 304, 0, 0, 10, 314
+"h:\Client Projects\faith-import-trade\components\Header\index.jsx", "JavaScript JSX", 0, 0, 0, 0, 0, 200, 0, 4, 7, 211
+"h:\Client Projects\faith-import-trade\components\Header\menuData.jsx", "JavaScript JSX", 0, 0, 0, 0, 0, 58, 0, 0, 1, 59
+"h:\Client Projects\faith-import-trade\components\Hero\Carousel\HomeSliderData.jsx", "JavaScript JSX", 0, 0, 0, 0, 0, 39, 0, 0, 1, 40
+"h:\Client Projects\faith-import-trade\components\Hero\Carousel\SliderButton.jsx", "JavaScript JSX", 0, 0, 0, 0, 0, 44, 0, 0, 3, 47
+"h:\Client Projects\faith-import-trade\components\Hero\Carousel\index.jsx", "JavaScript JSX", 0, 0, 0, 0, 0, 222, 0, 2, 5, 229
+"h:\Client Projects\faith-import-trade\components\Hero\HomeAboutUs.jsx", "JavaScript JSX", 0, 0, 0, 0, 0, 51, 0, 0, 4, 55
+"h:\Client Projects\faith-import-trade\components\Hero\HomeContactUs.jsx", "JavaScript JSX", 0, 0, 0, 0, 0, 20, 0, 0, 3, 23
+"h:\Client Projects\faith-import-trade\components\Hero\HomeCustomers.jsx", "JavaScript JSX", 0, 0, 0, 0, 0, 11, 0, 0, 3, 14
+"h:\Client Projects\faith-import-trade\components\Hero\HomeEssences.jsx", "JavaScript JSX", 0, 0, 0, 0, 0, 6, 0, 0, 2, 8
+"h:\Client Projects\faith-import-trade\components\Hero\HomeServices.jsx", "JavaScript JSX", 0, 0, 0, 0, 0, 169, 0, 3, 14, 186
+"h:\Client Projects\faith-import-trade\components\Hero\ManifestoScrollytelling\ManifestoData.jsx", "JavaScript JSX", 0, 0, 0, 0, 0, 332, 0, 0, 1, 333
+"h:\Client Projects\faith-import-trade\components\Hero\ManifestoScrollytelling\SingleManifesto.jsx", "JavaScript JSX", 0, 0, 0, 0, 0, 21, 0, 0, 3, 24
+"h:\Client Projects\faith-import-trade\components\Hero\ManifestoScrollytelling\index.jsx", "JavaScript JSX", 0, 0, 0, 0, 0, 41, 0, 0, 4, 45
+"h:\Client Projects\faith-import-trade\components\Hero\index.jsx", "JavaScript JSX", 0, 0, 0, 0, 0, 21, 0, 275, 3, 299
+"h:\Client Projects\faith-import-trade\components\ScrollToTop\index.jsx", "JavaScript JSX", 0, 0, 0, 0, 0, 39, 0, 2, 9, 50
+"h:\Client Projects\faith-import-trade\components\Services\Computers\index.jsx", "JavaScript JSX", 0, 0, 0, 0, 0, 27, 0, 0, 2, 29
+"h:\Client Projects\faith-import-trade\components\Services\Computers\itemsData.jsx", "JavaScript JSX", 0, 0, 0, 0, 0, 251, 0, 5, 11, 267
+"h:\Client Projects\faith-import-trade\components\Services\ItemCategories.jsx", "JavaScript JSX", 0, 0, 0, 0, 0, 46, 0, 7, 3, 56
+"h:\Client Projects\faith-import-trade\components\Services\Maintenance\index.jsx", "JavaScript JSX", 0, 0, 0, 0, 0, 0, 0, 0, 1, 1
+"h:\Client Projects\faith-import-trade\components\Services\ServicesContact.jsx", "JavaScript JSX", 0, 0, 0, 0, 0, 20, 0, 0, 3, 23
+"h:\Client Projects\faith-import-trade\components\Services\ServicesMaintenance.jsx", "JavaScript JSX", 0, 0, 0, 0, 0, 20, 0, 0, 3, 23
+"h:\Client Projects\faith-import-trade\components\Services\Stationary\index.jsx", "JavaScript JSX", 0, 0, 0, 0, 0, 0, 0, 0, 1, 1
+"h:\Client Projects\faith-import-trade\components\Testimonials\CornerImage.jsx", "JavaScript JSX", 0, 0, 0, 0, 0, 264, 0, 0, 2, 266
+"h:\Client Projects\faith-import-trade\components\Testimonials\TestimonialsData.jsx", "JavaScript JSX", 0, 0, 0, 0, 0, 68, 0, 0, 1, 69
+"h:\Client Projects\faith-import-trade\components\Testimonials\TestimonialsSlider.jsx", "JavaScript JSX", 0, 0, 0, 0, 0, 149, 0, 1, 12, 162
+"h:\Client Projects\faith-import-trade\components\Testimonials\index.jsx", "JavaScript JSX", 0, 0, 0, 0, 0, 74, 0, 0, 4, 78
+"h:\Client Projects\faith-import-trade\jsconfig.json", "JSON with Comments", 0, 0, 0, 0, 4, 0, 0, 4, 0, 8
+"h:\Client Projects\faith-import-trade\next.config.js", "JavaScript", 2, 0, 0, 0, 0, 0, 0, 1, 2, 5
+"h:\Client Projects\faith-import-trade\package-lock.json", "JSON", 0, 0, 0, 2143, 0, 0, 0, 0, 1, 2144
+"h:\Client Projects\faith-import-trade\package.json", "JSON", 0, 0, 0, 28, 0, 0, 0, 0, 1, 29
+"h:\Client Projects\faith-import-trade\postcss.config.js", "JavaScript", 6, 0, 0, 0, 0, 0, 0, 0, 1, 7
+"h:\Client Projects\faith-import-trade\public\images\404.svg", "XML", 0, 0, 1, 0, 0, 0, 0, 0, 0, 1
+"h:\Client Projects\faith-import-trade\public\images\footer-map.svg", "XML", 0, 0, 941, 0, 0, 0, 0, 0, 1, 942
+"h:\Client Projects\faith-import-trade\public\images\logo\icon-logo.svg", "XML", 0, 0, 1527, 0, 0, 0, 0, 0, 2, 1529
+"h:\Client Projects\faith-import-trade\public\images\logo\logo-2.svg", "XML", 0, 0, 1, 0, 0, 0, 0, 0, 0, 1
+"h:\Client Projects\faith-import-trade\public\images\logo\logo-icon-rotate.svg", "XML", 0, 0, 1527, 0, 0, 0, 0, 0, 2, 1529
+"h:\Client Projects\faith-import-trade\public\images\logo\logo-icon.svg", "XML", 0, 0, 2204, 0, 0, 0, 0, 0, 1, 2205
+"h:\Client Projects\faith-import-trade\public\images\logo\logo.svg", "XML", 0, 0, 1, 0, 0, 0, 0, 0, 0, 1
+"h:\Client Projects\faith-import-trade\public\images\logo\main-logo.svg", "XML", 0, 0, 7732, 0, 0, 0, 0, 0, 1, 7733
+"h:\Client Projects\faith-import-trade\public\next.svg", "XML", 0, 0, 1, 0, 0, 0, 0, 0, 0, 1
+"h:\Client Projects\faith-import-trade\public\thirteen.svg", "XML", 0, 0, 1, 0, 0, 0, 0, 0, 0, 1
+"h:\Client Projects\faith-import-trade\public\vercel.svg", "XML", 0, 0, 1, 0, 0, 0, 0, 0, 0, 1
+"h:\Client Projects\faith-import-trade\tailwind.config.js", "JavaScript", 61, 0, 0, 0, 0, 0, 0, 7, 7, 75
+"h:\Client Projects\faith-import-trade\utils\font\font.js", "JavaScript", 2, 0, 0, 0, 0, 0, 0, 0, 2, 4
+"Total", "-", 101, 1, 13937, 2171, 4, 4205, 274, 346, 282, 21321

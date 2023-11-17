@@ -71,11 +71,11 @@ export const MonitorsDisplays = [
   },
   {
     id: "item002",
-    itemName: "Gamming Monitors",
+    itemName: "Projectors",
     brand: "Dell",
     price: 249.99,
     description:
-      "mmerse yourself in gaming with powerful monitors optimized for gaming performance.",
+      "Experience stunning visuals and versatile presentations with our high-quality projectors.",
     image: "/images/computers/monitor-3.avif",
   },
 ];
@@ -87,7 +87,7 @@ export const NetworkingDevices = [
     brand: "various brands",
     price: 849.99,
     description: "Seamlessly connect networks for efficient data transfer.",
-    image: "/images/computers/monitor-1.avif",
+    image: "/images/computers/network-1.avif",
   },
   {
     id: "item002",
@@ -95,42 +95,103 @@ export const NetworkingDevices = [
     brand: "various brands",
     price: 99.99,
     description: "Effortlessly connect and manage devices within your network.",
-    image: "/images/computers/monitor-1.avif",
+    image: "/images/computers/network-2.avif",
   },
   {
     id: "item003",
-    itemName: "Wireless Access Points",
-    brand: "various brands",
-    price: 99.99,
-    description: "Extend wireless connectivity and internet access.",
-    image: "/images/computers/monitor-1.avif",
-  },
-  {
-    id: "item004",
     itemName: "Modems",
     brand: "various brands",
     price: 99.99,
     description: "Fast and stable internet connections made easy",
-    image: "/images/computers/monitor-1.avif",
+    image: "/images/computers/network-3.avif",
   },
+  {
+    id: "item004",
+    itemName: "Connectivity Cables/Wires",
+    brand: "various brands",
+    price: 99.99,
+    description:
+      "Essential connectivity cables for reliable and high-speed data transmission within your network.",
+    image: "/images/computers/network-4.avif",
+  },
+
   {
     id: "item005",
     itemName: "Network Security Devices",
     brand: "various brands",
     price: 99.99,
     description: "Protect your network from unauthorized access and threats.",
-    image: "/images/computers/monitor-1.avif",
+    image: "/images/computers/network-5.avif",
   },
   {
     id: "item006",
-    itemName: "Network Storage Devices",
+    itemName: "Servers",
     brand: "various brands",
     price: 99.99,
     description:
-      "Centralize and secure your data with our network storage devices. ",
-    image: "/images/computers/monitor-1.avif",
+      "High-performance servers for reliable network workloads and application performance.",
+    image: "/images/computers/network-6.avif",
   },
 ];
+
+export const OfficeEquipments = [
+  {
+    id: "item001",
+    itemName: "Printers & Scanners",
+    brand: "Various brands",
+    price: 349.99,
+    description:
+      "Streamline your document management with our high-quality printing and scanning solutions.",
+    image: "/images/computers/office-1.avif",
+  },
+  {
+    id: "item002",
+    itemName: "Copying Equipments",
+    brand: "Various brands",
+    price: 249.99,
+    description:
+      "Boost productivity and efficiency with our reliable copying and duplication equipment.",
+    image: "/images/computers/office-2.avif",
+  },
+  {
+    id: "item003",
+    itemName: "Document Management Accessories",
+    brand: "Various brands",
+    price: 249.99,
+    description:
+      "Enhance your workflow and protect sensitive information with our range of shredders, binding machines, laminators, and more.",
+    image: "/images/computers/office-3.avif",
+  },
+];
+
+export const PowerSolutions = [
+  {
+    id: "item001",
+    itemName: "UPS",
+    brand: "Various brands",
+    price: 229.99,
+    description: "Ensure uninterrupted power supply for your critical devices and protect them from unexpected power outages or fluctuations.",
+    image: "/images/computers/power-1.avif",
+  },
+  {
+    id: "item002",
+    itemName: "Surge Protectors",
+    brand: "Various brands",
+    price: 199.99,
+    description: "Safeguard your valuable electronic equipment from power surges and voltage spikes with our reliable surge protectors.",
+    image: "/images/computers/power-2.avif",
+  },
+  {
+    id: "item003",
+    itemName: "Power Banks",
+    brand: "Various brands",
+    price: 199.99,
+    description: "Stay powered on the go with our portable and convenient power banks and chargers, ensuring your devices are always ready when you need them.",
+    image: "/images/computers/power-3.avif",
+  },
+];
+
+
 export const Accessories = [
   {
     id: "item001",
@@ -169,46 +230,6 @@ export const SoftwareProducts = [
     image: "path/to/image.jpg",
   },
   // Add more software product items as needed
-];
-
-export const OfficeEquipment = [
-  {
-    id: "item001",
-    itemName: "HP LaserJet Pro MFP M281fdw",
-    brand: "HP",
-    price: 349.99,
-    description: "Wireless Color Laser Printer, Copier, Scanner, Fax",
-    image: "path/to/image.jpg",
-  },
-  {
-    id: "item002",
-    itemName: "Epson Perfection V600",
-    brand: "Epson",
-    price: 249.99,
-    description: "High-quality Photo and Document Scanner",
-    image: "path/to/image.jpg",
-  },
-  // Add more office equipment items as needed
-];
-
-export const PowerSolutions = [
-  {
-    id: "item001",
-    itemName: "APC Back-UPS Pro 1500VA",
-    brand: "APC",
-    price: 229.99,
-    description: "UPS Battery Backup & Surge Protector",
-    image: "path/to/image.jpg",
-  },
-  {
-    id: "item002",
-    itemName: "CyberPower CP1500PFCLCD",
-    brand: "CyberPower",
-    price: 199.99,
-    description: "1500VA/900W PFC Sinewave UPS System",
-    image: "path/to/image.jpg",
-  },
-  // Add more power solution items as needed
 ];
 
 export const DataStorage = [

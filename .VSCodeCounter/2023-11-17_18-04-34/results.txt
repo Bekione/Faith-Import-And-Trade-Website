@@ -1,0 +1,144 @@
+Date : 2023-11-17 18:04:34
+Directory : h:\Client Projects\faith-import-trade
+Total : 76 files,  20693 codes, 346 comments, 282 blanks, all 21321 lines
+
+Languages
++--------------------+------------+------------+------------+------------+------------+
+| language           | files      | code       | comment    | blank      | total      |
++--------------------+------------+------------+------------+------------+------------+
+| XML                |         11 |     13,937 |          0 |          7 |     13,944 |
+| JavaScript JSX     |         53 |      4,205 |        313 |        203 |      4,721 |
+| JSON               |          2 |      2,171 |          0 |          2 |      2,173 |
+| CSS                |          1 |        274 |         21 |         51 |        346 |
+| JavaScript         |          7 |        101 |          8 |         19 |        128 |
+| JSON with Comments |          1 |          4 |          4 |          0 |          8 |
+| Markdown           |          1 |          1 |          0 |          0 |          1 |
++--------------------+------------+------------+------------+------------+------------+
+
+Directories
++---------------------------------------------------------------------------------------------------+------------+------------+------------+------------+------------+
+| path                                                                                              | files      | code       | comment    | blank      | total      |
++---------------------------------------------------------------------------------------------------+------------+------------+------------+------------+------------+
+| .                                                                                                 |         76 |     20,693 |        346 |        282 |     21,321 |
+| . (Files)                                                                                         |          7 |      2,245 |         12 |         12 |      2,269 |
+| app                                                                                               |         11 |        471 |         21 |         85 |        577 |
+| app (Files)                                                                                       |          3 |        304 |         21 |         57 |        382 |
+| app\about                                                                                         |          1 |         25 |          0 |          3 |         28 |
+| app\api                                                                                           |          1 |          0 |          0 |          1 |          1 |
+| app\contact                                                                                       |          1 |         20 |          0 |          4 |         24 |
+| app\gallery                                                                                       |          1 |         19 |          0 |          4 |         23 |
+| app\services                                                                                      |          4 |        103 |          0 |         16 |        119 |
+| app\services (Files)                                                                              |          1 |         19 |          0 |          4 |         23 |
+| app\services\computer                                                                             |          1 |         48 |          0 |          4 |         52 |
+| app\services\maintenance                                                                          |          1 |         17 |          0 |          4 |         21 |
+| app\services\stationary                                                                           |          1 |         19 |          0 |          4 |         23 |
+| components                                                                                        |         46 |      4,038 |        313 |        176 |      4,527 |
+| components\About                                                                                  |          6 |        783 |          8 |         17 |        808 |
+| components\Brands                                                                                 |          2 |        142 |          0 |          7 |        149 |
+| components\Common                                                                                 |          3 |         96 |          0 |          8 |        104 |
+| components\Contact                                                                                |          6 |        398 |          6 |         21 |        425 |
+| components\Customers                                                                              |          2 |        122 |          0 |          7 |        129 |
+| components\Footer                                                                                 |          1 |        304 |          0 |         10 |        314 |
+| components\Header                                                                                 |          2 |        258 |          4 |          8 |        270 |
+| components\Hero                                                                                   |         12 |        977 |        280 |         46 |      1,303 |
+| components\Hero (Files)                                                                           |          6 |        278 |        278 |         29 |        585 |
+| components\Hero\Carousel                                                                          |          3 |        305 |          2 |          9 |        316 |
+| components\Hero\ManifestoScrollytelling                                                           |          3 |        394 |          0 |          8 |        402 |
+| components\ScrollToTop                                                                            |          1 |         39 |          2 |          9 |         50 |
+| components\Services                                                                               |          7 |        364 |         12 |         24 |        400 |
+| components\Services (Files)                                                                       |          3 |         86 |          7 |          9 |        102 |
+| components\Services\Computers                                                                     |          2 |        278 |          5 |         13 |        296 |
+| components\Services\Maintenance                                                                   |          1 |          0 |          0 |          1 |          1 |
+| components\Services\Stationary                                                                    |          1 |          0 |          0 |          1 |          1 |
+| components\Testimonials                                                                           |          4 |        555 |          1 |         19 |        575 |
+| public                                                                                            |         11 |     13,937 |          0 |          7 |     13,944 |
+| public (Files)                                                                                    |          3 |          3 |          0 |          0 |          3 |
+| public\images                                                                                     |          8 |     13,934 |          0 |          7 |     13,941 |
+| public\images (Files)                                                                             |          2 |        942 |          0 |          1 |        943 |
+| public\images\logo                                                                                |          6 |     12,992 |          0 |          6 |     12,998 |
+| utils                                                                                             |          1 |          2 |          0 |          2 |          4 |
+| utils\font                                                                                        |          1 |          2 |          0 |          2 |          4 |
++---------------------------------------------------------------------------------------------------+------------+------------+------------+------------+------------+
+
+Files
++---------------------------------------------------------------------------------------------------+--------------------+------------+------------+------------+------------+
+| filename                                                                                          | language           | code       | comment    | blank      | total      |
++---------------------------------------------------------------------------------------------------+--------------------+------------+------------+------------+------------+
+| h:\Client Projects\faith-import-trade\README.md                                                   | Markdown           |          1 |          0 |          0 |          1 |
+| h:\Client Projects\faith-import-trade\app\about\page.jsx                                          | JavaScript JSX     |         25 |          0 |          3 |         28 |
+| h:\Client Projects\faith-import-trade\app\api\contact.js                                          | JavaScript         |          0 |          0 |          1 |          1 |
+| h:\Client Projects\faith-import-trade\app\contact\page.jsx                                        | JavaScript JSX     |         20 |          0 |          4 |         24 |
+| h:\Client Projects\faith-import-trade\app\gallery\page.jsx                                        | JavaScript JSX     |         19 |          0 |          4 |         23 |
+| h:\Client Projects\faith-import-trade\app\globals.css                                             | CSS                |        274 |         21 |         51 |        346 |
+| h:\Client Projects\faith-import-trade\app\layout.js                                               | JavaScript         |         22 |          0 |          4 |         26 |
+| h:\Client Projects\faith-import-trade\app\page.js                                                 | JavaScript         |          8 |          0 |          2 |         10 |
+| h:\Client Projects\faith-import-trade\app\services\computer\page.jsx                              | JavaScript JSX     |         48 |          0 |          4 |         52 |
+| h:\Client Projects\faith-import-trade\app\services\maintenance\page.jsx                           | JavaScript JSX     |         17 |          0 |          4 |         21 |
+| h:\Client Projects\faith-import-trade\app\services\page.jsx                                       | JavaScript JSX     |         19 |          0 |          4 |         23 |
+| h:\Client Projects\faith-import-trade\app\services\stationary\page.jsx                            | JavaScript JSX     |         19 |          0 |          4 |         23 |
+| h:\Client Projects\faith-import-trade\components\About\AboutCards.jsx                             | JavaScript JSX     |        237 |          0 |          2 |        239 |
+| h:\Client Projects\faith-import-trade\components\About\AboutCustomers.jsx                         | JavaScript JSX     |         12 |          0 |          3 |         15 |
+| h:\Client Projects\faith-import-trade\components\About\AboutDescription.jsx                       | JavaScript JSX     |         55 |          8 |          6 |         69 |
+| h:\Client Projects\faith-import-trade\components\About\AboutSectionTitle.jsx                      | JavaScript JSX     |         13 |          0 |          2 |         15 |
+| h:\Client Projects\faith-import-trade\components\About\Manifesto.jsx                              | JavaScript JSX     |        335 |          0 |          2 |        337 |
+| h:\Client Projects\faith-import-trade\components\About\Slogan.jsx                                 | JavaScript JSX     |        131 |          0 |          2 |        133 |
+| h:\Client Projects\faith-import-trade\components\Brands\BrandsData.jsx                            | JavaScript JSX     |         77 |          0 |          1 |         78 |
+| h:\Client Projects\faith-import-trade\components\Brands\BrandsSlider.jsx                          | JavaScript JSX     |         65 |          0 |          6 |         71 |
+| h:\Client Projects\faith-import-trade\components\Common\Breadcrumb.jsx                            | JavaScript JSX     |         33 |          0 |          3 |         36 |
+| h:\Client Projects\faith-import-trade\components\Common\PageHeader.jsx                            | JavaScript JSX     |         53 |          0 |          3 |         56 |
+| h:\Client Projects\faith-import-trade\components\Common\SectionTitle.jsx                          | JavaScript JSX     |         10 |          0 |          2 |         12 |
+| h:\Client Projects\faith-import-trade\components\Contact\ContactInfo.jsx                          | JavaScript JSX     |         72 |          0 |          4 |         76 |
+| h:\Client Projects\faith-import-trade\components\Contact\LocationPin.jsx                          | JavaScript JSX     |         10 |          0 |          2 |         12 |
+| h:\Client Projects\faith-import-trade\components\Contact\Map.jsx                                  | JavaScript JSX     |         40 |          1 |          8 |         49 |
+| h:\Client Projects\faith-import-trade\components\Contact\NewsLetter.jsx                           | JavaScript JSX     |        175 |          5 |          3 |        183 |
+| h:\Client Projects\faith-import-trade\components\Contact\index.jsx                                | JavaScript JSX     |         94 |          0 |          3 |         97 |
+| h:\Client Projects\faith-import-trade\components\Contact\locationData.jsx                         | JavaScript JSX     |          7 |          0 |          1 |          8 |
+| h:\Client Projects\faith-import-trade\components\Customers\CustomersData.jsx                      | JavaScript JSX     |         52 |          0 |          1 |         53 |
+| h:\Client Projects\faith-import-trade\components\Customers\CustomersSlider.jsx                    | JavaScript JSX     |         70 |          0 |          6 |         76 |
+| h:\Client Projects\faith-import-trade\components\Footer\index.jsx                                 | JavaScript JSX     |        304 |          0 |         10 |        314 |
+| h:\Client Projects\faith-import-trade\components\Header\index.jsx                                 | JavaScript JSX     |        200 |          4 |          7 |        211 |
+| h:\Client Projects\faith-import-trade\components\Header\menuData.jsx                              | JavaScript JSX     |         58 |          0 |          1 |         59 |
+| h:\Client Projects\faith-import-trade\components\Hero\Carousel\HomeSliderData.jsx                 | JavaScript JSX     |         39 |          0 |          1 |         40 |
+| h:\Client Projects\faith-import-trade\components\Hero\Carousel\SliderButton.jsx                   | JavaScript JSX     |         44 |          0 |          3 |         47 |
+| h:\Client Projects\faith-import-trade\components\Hero\Carousel\index.jsx                          | JavaScript JSX     |        222 |          2 |          5 |        229 |
+| h:\Client Projects\faith-import-trade\components\Hero\HomeAboutUs.jsx                             | JavaScript JSX     |         51 |          0 |          4 |         55 |
+| h:\Client Projects\faith-import-trade\components\Hero\HomeContactUs.jsx                           | JavaScript JSX     |         20 |          0 |          3 |         23 |
+| h:\Client Projects\faith-import-trade\components\Hero\HomeCustomers.jsx                           | JavaScript JSX     |         11 |          0 |          3 |         14 |
+| h:\Client Projects\faith-import-trade\components\Hero\HomeEssences.jsx                            | JavaScript JSX     |          6 |          0 |          2 |          8 |
+| h:\Client Projects\faith-import-trade\components\Hero\HomeServices.jsx                            | JavaScript JSX     |        169 |          3 |         14 |        186 |
+| h:\Client Projects\faith-import-trade\components\Hero\ManifestoScrollytelling\ManifestoData.jsx   | JavaScript JSX     |        332 |          0 |          1 |        333 |
+| h:\Client Projects\faith-import-trade\components\Hero\ManifestoScrollytelling\SingleManifesto.jsx | JavaScript JSX     |         21 |          0 |          3 |         24 |
+| h:\Client Projects\faith-import-trade\components\Hero\ManifestoScrollytelling\index.jsx           | JavaScript JSX     |         41 |          0 |          4 |         45 |
+| h:\Client Projects\faith-import-trade\components\Hero\index.jsx                                   | JavaScript JSX     |         21 |        275 |          3 |        299 |
+| h:\Client Projects\faith-import-trade\components\ScrollToTop\index.jsx                            | JavaScript JSX     |         39 |          2 |          9 |         50 |
+| h:\Client Projects\faith-import-trade\components\Services\Computers\index.jsx                     | JavaScript JSX     |         27 |          0 |          2 |         29 |
+| h:\Client Projects\faith-import-trade\components\Services\Computers\itemsData.jsx                 | JavaScript JSX     |        251 |          5 |         11 |        267 |
+| h:\Client Projects\faith-import-trade\components\Services\ItemCategories.jsx                      | JavaScript JSX     |         46 |          7 |          3 |         56 |
+| h:\Client Projects\faith-import-trade\components\Services\Maintenance\index.jsx                   | JavaScript JSX     |          0 |          0 |          1 |          1 |
+| h:\Client Projects\faith-import-trade\components\Services\ServicesContact.jsx                     | JavaScript JSX     |         20 |          0 |          3 |         23 |
+| h:\Client Projects\faith-import-trade\components\Services\ServicesMaintenance.jsx                 | JavaScript JSX     |         20 |          0 |          3 |         23 |
+| h:\Client Projects\faith-import-trade\components\Services\Stationary\index.jsx                    | JavaScript JSX     |          0 |          0 |          1 |          1 |
+| h:\Client Projects\faith-import-trade\components\Testimonials\CornerImage.jsx                     | JavaScript JSX     |        264 |          0 |          2 |        266 |
+| h:\Client Projects\faith-import-trade\components\Testimonials\TestimonialsData.jsx                | JavaScript JSX     |         68 |          0 |          1 |         69 |
+| h:\Client Projects\faith-import-trade\components\Testimonials\TestimonialsSlider.jsx              | JavaScript JSX     |        149 |          1 |         12 |        162 |
+| h:\Client Projects\faith-import-trade\components\Testimonials\index.jsx                           | JavaScript JSX     |         74 |          0 |          4 |         78 |
+| h:\Client Projects\faith-import-trade\jsconfig.json                                               | JSON with Comments |          4 |          4 |          0 |          8 |
+| h:\Client Projects\faith-import-trade\next.config.js                                              | JavaScript         |          2 |          1 |          2 |          5 |
+| h:\Client Projects\faith-import-trade\package-lock.json                                           | JSON               |      2,143 |          0 |          1 |      2,144 |
+| h:\Client Projects\faith-import-trade\package.json                                                | JSON               |         28 |          0 |          1 |         29 |
+| h:\Client Projects\faith-import-trade\postcss.config.js                                           | JavaScript         |          6 |          0 |          1 |          7 |
+| h:\Client Projects\faith-import-trade\public\images\404.svg                                       | XML                |          1 |          0 |          0 |          1 |
+| h:\Client Projects\faith-import-trade\public\images\footer-map.svg                                | XML                |        941 |          0 |          1 |        942 |
+| h:\Client Projects\faith-import-trade\public\images\logo\icon-logo.svg                            | XML                |      1,527 |          0 |          2 |      1,529 |
+| h:\Client Projects\faith-import-trade\public\images\logo\logo-2.svg                               | XML                |          1 |          0 |          0 |          1 |
+| h:\Client Projects\faith-import-trade\public\images\logo\logo-icon-rotate.svg                     | XML                |      1,527 |          0 |          2 |      1,529 |
+| h:\Client Projects\faith-import-trade\public\images\logo\logo-icon.svg                            | XML                |      2,204 |          0 |          1 |      2,205 |
+| h:\Client Projects\faith-import-trade\public\images\logo\logo.svg                                 | XML                |          1 |          0 |          0 |          1 |
+| h:\Client Projects\faith-import-trade\public\images\logo\main-logo.svg                            | XML                |      7,732 |          0 |          1 |      7,733 |
+| h:\Client Projects\faith-import-trade\public\next.svg                                             | XML                |          1 |          0 |          0 |          1 |
+| h:\Client Projects\faith-import-trade\public\thirteen.svg                                         | XML                |          1 |          0 |          0 |          1 |
+| h:\Client Projects\faith-import-trade\public\vercel.svg                                           | XML                |          1 |          0 |          0 |          1 |
+| h:\Client Projects\faith-import-trade\tailwind.config.js                                          | JavaScript         |         61 |          7 |          7 |         75 |
+| h:\Client Projects\faith-import-trade\utils\font\font.js                                          | JavaScript         |          2 |          0 |          2 |          4 |
+| Total                                                                                             |                    |     20,693 |        346 |        282 |     21,321 |
++---------------------------------------------------------------------------------------------------+--------------------+------------+------------+------------+------------+

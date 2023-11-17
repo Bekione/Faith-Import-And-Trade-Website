@@ -1,8 +1,8 @@
 import Link from "next/link";
 
-const Breadcrumb = ({ paths }) => {
+const Breadcrumb = ({ paths, classes }) => {
   return (
-    <nav className="w-full flex justify-end text-sm">
+    <nav className={`w-full flex justify-end text-sm ${classes}`}>
       <ol className="list-none p-0 flex items-center md:justify-end">
         <li className="flex items-center">
           <Link href="/" className="pr-1 text-base font-medium text-secondary transition hover:opacity-70 hover:underline ">

@@ -69,9 +69,9 @@ export const brandsData = [
     path: "/images/brands/brand-14.png",
     title: "JBL",
   },
-  // {
-  //   id: "img015",
-  //   path: "/images/brands/brand-15.jfif",
-  //   title: "LG",
-  // },
+  {
+    id: "img015",
+    path: "/images/brands/brand-15.png",
+    title: "LG",
+  },
 ];
