@@ -54,8 +54,7 @@ export const MonitorsDisplays = [
   {
     id: "item001",
     itemName: "UltraWide Monitors",
-    brand: "LG",
-    price: 499.99,
+    brand: "Various brands",
     description:
       "Expand your view and productivity with immersive ultra-wide monitors for a seamless multitasking experience.",
     image: "/images/computers/monitor-1.avif",
@@ -63,8 +62,7 @@ export const MonitorsDisplays = [
   {
     id: "item002",
     itemName: "Professional Monitors",
-    brand: "Dell",
-    price: 249.99,
+    brand: "Various brands",
     description:
       "Enhance your professional workloads with high-performance monitors designed for precision and accuracy.",
     image: "/images/computers/monitor-2.avif",
@@ -72,8 +70,7 @@ export const MonitorsDisplays = [
   {
     id: "item002",
     itemName: "Projectors",
-    brand: "Dell",
-    price: 249.99,
+    brand: "Various brands",
     description:
       "Experience stunning visuals and versatile presentations with our high-quality projectors.",
     image: "/images/computers/monitor-3.avif",
@@ -170,7 +167,8 @@ export const PowerSolutions = [
     itemName: "UPS",
     brand: "Various brands",
     price: 229.99,
-    description: "Ensure uninterrupted power supply for your critical devices and protect them from unexpected power outages or fluctuations.",
+    description:
+      "Ensure uninterrupted power supply for your critical devices and protect them from unexpected power outages or fluctuations.",
     image: "/images/computers/power-1.avif",
   },
   {
@@ -178,7 +176,8 @@ export const PowerSolutions = [
     itemName: "Surge Protectors",
     brand: "Various brands",
     price: 199.99,
-    description: "Safeguard your valuable electronic equipment from power surges and voltage spikes with our reliable surge protectors.",
+    description:
+      "Safeguard your valuable electronic equipment from power surges and voltage spikes with our reliable surge protectors.",
     image: "/images/computers/power-2.avif",
   },
   {
@@ -186,88 +185,38 @@ export const PowerSolutions = [
     itemName: "Power Banks",
     brand: "Various brands",
     price: 199.99,
-    description: "Stay powered on the go with our portable and convenient power banks and chargers, ensuring your devices are always ready when you need them.",
+    description:
+      "Stay powered on the go with our portable and convenient power banks and chargers, ensuring your devices are always ready when you need them.",
     image: "/images/computers/power-3.avif",
   },
 ];
 
-
-export const Accessories = [
+export const Others = [
   {
     id: "item001",
-    itemName: "HDMI Cable",
-    brand: "Generic",
-    price: 9.99,
-    description: "High-Speed HDMI Cable, 6 feet",
-    image: "path/to/image.jpg",
-  },
-  {
-    id: "item002",
-    itemName: "USB-C Hub",
-    brand: "Anker",
-    price: 39.99,
-    description: "7-in-1 USB C Adapter with 4K USB C to HDMI",
-    image: "path/to/image.jpg",
-  },
-  // Add more accessory items as needed
-];
-
-export const SoftwareProducts = [
-  {
-    id: "item001",
-    itemName: "Microsoft Office 365",
-    brand: "Microsoft",
-    price: 99.99,
-    description: "1-year subscription for Office applications",
-    image: "path/to/image.jpg",
-  },
-  {
-    id: "item002",
-    itemName: "Adobe Photoshop",
-    brand: "Adobe",
-    price: 299.99,
-    description: "Professional photo editing software",
-    image: "path/to/image.jpg",
-  },
-  // Add more software product items as needed
-];
-
-export const DataStorage = [
-  {
-    id: "item001",
-    itemName: "Seagate Expansion Desktop",
-    brand: "Seagate",
-    price: 129.99,
-    description: "10TB External Hard Drive",
-    image: "path/to/image.jpg",
-  },
-  {
-    id: "item002",
-    itemName: "Samsung T7 Portable SSD",
-    brand: "Samsung",
-    price: 189.99,
-    description: "1TB USB 3.2 External Solid State Drive",
-    image: "path/to/image.jpg",
-  },
-  // Add more data storage items as needed
-];
-
-export const Consumables = [
-  {
-    id: "item001",
-    itemName: "HP 63 Black Ink Cartridge",
-    brand: "HP",
+    itemName: "HDD & SSDs",
+    brand: "Various brands",
     price: 19.99,
-    description: "Original Ink Cartridge",
-    image: "path/to/image.jpg",
+    description:
+      "Expand your storage capacity and boost your system's performance with our reliable HDDs & SDDs.",
+    image: "/images/computers/other-1.avif",
   },
   {
     id: "item002",
-    itemName: "Epson T220 Color Combo Pack",
-    brand: "Epson",
+    itemName: "Toners & Cartridges",
+    brand: "Various brands",
     price: 39.99,
-    description: "Standard Capacity Ink Cartridges",
-    image: "path/to/image.jpg",
+    description:
+      "Keep your printers running smoothly with our wide selection of cartridges and toners.",
+    image: "/images/computers/other-2.avif",
   },
-  // Add more consumable items as needed
+  {
+    id: "item003",
+    itemName: "Many more",
+    brand: "Various brands",
+    price: 39.99,
+    description:
+      "Explore our diverse range of additional products and accessories to find the perfect solution for your specific needs.",
+    image: "/images/computers/other-3.avif",
+  },
 ];

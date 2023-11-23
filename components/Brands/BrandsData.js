@@ -1,4 +1,4 @@
-export const brandsData = [
+export const cpBrandsData = [
   {
     id: "img001",
     path: "/images/brands/brand-1.png",
@@ -73,5 +73,58 @@ export const brandsData = [
     id: "img015",
     path: "/images/brands/brand-15.png",
     title: "LG",
+  },
+  {
+    id: "img016",
+    path: "/images/brands/brand-16.png",
+    title: "D-Link",
+  },
+  {
+    id: "img017",
+    path: "/images/brands/brand-17.jpg",
+    title: "Brother",
+  },
+];
+
+export const stBrandsData = [
+  {
+    id: "img001",
+    path: "/images/brands/brand-st-1.png",
+    title: "Staedtler",
+  },
+  {
+    id: "img002",
+    path: "/images/brands/brand-st-2.png",
+    title: "Swingline",
+  },
+  {
+    id: "img003",
+    path: "/images/brands/brand-st-3.png",
+    title: "Xerox",
+  },
+  {
+    id: "img004",
+    path: "/images/brands/brand-st-4.png",
+    title: "Post-it",
+  },
+  {
+    id: "img005",
+    path: "/images/brands/brand-st-5.png",
+    title: "Dobule A",
+  },
+  {
+    id: "img006",
+    path: "/images/brands/brand-st-6.png",
+    title: "Sharpie",
+  },
+  {
+    id: "img007",
+    path: "/images/brands/brand-st-7.png",
+    title: "Sinarline",
+  },
+  {
+    id: "img008",
+    path: "/images/brands/brand-st-8.png",
+    title: "Bostitch",
   },
 ];

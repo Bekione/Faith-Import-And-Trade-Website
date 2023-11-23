@@ -3,11 +3,11 @@
 import Image from "next/image";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Autoplay } from "swiper/modules";
-import { brandsData } from "./BrandsData";
+import { cpBrandsData, stBrandsData } from "./BrandsData";
 
 import "swiper/css";
 
-const BrandsSlider = () => {
+const BrandsSlider = ({ctx}) => {
   const breakpoints = {
     0: {
       slidesPerView: 1,
@@ -22,6 +22,8 @@ const BrandsSlider = () => {
       slidesPerView: 4,
     },
   };
+
+  const brandsData = ctx === "computer" ? cpBrandsData : stBrandsData
 
   return (
     <div className="brands_slider w-full mt-16 mb-10 ">
@@ -42,7 +44,7 @@ const BrandsSlider = () => {
         modules={[Autoplay]}
         className="w-full h-fit"
       >
-        {brandsData.map((brand) => {
+        { brandsData.map((brand) => {
           return (
             <SwiperSlide
               key={brand.id}

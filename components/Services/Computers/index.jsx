@@ -5,6 +5,7 @@ import {
   NetworkingDevices,
   OfficeEquipments,
   PowerSolutions,
+  Others,
 } from "./itemsData";
 import BrandsSlider from "@components/Brands/BrandsSlider";
 import ServicesContact from "../ServicesContact";
@@ -15,7 +16,7 @@ const index = () => {
     <div className="">
       <ItemCategories category="Laptops & Desktops" items={LaptopsDesktops} />
       <ItemCategories category="Monitors & Displays" items={MonitorsDisplays} />
-      <BrandsSlider />
+      <BrandsSlider ctx="computer" />
       <ItemCategories
         category="Networking Devices "
         items={NetworkingDevices}
@@ -24,6 +25,7 @@ const index = () => {
       <ItemCategories category="Office Equipments" items={OfficeEquipments} />
       <ItemCategories category="Power Solutions" items={PowerSolutions} />
       <ServicesMaintenance />
+      <ItemCategories category="Others" items={Others} />
     </div>
   );
 };
