@@ -3,8 +3,8 @@ import {
   WritingInstruments,
   PaperProducts,
   DeskOrganization,
-  // FilingStorage,
   ArtsCrafts,
+  Others,
 } from "./itemsData";
 import BrandsSlider from "@components/Brands/BrandsSlider";
 import ServicesContact from "../ServicesContact";
@@ -21,9 +21,9 @@ const index = () => {
       <ServicesContact />
       <ItemCategories category="Desk Organization" items={DeskOrganization} />
       <BrandsSlider ctx="stationery" />
-      {/* <ItemCategories category="Filing and Storage" items={FilingStorage} /> */}
-      <ServicesMaintenance />
       <ItemCategories category="Arts and Crafts" items={ArtsCrafts} />
+      <ServicesMaintenance />
+      <ItemCategories category="Others" items={Others} />
     </div>
   );
 };

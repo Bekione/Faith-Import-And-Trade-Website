@@ -46,7 +46,7 @@ export const DeskOrganization = [
     id: "item001",
     itemName: "Desk Organizers",
     description: "Keep your essentials in order with desk organizers.",
-    image: "/images/stationery/desk-1.jpeg",
+    image: "/images/stationery/desk-1.jpg",
   },
   {
     id: "item002",
@@ -58,30 +58,9 @@ export const DeskOrganization = [
     id: "item003",
     itemName: "Desk Accessories",
     description: "Enhance your workspace with desk accessories.",
-    image: "/images/stationery/desk-3.webp",
+    image: "/images/stationery/desk-3.jpg",
   },
 ];
-
-// export const FilingStorage = [
-//   {
-//     id: "item001",
-//     itemName: "Folders and Binders",
-//     description: "Keep your documents sorted with folders and binders.",
-//     image: "/images/stationery/folders-binders.avif",
-//   },
-//   {
-//     id: "item002",
-//     itemName: "File Cabinets",
-//     description: "Explore file cabinets for efficient document storage.",
-//     image: "/images/stationery/file-cabinets.avif",
-//   },
-//   {
-//     id: "item003",
-//     itemName: "Storage Boxes",
-//     description: "Choose from storage boxes for organized file storage.",
-//     image: "/images/stationery/storage-boxes.avif",
-//   },
-// ];
 
 export const ArtsCrafts = [
   {
@@ -101,5 +80,28 @@ export const ArtsCrafts = [
     itemName: "Craft Materials",
     description: "Discover a variety of craft materials for DIY projects.",
     image: "/images/stationery/art-3.avif",
+  },
+];
+
+export const Others = [
+  {
+    id: "item001",
+    itemName: "Box files",
+    description:
+      "Durable files for organizing and storing important documents.",
+    image: "/images/stationery/office-1.avif",
+  },
+  {
+    id: "item002",
+    itemName: "Staplers",
+    description:
+      "Various types of staplers for securely binding documents together.",
+    image: "/images/stationery/office-2.avif",
+  },
+  {
+    id: "item003",
+    itemName: "Many more",
+    description: "And many more stationery equipments/machines you asked.",
+    image: "/images/stationery/office-3.avif",
   },
 ];
