@@ -21,9 +21,10 @@ const ItemCategories = ({ category, items }) => {
               <div className="group w-full h-full rounded-md overflow-hidden">
                 <Image
                   src={item.image}
-                  width={200}
-                  height={150}
+                  width={352}
+                  height={240}
                   alt={item.itemName}
+                  quality={100}
                   className="object-cover w-full h-full group-hover: transition"
                 />
                 {/* <div className="absolute bottom-0 left-0 py-5 px-6 pr-8 bg-primary">
