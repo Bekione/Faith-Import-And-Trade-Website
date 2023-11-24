@@ -9,9 +9,9 @@ const page = () => {
         imgPath="/images/pages-head/bg-maintenance.avif"
       />
 
-      <div className="container px-5 md:px-10 pt-5 ">
-        <Breadcrumb paths={["services", "maintenance"]} />
-        <div className="flex flex-col lg:flex-row gap-10">Maintenace</div>
+      <div className="pt-5 ">
+        <Breadcrumb paths={["services", "maintenance"]} classes="pr-16" />
+        <div className="px-4">Maintenace</div>
       </div>
     </section>
   );
