@@ -56,11 +56,11 @@
   input#checkboxLabel:checked ~ .box span {
     @apply opacity-100;
   }
+  .page-link {
+    @apply font-bold text-secondary;
+  }
 }
 
-.zmblo {
-  box-shadow: 10px -10px 10px -10px red;
-}
 .shadow-corner-r {
   box-shadow: -2px -2px 25px 7px rgba(4, 170, 130, 0.1);
 }
@@ -76,10 +76,6 @@
   background: #3deac1;
   color: #04aa82;
   z-index: 10;
-}
-
-.active-link {
-  /* text-shadow: 0 -0 1px rgb(255, 255, 255); */
 }
 
 .first-parag::first-letter {
@@ -160,9 +156,9 @@
   box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.4);
 }
 
-.brands_slider .swiper-wrapper{
-  -webkit-transition-timing-function:linear!important;
-  transition-timing-function:linear!important; 
+.brands_slider .swiper-wrapper {
+  -webkit-transition-timing-function: linear !important;
+  transition-timing-function: linear !important;
 }
 
 .slider_title {
@@ -342,4 +338,3 @@
 .fancybox__container {
   z-index: 999999 !important;
 }
-

@@ -10,7 +10,7 @@ const page = () => {
   return (
     <section className="relative z-10 overflow-hidden pb-16 md:pb-[120px] xl:pb-[140px] 2xl:pb-[160px]">
       <PageHeader
-        title="Stationary"
+        title="Stationery"
         imgPath="/images/pages-head/bg-stationary.avif"
       />
 
@@ -18,7 +18,7 @@ const page = () => {
         <Breadcrumb paths={["services", "stationary"]} classes="pr-16" />
        
         <ServiceHero
-          intro={introText}
+          Intro={introText}
           imgPath="/images/stationery/stationery-hero.png"
           imgAlt="A bunch of stationery materials"
         />
