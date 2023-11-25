@@ -28,8 +28,8 @@ const menuData = [
       },
       {
         id: 32,
-        title: "Stationary",
-        path: "/services/stationary",
+        title: "Stationery",
+        path: "/services/stationery",
         newTab: false,
       },
       {
@@ -42,13 +42,6 @@ const menuData = [
   },
   {
     id: 4,
-    title: "Gallery",
-    path: "/gallery",
-    newTab: false,
-    hasSubMenu: false,
-  },
-  {
-    id: 5,
     title: "Contact Us",
     path: "/contact",
     newTab: false,
