@@ -1,10 +1,12 @@
 import Link from "next/link";
 
-const ServicesContact = () => {
+const ServicesContact = ({ ctx }) => {
   return (
-    <div className="mt-24 w-full px-10 md:px-4 py-12 sm:py-16 md:py-20 flex flex-col sm:flex-row justify-center items-center gap-5 bg-gradient-to-r from-primary to-secondary">
+    <div className="my-12 w-full px-10 md:px-4 py-12 sm:py-16 md:py-20 flex flex-col sm:flex-row justify-center items-center gap-5 bg-gradient-to-r from-primary to-secondary">
       <h2 className="text-base text-center font-bold text-xl text-white italic leading-md ">
-        Want to order any of these items?
+        {ctx === "maintenance"
+          ? "Need maintenance? Want to schedule an appointment or discuss your requirements?"
+          : "Want to order any of these items?"}
       </h2>
       <Link
         href="/contact"

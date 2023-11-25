@@ -4,7 +4,11 @@ const PageIntro = () => {
   const handleSmoothScroll = (event, targetId) => {
     event.preventDefault();
     const targetElement = document.getElementById(targetId);
-    const topOffset = targetElement.offsetTop - 105;
+    let headerHeight = 105;
+    if (window.innerWidth <= 1024) {
+      headerHeight = 128;
+    }
+    const topOffset = targetElement.offsetTop - headerHeight;
     if (targetElement) {
       window.scrollTo({
         top: topOffset,
