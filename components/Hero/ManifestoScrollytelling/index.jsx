@@ -20,7 +20,7 @@ const HomeManifesto = () => {
             />
           </figure>
           <h2
-            className={`${mokoto.className} text-center my-4 text-secondary tracking-wide uppercase text-[1.5rem] font-bold leading-relaxed sm:text-2xl md:text-[30px] xl:text-[35px]`}
+            className={`${mokoto.className} text-center my-4 text-secondary tracking-widest uppercase text-[1.5rem] font-bold leading-relaxed sm:text-2xl md:text-[30px] xl:text-[35px]`}
           >
             Faith import & trade
           </h2>

@@ -1,4 +1,4 @@
-import { mokoto } from "../../utils/font/font";
+import { mokoto } from "@utils/font/font";
 import Image from "next/image";
 
 const PageHeader = ({ title, titleExtra, imgPath }) => {
