@@ -2,7 +2,7 @@ import Image from "next/image";
 
 const Warranty = () => {
   return (
-    <div className="p-4 flex flex-col md:flex-row items-center gap-5 max-w-[1000px] mx-auto bg-[url('/images/about/home-about-textured.png')] rounded-md">
+    <div className="p-4 my-12 flex flex-col md:flex-row items-center gap-5 max-w-[1000px] mx-auto bg-[url('/images/about/home-about-textured.png')] rounded-md shadow-lg">
       <Image
         src="/images/maintenance/warranty.png"
         width={250}
