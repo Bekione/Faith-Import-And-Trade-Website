@@ -1,5 +1,6 @@
 import Warranty from "./Warranty";
 import ServiceInfo from "./ServiceInfo";
+import Technician from './Technician'
 import ServicesContact from "../ServicesContact";
 
 const Mainteance = () => {
@@ -10,6 +11,7 @@ const Mainteance = () => {
   return (
     <div className="">
       <Warranty />
+      <Technician />
       <ServiceInfo
         title="What is preventive maintenance?"
         text={paragOne}

@@ -5,7 +5,7 @@ const ServicesContact = ({ ctx }) => {
     <div className="my-12 w-full px-10 md:px-4 py-12 sm:py-16 md:py-20 flex flex-col sm:flex-row justify-center items-center gap-5 bg-gradient-to-r from-primary to-secondary">
       <h2 className="text-base text-center font-bold text-xl text-white italic leading-md ">
         {ctx === "maintenance"
-          ? "Need maintenance? Want to schedule an appointment or discuss your requirements?"
+          ? "Need maintenance or want to schedule an appointment to discuss your requirements?"
           : "Want to order any of these items?"}
       </h2>
       <Link
