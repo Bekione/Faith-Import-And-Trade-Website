@@ -19,8 +19,8 @@ const page = () => {
           Intro={introText}
           imgPath="/images/services/services-hero.png"
           imgAlt="Assembling Jigsaw pieces indicating fulfilling customer needs"
-          w="315"
-          h="189"
+          w="405"
+          h="243"
         />
 
         <Services />
