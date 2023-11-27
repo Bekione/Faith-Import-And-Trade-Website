@@ -76,6 +76,7 @@ const Header = () => {
                   alt="logo"
                   width={200}
                   height={85}
+                  quality={100}
                   className={`${sticky ? "hidden" : ""}`}
                   priority
                 />
@@ -84,6 +85,7 @@ const Header = () => {
                   alt="logo"
                   width={200}
                   height={85}
+                  quality={100}
                   className={`hidden ${sticky ? "!block" : ""}`}
                   priority
                 />

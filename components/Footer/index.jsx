@@ -27,6 +27,7 @@ const Footer = () => {
                   className="w-full -mt-11"
                   width={200}
                   height={90}
+                  quality={100}
                 />
               </Link>
               <p className="mb-9 text-base font-medium leading-relaxed text-body-color">
