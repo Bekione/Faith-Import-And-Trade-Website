@@ -14,7 +14,7 @@ const page = () => {
       />
 
       <div className="pt-5 ">
-        <Breadcrumb paths={["services", "computer"]} classes="pr-16" />
+        <Breadcrumb paths={["services"]} classes="pr-16" />
         <ServiceHero
           Intro={introText}
           imgPath="/images/services/services-hero.png"
