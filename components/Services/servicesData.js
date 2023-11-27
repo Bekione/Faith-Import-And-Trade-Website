@@ -29,7 +29,7 @@ export const servicesData = [
   {
     id: 103,
     title: "More Coming Soon",
-    text: "At Faith import & trade, we are always in thoughts of satisfying our customers needs, so we are continously expanding our reach and services. You are always welcome to ask us your needs and faith will guarantee you will not be disappointed.",
+    text: "At Faith Import & Trade, we continuously strive to satisfy our customers' needs by expanding our reach and services. Stay tuned for more exciting updates! Feel free to share your requirements with us, and rest assured, Faith guarantees your satisfaction.",
     classes: "bg-[url('/images/services/coming-soon.png')]",
   },
 ];
