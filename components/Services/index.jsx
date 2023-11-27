@@ -1,11 +1,11 @@
 import Link from "next/link";
 import { mokoto } from "@utils/font/font";
 import { servicesData } from "./servicesData";
-const SingleService = ({ title, text, pageUrl, imageUrl, ctx }) => {
-  const imgPath = "bg-[url('" + imageUrl + "')]";
+
+const SingleService = ({ title, text, pageUrl, ctx, classes }) => {
   return (
     <div
-      className={`relative h-screen flex items-center ${imgPath} bg-no-repeat bg-cover mdPlus:bg-contain ${
+      className={`relative h-screen flex items-center ${classes} bg-no-repeat bg-cover mdPlus:bg-contain ${
         ctx !== "stationery" ? "bg-right bg-contain" : ""
       }`}
     >
