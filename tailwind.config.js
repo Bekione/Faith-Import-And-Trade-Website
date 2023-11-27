@@ -35,6 +35,9 @@ module.exports = {
       md: "768px",
       // => @media (min-width: 768px) { ... }
 
+      mdPlus: "840px",
+      // => @media (min-width: 840px) { ... }
+
       lg: "992px",
       // => @media (min-width: 992px) { ... }
 
