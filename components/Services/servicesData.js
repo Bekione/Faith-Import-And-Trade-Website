@@ -26,4 +26,10 @@ export const servicesData = [
     ctx: "maintenance",
     classes: "bg-[url('/images/services/bg-maintenance.png')]",
   },
+  {
+    id: 103,
+    title: "More Coming Soon",
+    text: "At Faith import & trade, we are always in thoughts of satisfying our customers needs, so we are continously expanding our reach and services. You are always welcome to ask us your needs and faith will guarantee you will not be disappointed.",
+    classes: "bg-[url('/images/services/coming-soon.png')]",
+  },
 ];

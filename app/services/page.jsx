@@ -1,7 +1,7 @@
 import PageHeader from "@components/Common/PageHeader";
 import Breadcrumb from "@components/Common/Breadcrumb";
 import ServiceHero from "./ServiceHero";
-import Services from "@components/Services"
+import Services from "@components/Services";
 
 const page = () => {
   const introText =
@@ -17,8 +17,10 @@ const page = () => {
         <Breadcrumb paths={["services", "computer"]} classes="pr-16" />
         <ServiceHero
           Intro={introText}
-          imgPath="/images/services/services-hero.png"
+          imgPath="/images/services/-services-hero.png"
           imgAlt="A bunch of computer and stationery materials"
+          w="315"
+          h="189"
         />
 
         <Services />
