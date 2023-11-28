@@ -12,6 +12,7 @@ const page = () => {
         title="Computers"
         titleExtra="Accessories"
         imgPath="/images/pages-head/bg-computer.avif"
+        classes="bg-[url('/images/pages-head/bg-computer.avif')]"
       />
 
       <div className="pt-5 ">

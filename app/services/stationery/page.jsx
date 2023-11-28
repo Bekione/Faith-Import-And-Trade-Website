@@ -12,6 +12,7 @@ const page = () => {
       <PageHeader
         title="Stationery"
         imgPath="/images/pages-head/bg-stationary.avif"
+        classes="bg-[url('/images/pages-head/bg-stationery.avif')]"
       />
 
       <div className="pt-5 ">

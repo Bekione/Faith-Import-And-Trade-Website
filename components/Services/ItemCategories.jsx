@@ -11,7 +11,7 @@ const ItemCategories = ({ category, items }) => {
         </div>
         <div className="absolute top-1/2 transform -transform-y-1/2 h-1 w-28 bg-secondary transform skew-x-[40deg]"></div>
       </div>
-      <div className=" w-full max-w-[1500px] mx-auto flex flex-wrap gap-8 items-center justify-center">
+      <div className=" w-full max-w-[1500px] mx-auto grid grid-cols-[repeat(auto-fill,minmax(320px,1fr))] grid-gap-4">
         {items.map((item) => {
           return (
             <div

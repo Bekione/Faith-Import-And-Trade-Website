@@ -8,7 +8,11 @@ import AboutCustomers from "@components/About/AboutCustomers";
 const page = () => {
   return (
     <section className="relative z-10 overflow-hidden pb-16 md:pb-[120px] xl:pb-[140px] 2xl:pb-[160px]">
-      <PageHeader title="About Us" imgPath="/images/about/bg-about.avif" />
+      <PageHeader
+        title="About Us"
+        imgPath="/images/about/bg-about.avif"
+        classes="bg-[url('/images/about/bg-about.avif')]"
+      />
 
       <div className="container px-5 md:px-10 pt-5 ">
         <Breadcrumb paths={["about"]} />

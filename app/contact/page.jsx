@@ -8,6 +8,7 @@ const page = () => {
       <PageHeader
         title="Contact Us"
         imgPath="/images/contact/bg-contact.avif"
+        classes="bg-[url('/images/contact/bg-contact.avif')]"
       />
 
       <div className="container px-5 md:px-10 pt-5 ">

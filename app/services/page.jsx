@@ -11,6 +11,7 @@ const page = () => {
       <PageHeader
         title="Our Services"
         imgPath="/images/contact/bg-contact.avif"
+        classes="bg-[url('/images/contact/bg-contact.avif')]"
       />
 
       <div className="pt-5 ">
