@@ -1,11 +1,11 @@
 import { mokoto } from "@utils/font/font";
 import Image from "next/image";
 
-const PageHeader = ({ title, titleExtra, imgPath, classes }) => {
+const PageHeader = ({ title, titleExtra, classes }) => {
   return (
     <div
-      className={`relative h-[300px] md:h-[500px] w-full p-10 flex items-center justify-center mb-5 ${classes} bg-cover bg-fixed `}
-      style={{ clipPath: "inset(0 0 0 0)" }}
+      className={`relative h-[300px] md:h-[500px] w-full p-10 flex items-center justify-center mb-5 ${classes} bg-cover bg-center bg-fixed`}
+      // style={{ clipPath: "inset(0 0 0 0)" }}
     >
       <div
         className="absolute inset-0 bg-gradient-to-b from-[#ffffff50] to-[#151F34f2] z-[5]"
@@ -14,7 +14,7 @@ const PageHeader = ({ title, titleExtra, imgPath, classes }) => {
       {/* <div
         className={`fixed h-full w-full top-0 left-0 z-[4]`}
         aria-hidden="true"
-      >
+      > 
         <Image
           src={imgPath}
           fill

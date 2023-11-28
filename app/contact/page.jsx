@@ -7,8 +7,7 @@ const page = () => {
     <section className="relative z-10 overflow-hidden pb-16 md:pb-[120px] xl:pb-[140px] 2xl:pb-[160px]">
       <PageHeader
         title="Contact Us"
-        imgPath="/images/contact/bg-contact.avif"
-        classes="bg-[url('/images/contact/bg-contact.avif')]"
+        classes="bg-[url('/images/pages-head/bg-contact.webp')]"
       />
 
       <div className="container px-5 md:px-10 pt-5 ">

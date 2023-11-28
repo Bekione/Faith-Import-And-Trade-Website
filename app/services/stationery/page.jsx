@@ -11,8 +11,7 @@ const page = () => {
     <section className="relative z-10 overflow-hidden pb-16 md:pb-[120px] xl:pb-[140px] 2xl:pb-[160px]">
       <PageHeader
         title="Stationery"
-        imgPath="/images/pages-head/bg-stationary.avif"
-        classes="bg-[url('/images/pages-head/bg-stationery.avif')]"
+        classes="bg-[url('/images/pages-head/bg-stationery.webp')]"
       />
 
       <div className="pt-5 ">
