@@ -81,7 +81,7 @@ export const cpBrandsData = [
   },
   {
     id: "img017",
-    path: "/images/brands/brand-17.jpg",
+    path: "/images/brands/brand-17.png",
     title: "Brother",
   },
 ];

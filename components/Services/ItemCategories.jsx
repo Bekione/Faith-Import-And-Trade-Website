@@ -3,19 +3,19 @@ import Image from "next/image";
 const ItemCategories = ({ category, items }) => {
   return (
     <div className="my-10 px-10">
-      <div className="relative py-8">
-        <div className="ml-32 text-3xl font-extrabold capitalize">
+      <div className="relative py-8 mb-4">
+        <div className="sm:ml-32 text-3xl font-extrabold capitalize">
           <h1 className="bg-clip-text w-fit text-transparent bg-gradient-to-r from-primary to-secondary">
             {category}
           </h1>
         </div>
-        <div className="absolute top-1/2 transform -transform-y-1/2 h-1 w-28 bg-secondary transform skew-x-[40deg]"></div>
+        <div className="absolute bottom-4 sm:bottom-6  sm:top-1/2 transform sm:-transform-y-1/2 h-1 w-[65%] sm:w-28 bg-secondary transform skew-x-[40deg]"></div>
       </div>
-      <div className=" w-full max-w-[1500px] mx-auto grid grid-cols-[repeat(auto-fill,minmax(320px,1fr))] gap-12">
+      <div className="w-full sm:px-20 mdPlus:px-0 max-w-[1500px] mx-auto grid grid-cols-[repeat(auto-fill,minmax(100%,1fr))] sm:grid-cols-[repeat(auto-fill,minmax(320px,1fr))] items-stretch gap-12">
         {items.map((item) => {
           return (
-            <div key={item.id}>
-              <div className="relative w-full h-full group rounded-md overflow-hidden">
+            <div key={item.id} className="pt-[62.5%] relative">
+              <div className="absolute inset-0 w-full h-full group rounded-md overflow-hidden">
                 <Image
                   src={item.image}
                   width={352}
@@ -33,7 +33,7 @@ const ItemCategories = ({ category, items }) => {
               </div> */}
                 <div className="absolute bottom-0 left-0 w-full h-[64px] group-hover:h-full bg-gradient-to-r from-secondary group-hover:bg-gradient-to-b group-hover:from-secondary group-hover:via-secondary group-hover:rounded-md rounded-b-md transition-background duration-500 ease-in-out transition-height duration-500 ease-in-out overflow-hidden">
                   <p
-                    className={`absolute w-fit break-normal top-1/2 left-8 transform -translate-y-1/2 group-hover:left-1/2 group-hover:-translate-x-1/2 group-hover:-translate-x-1/2 group-hover:top-14 text-white text-base font-semibold group-hover:font-bold text-md group-hover:text-2xl transition-all duration-[500ms] ease-in-out`}
+                    className={`absolute w-fit min-w-[18ch] top-1/2 left-8 transform -translate-y-1/2 group-hover:left-1/2 group-hover:-translate-x-1/2 group-hover:-translate-x-1/2 group-hover:top-14 text-white text-base font-semibold group-hover:font-bold text-md group-hover:text-2xl transition-all duration-[500ms] ease-in-out`}
                   >
                     {item.itemName}
                   </p>

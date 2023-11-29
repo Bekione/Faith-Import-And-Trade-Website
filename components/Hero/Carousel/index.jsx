@@ -203,7 +203,7 @@ export default function HomeSlider() {
               >
                 <div className="w-full">
                   <h2
-                    className={`${mokoto.className} slider_title mb-4 text-primary text-[1.9rem] font-bold !leading-tight sm:text-4xl md:text-[45px] xl:text-[50px]`}
+                    className={`${mokoto.className} slider_title mb-4 text-primary text-[1.9rem] font-bold !leading-tight tracking-widest sm:text-4xl md:text-[45px] xl:text-[50px]`}
                   >
                     {data.title}{" "}
                   </h2>

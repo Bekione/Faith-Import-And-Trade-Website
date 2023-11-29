@@ -9,7 +9,7 @@ export const LaptopsDesktops = [
   },
   {
     id: "item002",
-    itemName: "Convertible Laptop",
+    itemName: "Convertible Laptops",
     brand: "Various Brands",
     price: 1099.99,
     description:
@@ -18,7 +18,7 @@ export const LaptopsDesktops = [
   },
   {
     id: "item003",
-    itemName: "Workstation Laptop",
+    itemName: "Workstation Laptops",
     brand: "Various Brands",
     price: 1999.99,
     description: "High-performance laptop for professional workloads",
@@ -26,7 +26,7 @@ export const LaptopsDesktops = [
   },
   {
     id: "item004",
-    itemName: "All-in-One Desktop",
+    itemName: "All-in-One Desktops",
     brand: "Various Brands",
     price: 1599.99,
     description: "Compact desktop computer with integrated display",
@@ -34,7 +34,7 @@ export const LaptopsDesktops = [
   },
   {
     id: "item005",
-    itemName: "Mini PC",
+    itemName: "Mini PCs",
     brand: "Various Brands",
     price: 799.99,
     description: "Small form factor desktop computer for space-saving setups",
@@ -42,7 +42,7 @@ export const LaptopsDesktops = [
   },
   {
     id: "item006",
-    itemName: "Workstation Desktop",
+    itemName: "Workstation Desktops",
     brand: "Various Brands",
     price: 2999.99,
     description: "High-performance desktop computer for professional workloads",
@@ -111,7 +111,6 @@ export const NetworkingDevices = [
       "Essential connectivity cables for reliable and high-speed data transmission within your network.",
     image: "/images/computers/network-4.avif",
   },
-
   {
     id: "item005",
     itemName: "Network Security Devices",
