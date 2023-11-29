@@ -57,7 +57,7 @@ const HomeServices = () => {
       if (animationClass !== undefined) {
         logoRef.current.classList.add(animationClass);
         swiper.once("transitionEnd", () => {
-          logoRef.current.classList.remove(animationClass);
+          logoRef.current?.classList.remove(animationClass);
         });
       }
     }

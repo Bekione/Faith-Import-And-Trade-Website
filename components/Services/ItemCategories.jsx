@@ -11,14 +11,11 @@ const ItemCategories = ({ category, items }) => {
         </div>
         <div className="absolute top-1/2 transform -transform-y-1/2 h-1 w-28 bg-secondary transform skew-x-[40deg]"></div>
       </div>
-      <div className=" w-full max-w-[1500px] mx-auto grid grid-cols-[repeat(auto-fill,minmax(320px,1fr))] grid-gap-4">
+      <div className=" w-full max-w-[1500px] mx-auto grid grid-cols-[repeat(auto-fill,minmax(320px,1fr))] gap-12">
         {items.map((item) => {
           return (
-            <div
-              className="relative bg-secondary/30 flex flex-col !w-[22rem] h-[15rem] shadow-xl rounded-md"
-              key={item.id}
-            >
-              <div className="group w-full h-full rounded-md overflow-hidden">
+            <div key={item.id}>
+              <div className="relative w-full h-full group rounded-md overflow-hidden">
                 <Image
                   src={item.image}
                   width={352}
@@ -29,7 +26,7 @@ const ItemCategories = ({ category, items }) => {
                 />
                 {/* <div className="absolute bottom-0 left-0 py-5 px-6 pr-8 bg-primary">
                 <p className="text-white text-base font-normal text-md">
-                  {item.itemName}
+                  {item.itemName} 
                 </p>
                 <div className="absolute -right-2 bottom-0 h-full w-2 transform skew-x-12 bg-secondary z-[10]"></div>
                 <div className="absolute right-0 bottom-0 h-full w-[1rem] transform skew-x-12 bg-gradient-to-r from-[rgba(0,0,0,0)] to-[#2bd1aa]  z-[10]"></div>
