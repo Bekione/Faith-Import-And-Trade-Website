@@ -46,7 +46,7 @@ export const DeskOrganization = [
     id: "item001",
     itemName: "Desk Organizers",
     description: "Keep your essentials in order with desk organizers.",
-    image: "/images/stationery/desk-1.jpg",
+    image: "/images/stationery/desk-1.webp",
   },
   {
     id: "item002",
@@ -58,7 +58,7 @@ export const DeskOrganization = [
     id: "item003",
     itemName: "Desk Accessories",
     description: "Enhance your workspace with desk accessories.",
-    image: "/images/stationery/desk-3.jpg",
+    image: "/images/stationery/desk-3.webp",
   },
 ];
 
