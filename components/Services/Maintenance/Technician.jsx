@@ -4,7 +4,7 @@ import { essenseData } from "./essenseData";
 const Technician = () => {
   return (
     <div className="my-12 flex flex-col mdPlus:flex-row">
-      <div className="relative w-full mdPlus:w-6/12 min-h-[28rem] flex items-center justify-center p-20 bg-[url('/images/maintenance/maintenance-technician.webp')] bg-cover bg-right">
+      <div className="relative w-full mdPlus:w-6/12 min-h-[28rem] flex items-center justify-center p-8 sm:p-12 md:p-16 lg:p-20 bg-[url('/images/maintenance/maintenance-technician.webp')] bg-cover bg-right">
         <div className="absolute inset-0 bg-gradient-to-r from-primary/80 to-primary/80 z-0"></div>
         <div className="z-10 relative">
           <h2 className="text-5xl text-white font-bold">
@@ -25,7 +25,7 @@ const Technician = () => {
           </Link>
         </div>
       </div>
-      <div className="relative w-full mdPlus:w-6/12 min-h-[28rem] flex items-center justify-center p-20 bg-[url('/images/maintenance/maintenance-technician-2.webp')] bg-cover bg-right">
+      <div className="relative w-full mdPlus:w-6/12 min-h-[28rem] flex items-center justify-center p-8 sm:p-12 md:p-16 lg:p-20 bg-[url('/images/maintenance/maintenance-technician-2.webp')] bg-cover bg-right">
         <div className="absolute inset-0 bg-gradient-to-r from-secondary/80 to-secondary/80 z-0"></div>
         <div className="z-10 relative">
           <h2 className="text-4xl text-white font-bold">
