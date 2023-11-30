@@ -40,7 +40,7 @@ export default function HomeSlider() {
             <SwiperSlide
               key={data.id}
               style={{ backgroundImage: `url(${data.bgImgPath})` }}
-              className="relative !h-[90%] bg-secondary pt-[150px] bg-no-repeat bg-center bg-cover"
+              className={`relative !h-[90%] bg-secondary pt-[150px] bg-no-repeat bg-cover ${data.fix ? 'bg-top' : 'bg-center'} `}
             >
               <div className="absolute right-0 -bottom-10 w-[300px] sm:w-[380px] md:w-[450px] h-16 md:h-20 z-[15] overflow-hidden ">
                 <div className="absolute -right-[30px] top-0 w-full h-full bg-primary border-l-8 border-secondary transform -skew-x-[20deg] origin-left z-[15]"></div>
@@ -116,8 +116,8 @@ export default function HomeSlider() {
                       y2="288"
                       gradientUnits="userSpaceOnUse"
                     >
-                      <stop stopColor="#151F34" />
-                      <stop offset="1" stopColor="#151F34" stopOpacity="0" />
+                      <stop stopColor="#04AA82" />
+                      <stop offset="1" stopColor="#04AA82" stopOpacity="0" />
                     </linearGradient>
                     <radialGradient
                       id="paint1_radial_25:217"
@@ -129,10 +129,10 @@ export default function HomeSlider() {
                     >
                       <stop
                         offset="0.145833"
-                        stopColor="#151F34"
+                        stopColor="#04AA82"
                         stopOpacity="0"
                       />
-                      <stop offset="1" stopColor="#151F34" stopOpacity="0.08" />
+                      <stop offset="1" stopColor="#04AA82" stopOpacity="0.08" />
                     </radialGradient>
                     <radialGradient
                       id="paint2_radial_25:217"
@@ -144,10 +144,10 @@ export default function HomeSlider() {
                     >
                       <stop
                         offset="0.145833"
-                        stopColor="#151F34"
+                        stopColor="#04AA82"
                         stopOpacity="0"
                       />
-                      <stop offset="1" stopColor="#151F34" stopOpacity="0.08" />
+                      <stop offset="1" stopColor="#04AA82" stopOpacity="0.08" />
                     </radialGradient>
                     <linearGradient
                       id="paint3_linear_25:217"
@@ -158,7 +158,7 @@ export default function HomeSlider() {
                       gradientUnits="userSpaceOnUse"
                     >
                       <stop stopColor="#151F34" />
-                      <stop offset="1" stopColor="#151F34" stopOpacity="0" />
+                      <stop offset="1" stopColor="#04AA82" stopOpacity="0" />
                     </linearGradient>
                     <linearGradient
                       id="paint4_linear_25:217"
@@ -168,7 +168,7 @@ export default function HomeSlider() {
                       y2="448.882"
                       gradientUnits="userSpaceOnUse"
                     >
-                      <stop stopColor="#151F34" />
+                      <stop stopColor="#04AA82" />
                       <stop offset="1" stopColor="white" stopOpacity="0" />
                     </linearGradient>
                     <linearGradient
@@ -179,7 +179,7 @@ export default function HomeSlider() {
                       y2="470"
                       gradientUnits="userSpaceOnUse"
                     >
-                      <stop stopColor="#151F34" />
+                      <stop stopColor="#04AA82" />
                       <stop offset="1" stopColor="white" stopOpacity="0" />
                     </linearGradient>
                     <linearGradient
@@ -191,23 +191,23 @@ export default function HomeSlider() {
                       gradientUnits="userSpaceOnUse"
                     >
                       <stop stopColor="#151F34" />
-                      <stop offset="1" stopColor="#151F34" stopOpacity="0" />
+                      <stop offset="1" stopColor="#04AA82" stopOpacity="0" />
                     </linearGradient>
                   </defs>
                 </svg>
               </div>
               <div
-                className={`absolute top-[20%] md:top-1/2 transform md:-translate-y-1/2  w-[85%] md:h-[320px] md:w-10/12 lg:w-7/12 pt-20 px-5 md:px-10 ${
+                className={`absolute top-[20%] md:top-1/2 transform md:-translate-y-1/2  w-[85%] md:h-[320px] md:w-10/12 lg:w-8/12 pt-20 px-5 md:px-10 ${
                   index !== 1 ? "lg:px-16" : ""
                 } flex flex-col`}
               >
                 <div className="w-full">
                   <h2
-                    className={`${mokoto.className} slider_title mb-4 text-primary text-[1.9rem] font-bold !leading-tight tracking-widest sm:text-4xl md:text-[45px] xl:text-[50px]`}
+                    className={`${mokoto.className} slider_title mb-4 text-primary text-[1.9rem] font-bold !leading-tight tracking-wider sm:text-4xl md:text-[45px] xl:text-[50px]`}
                   >
                     {data.title}{" "}
                   </h2>
-                  <p className="md:px-4 text-justify text-base font-normal leading-[1.5] text-white sm:text-lg sm:leading-[1.5] line-clamp-3">
+                  <p className="md:max-w-[85%] md:px-4 text-justify text-base font-normal leading-[1.5] text-white sm:text-lg sm:leading-[1.5] line-clamp-3 page-title">
                     {data.bodyText}
                   </p>
                 </div>
