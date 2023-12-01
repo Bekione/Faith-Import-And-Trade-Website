@@ -9,7 +9,8 @@ import Map from "./Map";
 const Contact = () => {
   const formRef = useRef(null);
   const [submitting, setSubmitting] = useState(false);
-  const [isSent, setIsSent] = useState(false)
+  const [isSent, setIsSent] = useState(false);
+  const [isNotSent, setIsNotSent] = useState(false);
 
   const handleSubmit = async (event) => {
     event.preventDefault();
@@ -32,17 +33,19 @@ const Contact = () => {
       );
 
       console.log("Your email was sent succesfully. ");
-      alert("Thank you for reaching us.");
 
-      setIsSent(true)
+      setIsSent(true);
       setTimeout(() => {
         setIsSent(false);
       }, 3000);
       formRef.current.reset();
       setSubmitting(false);
     } catch (error) {
-      console.log("Error sending ", error);
-      alert("Sorry, something went wrong.");
+      console.log("Error processing request. ", error);
+      setIsNotSent(true);
+      setTimeout(() => {
+        setIsNotSent(false);
+      }, 3000);
     } finally {
       setSubmitting(false);
     }
@@ -62,7 +65,16 @@ const Contact = () => {
                 We would love to hear from you.
               </p>
               <form ref={formRef} onSubmit={handleSubmit}>
-              {isSent && (<p className="mb-4 text-[rgb(20, 210, 10)]">Message sent succesfully!</p>)}
+                {isSent && (
+                  <p className="mb-4 text-[rgb(20, 210, 10)]">
+                    Message sent succesfully!
+                  </p>
+                )}
+                {isNotSent && (
+                  <p className="mb-4 text-[rgb(20, 210, 10)]">
+                    Could't send message. Try again!
+                  </p>
+                )}
                 <div className="-mx-4 flex flex-wrap">
                   <div className="w-full px-4 md:w-1/2">
                     <div className="mb-8">

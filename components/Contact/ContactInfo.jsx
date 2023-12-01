@@ -42,9 +42,14 @@ const ContactInfo = () => {
           </svg>
         </div>
         <div className="mx-2 flex-1 flex items-center justify-center sm:mx-[1.5rem]">
-          <p className="text-base text-center text-[#ffffff98] leading-relaxed">
-            faithimporttrade@gmail.com
-          </p>
+        <ul>
+            <li className="text-base text-body-dark leading-relaxed">
+              contact@faithimporttrade.com
+            </li>
+            <li className="text-base text-body-dark leading-relaxed">
+              faithimporttrade@gmail.com
+            </li>
+          </ul>
         </div>
       </div>
       <div className="relative min-w-[250px] min-h-[150px] p-2 pt-4 bg-white flex-1 flex flex-col rounded-tl-lg rounded-br-lg shadow-xl">
