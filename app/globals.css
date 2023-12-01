@@ -61,6 +61,24 @@
   }
 }
 
+.spinner {
+  width: 20px;
+  height: 20px;
+  border: 2px solid #151f34;
+  border-top-color: #00000000;
+  border-radius: 50%;
+  animation: rotate 1s infinite linear;
+}
+
+@keyframes rotate {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
 .shadow-corner-r {
   box-shadow: -2px -2px 25px 7px rgba(4, 170, 130, 0.1);
 }

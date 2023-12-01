@@ -1,42 +1,101 @@
-import React from "react";
+"use client";
+
+import emailjs from "@emailjs/browser";
+import { useState, useRef } from "react";
 
 const NewsLetter = () => {
+  const formRef = useRef(null);
+  const [submitting, setSubmitting] = useState(false);
+  const [subscribed, setSubscribed] = useState(false);
+  const [notSubscribed, setNotSubscribed] = useState(false);
+
+  const handleSubscription = async (event) => {
+    event.preventDefault();
+
+    setSubmitting(true);
+    const formData = event.target;
+    const senderEmail = formRef.current.elements.reply_to.value;
+    const senderName = formRef.current.elements.from_name.value;
+
+    try {
+      await emailjs.sendForm(
+        "service_ma95etu",
+        "template_apt5x5s",
+        formData,
+        "DPGDAD-VswlhMnw7_",
+        {
+          from_name: senderName,
+          reply_to: senderEmail,
+        }
+      );
+
+      console.log("Subscription added successfully. ");
+
+      setSubscribed(true);
+      setTimeout(() => {
+        setSubscribed(false);
+      }, 3000);
+      formRef.current.reset();
+      setSubmitting(false);
+    } catch (error) {
+      console.log("Error processing request. ", error);
+      setNotSubscribed(true);
+      setTimeout(() => {
+        setNotSubscribed(false);
+      }, 3000);
+    } finally {
+      setSubmitting(false);
+    }
+  };
+
   return (
-    <div
-      className="wow fadeInUp relative z-10 rounded-md bg-secondary/[10%] p-8 dark:bg-primary/10 sm:p-11 lg:p-8 xl:p-11"
-      data-wow-delay=".2s"
-    >
-      <h3 className="mb-4 text-2xl font-bold leading-tight text-black dark:text-white">
+    <div className="relative z-10 rounded-md bg-secondary/[10%] p-8 sm:p-11 lg:p-8 xl:p-11">
+      <h3 className="mb-4 text-2xl font-bold leading-tight text-black">
         Subscribe to our news letter
       </h3>
-      <p className="mb-11 border-b border-primary border-opacity-25 pb-11 text-base font-medium leading-relaxed text-body-color dark:border-white dark:border-opacity-25">
+      <p className="mb-6 border-b border-primary border-opacity-25 pb-11 text-base font-medium leading-relaxed text-body-color  dark:border-opacity-25">
         You will get notified about us and new deals.
       </p>
-      <form>
+      <form
+        ref={formRef}
+        onSubmit={handleSubscription}
+        className="outline-primary"
+      >
+        <p className="leading-6 text-center h-4 mb-3">
+          {subscribed && (
+            <span className="mb-4 text-[#4BB543]">Thanks for subscribing!</span>
+          )}
+          {notSubscribed && (
+            <span className="mb-4 text-[#ff0000]">
+              Subscription failed. Try again!
+            </span>
+          )}
+        </p>
         <input
-          type="text"
-          name="name"
+          type="from_name"
+          name="from_name"
           placeholder="Enter your name"
-          className="mb-4 w-full rounded-md border border-body-color border-opacity-10 py-3 px-6 text-base font-medium text-body-color placeholder-body-color outline-none focus:border-primary focus:border-opacity-100 focus-visible:shadow-none dark:border-white dark:border-opacity-10 dark:bg-[#242B51] focus:dark:border-opacity-50"
+          className="mb-4 w-full bg-[#fff] rounded-md border border-body-color border-opacity-10 py-3 px-6 text-base font-medium text-body-color placeholder-body-color outline-none focus:border-primary focus:border-opacity-100 focus-visible:shadow-none  dark:border-opacity-10 dark:bg-[#242B51] focus:dark:border-opacity-50"
         />
         <input
-          type="email"
-          name="email"
+          type="reply_to"
+          name="reply_to"
           placeholder="Enter your email"
-          className="mb-4 w-full rounded-md border border-body-color border-opacity-10 py-3 px-6 text-base font-medium text-body-color placeholder-body-color outline-none focus:border-primary focus:border-opacity-100 focus-visible:shadow-none dark:border-white dark:border-opacity-10 dark:bg-[#242B51] focus:dark:border-opacity-50"
+          className="mb-4 w-full bg-[#fff] rounded-md border border-body-color border-opacity-10 py-3 px-6 text-base font-medium text-body-color placeholder-body-color outline-none focus:border-primary focus:border-opacity-100 focus-visible:shadow-none  dark:border-opacity-10 dark:bg-[#242B51] focus:dark:border-opacity-50"
         />
         {/* <input
           type="submit"
           value="Subscribe"
-          className="duration-80 mb-4 w-full cursor-pointer rounded-md border border-transparent bg-primary py-3 px-6 text-center text-base font-medium text-white outline-none transition ease-in-out hover:bg-opacity-80 hover:shadow-signUp focus-visible:shadow-none"
+          className="duration-80 mb-4 w-full cursor-pointer rounded-md border border-transparent bg-primary py-3 px-6 text-center text-base font-medium text-#151f34 outline-none transition ease-in-out hover:bg-opacity-80 hover:shadow-signUp focus-visible:shadow-none"
         /> */}
         <button
+          disabled={submitting}
           type="submit"
-          className="w-full sm:w-fit lg:w-full rounded-md relative inline-flex group items-center justify-center px-9 py-3 cursor-pointer border-b-4 border-l-2 active:border-b-6 outline-0 active:outline-primary hover:shadow-signUp focus-visible:shadow-none bg-gradient-to-tr from-primary to-secondary border-primary overflow-hidden"
+          className="w-full h-[48px] sm:w-fit lg:w-full rounded-md relative inline-flex group items-center justify-center px-9 cursor-pointer border-b-4 border-l-2 active:border-b-6 outline-0 active:outline-primary hover:shadow-signUp focus-visible:shadow-none bg-gradient-to-tr from-primary to-secondary border-primary overflow-hidden"
         >
-          <span className="absolute w-0 h-0 transition-all duration-300 ease-out bg-white rounded-full group-hover:w-[300px] group-hover:h-[300px] opacity-5"></span>
+          <span className="absolute w-0 h-0 transition-all duration-300 ease-out bg-#151f34 rounded-full group-hover:w-[300px] group-hover:h-[300px] opacity-5"></span>
           <span className="relative text-center text-base font-medium text-white">
-            Subscribe
+            {submitting ? <div className="spinner"></div> : "Subscribe"}
           </span>
         </button>
       </form>
@@ -57,11 +116,11 @@ const NewsLetter = () => {
             width="370"
             height="596"
           >
-            <rect width="370" height="596" rx="2" fill="#1D2144" />
+            <rect width="370" height="596" rx="2" fill="#151f34" />
           </mask>
           <g mask="url(#mask0_88:141)">
             <path
-              opacity="0.15"
+              opacity="0.55"
               d="M15.4076 50.9571L54.1541 99.0711L71.4489 35.1605L15.4076 50.9571Z"
               fill="url(#paint0_linear_88:141)"
             />
@@ -103,8 +162,8 @@ const NewsLetter = () => {
               y2="41.5072"
               gradientUnits="userSpaceOnUse"
             >
-              <stop stopColor="white" />
-              <stop offset="1" stopColor="white" stopOpacity="0" />
+              <stop stopColor="#151f34" />
+              <stop offset="1" stopColor="#151f34" stopOpacity="0" />
             </linearGradient>
             <linearGradient
               id="paint1_linear_88:141"
@@ -114,8 +173,8 @@ const NewsLetter = () => {
               y2="464.391"
               gradientUnits="userSpaceOnUse"
             >
-              <stop stopColor="white" />
-              <stop offset="1" stopColor="white" stopOpacity="0" />
+              <stop stopColor="#151f34" />
+              <stop offset="1" stopColor="#151f34" stopOpacity="0" />
             </linearGradient>
             <linearGradient
               id="paint2_linear_88:141"
@@ -125,8 +184,8 @@ const NewsLetter = () => {
               y2="200.004"
               gradientUnits="userSpaceOnUse"
             >
-              <stop stopColor="white" />
-              <stop offset="1" stopColor="white" stopOpacity="0" />
+              <stop stopColor="#151f34" />
+              <stop offset="1" stopColor="#151f34" stopOpacity="0" />
             </linearGradient>
             <linearGradient
               id="paint3_linear_88:141"
@@ -136,8 +195,8 @@ const NewsLetter = () => {
               y2="89.9999"
               gradientUnits="userSpaceOnUse"
             >
-              <stop stopColor="white" />
-              <stop offset="1" stopColor="white" stopOpacity="0" />
+              <stop stopColor="#151f34" />
+              <stop offset="1" stopColor="#151f34" stopOpacity="0" />
             </linearGradient>
             <linearGradient
               id="paint4_linear_88:141"
@@ -147,8 +206,8 @@ const NewsLetter = () => {
               y2="64.9999"
               gradientUnits="userSpaceOnUse"
             >
-              <stop stopColor="white" />
-              <stop offset="1" stopColor="white" stopOpacity="0" />
+              <stop stopColor="#151f34" />
+              <stop offset="1" stopColor="#151f34" stopOpacity="0" />
             </linearGradient>
             <linearGradient
               id="paint5_linear_88:141"
@@ -158,8 +217,8 @@ const NewsLetter = () => {
               y2="73.9999"
               gradientUnits="userSpaceOnUse"
             >
-              <stop stopColor="white" />
-              <stop offset="1" stopColor="white" stopOpacity="0" />
+              <stop stopColor="#151f34" />
+              <stop offset="1" stopColor="#151f34" stopOpacity="0" />
             </linearGradient>
             <linearGradient
               id="paint6_linear_88:141"
@@ -169,8 +228,8 @@ const NewsLetter = () => {
               y2="40.9999"
               gradientUnits="userSpaceOnUse"
             >
-              <stop stopColor="white" />
-              <stop offset="1" stopColor="white" stopOpacity="0" />
+              <stop stopColor="#151f34" />
+              <stop offset="1" stopColor="#151f34" stopOpacity="0" />
             </linearGradient>
           </defs>
         </svg>

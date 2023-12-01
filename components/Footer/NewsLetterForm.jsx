@@ -23,6 +23,7 @@ const NewsLetterForm = () => {
     setSubmitting(true);
     const formData = event.target;
     const senderEmail = formRef.current.elements.reply_to.value;
+    const senderName = formRef.current.elements.from_name.value;
 
     try {
       await emailjs.sendForm(
@@ -31,6 +32,7 @@ const NewsLetterForm = () => {
         formData,
         "DPGDAD-VswlhMnw7_",
         {
+          from_name: senderName,
           reply_to: senderEmail,
         }
       );
@@ -67,7 +69,23 @@ const NewsLetterForm = () => {
               onSubmit={handleSubscription}
               className="form max-w-[300px]"
             >
-              <div className="relative mb-3" data-te-input-wrapper-init>
+              <div className="relative mb-3">
+                <input
+                  type="text"
+                  className="peer block min-h-[auto] w-full rounded bg-transparent border border-secondary focus:border-transparent px-3 py-[0.32rem] leading-[1.6] outline-none focus:outline-2 focus:outline-secondary transition-all duration-200 ease-linear focus:placeholder:opacity-100 peer-focus:text-secondary data-[te-input-state-active]:placeholder:opacity-100 motion-reduce:transition-none [&:not([data-te-input-placeholder-active])]:placeholder:opacity-0"
+                  id="from_name"
+                  name="from_name"
+                  placeholder="Your name"
+                  required
+                />
+                <label
+                  htmlFor="from_name"
+                  className="pointer-events-none absolute left-3 top-0 mb-0 max-w-[90%] origin-[0_0] truncate pt-[0.37rem] leading-[1.6] text-body-color transition-all duration-200 ease-out peer-focus:px-[4px] peer-focus:bg-[#f3f3f4] peer-focus:-translate-y-[1rem] peer-focus:scale-[0.8] peer-focus:text-secondary peer-data-[te-input-state-active]:-translate-y-[0.9rem] peer-data-[te-input-state-active]:scale-[0.8] motion-reduce:transition-none"
+                >
+                  Your name
+                </label>
+              </div>
+              <div className="relative mb-3">
                 <input
                   type="email"
                   className="peer block min-h-[auto] w-full rounded bg-transparent border border-secondary focus:border-transparent px-3 py-[0.32rem] leading-[1.6] outline-none focus:outline-2 focus:outline-secondary transition-all duration-200 ease-linear focus:placeholder:opacity-100 peer-focus:text-secondary data-[te-input-state-active]:placeholder:opacity-100 motion-reduce:transition-none [&:not([data-te-input-placeholder-active])]:placeholder:opacity-0"
@@ -86,23 +104,25 @@ const NewsLetterForm = () => {
               <button
                 disabled={submitting}
                 type="submit"
-                className="w-full rounded relative inline-flex group items-center justify-center px-3.5 py-2 cursor-pointer border-b-4 border-l-2 active:border-b-6 outline-0 active:outline-primary  active:shadow-none shadow-lg bg-gradient-to-tr from-primary to-secondary border-primary text-white overflow-hidden"
+                className="w-full h-[46px] rounded relative inline-flex group items-center justify-center cursor-pointer border-b-4 border-l-2 active:border-b-6 outline-0 active:outline-primary  active:shadow-none shadow-lg bg-gradient-to-tr from-primary to-secondary border-primary text-white overflow-hidden"
               >
                 <span className="absolute w-0 h-0 transition-all duration-300 ease-out bg-white rounded-full group-hover:w-[300px] group-hover:h-[300px] opacity-10"></span>
                 <span className="relative">
-                  {submitting ? "Subscribing..." : "Subscribe"}
+                  {submitting ? <div className="spinner"></div> : "Subscribe"}
                 </span>
               </button>
-              {subscribed && (
-                <p className="mb-4 text-[rgb(20, 210, 10)]">
-                  Thanks for subscribing!
-                </p>
-              )}
-              {notSubscribed && (
-                <p className="mb-4 text-[rgb(255, 80, 10)]">
-                  Subscription failed. Try again!
-                </p>
-              )}
+              <p className="leading-6 mt-2 text-center h-4">
+                {subscribed && (
+                  <span className="mb-4 text-[#4BB543]">
+                    Thanks for subscribing!
+                  </span>
+                )}
+                {notSubscribed && (
+                  <span className="mb-4 text-[#ff0000]">
+                    Subscription failed. Try again!
+                  </span>
+                )}
+              </p>
             </form>
           </div>
         </div>

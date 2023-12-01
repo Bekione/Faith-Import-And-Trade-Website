@@ -65,16 +65,6 @@ const Contact = () => {
                 We would love to hear from you.
               </p>
               <form ref={formRef} onSubmit={handleSubmit}>
-                {isSent && (
-                  <p className="mb-4 text-[rgb(20, 210, 10)]">
-                    Message sent succesfully!
-                  </p>
-                )}
-                {isNotSent && (
-                  <p className="mb-4 text-[rgb(20, 210, 10)]">
-                    Could't send message. Try again!
-                  </p>
-                )}
                 <div className="-mx-4 flex flex-wrap">
                   <div className="w-full px-4 md:w-1/2">
                     <div className="mb-8">
@@ -132,15 +122,27 @@ const Contact = () => {
                   <div className="w-full px-4">
                     <button
                       type="submit"
-                      className="w-full sm:w-fit rounded-md relative inline-flex group items-center justify-center px-12 py-3 cursor-pointer border-b-4 border-l-2 active:border-b-6 outline-0 active:outline-primary hover:shadow-signUp focus-visible:shadow-none bg-gradient-to-tr from-primary to-secondary border-primary overflow-hidden"
+                      className="w-full h-[44px] sm:w-fit rounded-md relative inline-flex group items-center justify-center px-12 cursor-pointer border-b-4 border-l-2 active:border-b-6 outline-0 active:outline-primary hover:shadow-signUp focus-visible:shadow-none bg-gradient-to-tr from-primary to-secondary border-primary overflow-hidden"
                     >
                       <span className="absolute w-0 h-0 transition-all duration-300 ease-out bg-white rounded-full group-hover:w-[300px] group-hover:h-[300px] opacity-5"></span>
                       <span className="relative text-center text-base font-medium text-white">
-                        {submitting ? "Sending..." : "Send"}
+                        {submitting ? <div className="spinner"></div> : "Send"}
                       </span>
                     </button>
                   </div>
                 </div>
+                <p className="mt-4 h-4">
+                  {isSent && (
+                    <span className="text-[#4BB543]">
+                      Message sent succesfully!
+                    </span>
+                  )}
+                  {isNotSent && (
+                    <span className="text-[#ff0000]">
+                      Couldn't send message. Try again!
+                    </span>
+                  )}
+                </p>
               </form>
             </div>
           </div>
