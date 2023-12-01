@@ -1,26 +1,52 @@
+"use client"
+
+import { useRef } from 'react'
+import emailjs from '@emailjs/browser';
 import ContactInfo from "./ContactInfo";
 import NewsLetter from "./NewsLetter";
 import Map from "./Map";
 
+
 const Contact = () => {
+  const formRef = useRef(null)
+  const handleSubmit = (event) => {
+    event.preventDefault();
+
+    const formData = event.target;
+    emailjs
+      .sendForm(
+        "service_4pzcntf",
+        "template_uujlgs9",
+        formData,
+        "DPGDAD-VswlhMnw7_"
+      )
+      .then((response) => {
+        console.log("Your email was sent succesfully. ", response.text)
+        alert("Thank you for reaching us.");
+      })
+      .catch((error) => {
+        console.log("Error sending ", error);
+        alert("Sorry, something went wrong.")
+      });
+
+
+      formRef.current.reset()
+  };
+
   return (
     <section id="contact" className=" py-10 md:py-16 lg:py-20">
       <ContactInfo />
       <div className="container">
         <div className="-mx-4 flex flex-wrap">
           <div className="w-full px-4 lg:w-7/12 xl:w-8/12">
-            <div
-              className="wow fadeInUp mb-12 rounded-md bg-primary/[10%] py-11 px-8 dark:bg-dark sm:p-[55px] lg:mb-5 lg:px-8 xl:p-[55px]"
-              data-wow-delay=".15s
-              "
-            >
+            <div className="wow fadeInUp mb-12 rounded-md bg-primary/[10%] py-11 px-8 dark:bg-dark sm:p-[55px] lg:mb-5 lg:px-8 xl:p-[55px]">
               <h2 className="mb-3 text-2xl font-bold text-black dark:text-white sm:text-3xl lg:text-2xl xl:text-3xl">
                 Drop us a line
               </h2>
               <p className="mb-12 text-base font-medium text-body-color">
                 We would love to hear from you.
               </p>
-              <form>
+              <form ref={formRef} onSubmit={handleSubmit}>
                 <div className="-mx-4 flex flex-wrap">
                   <div className="w-full px-4 md:w-1/2">
                     <div className="mb-8">

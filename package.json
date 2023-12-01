@@ -9,6 +9,7 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@emailjs/browser": "^3.11.0",
     "@fancyapps/ui": "^5.0.24",
     "dotenv": "^16.3.1",
     "framer-motion": "^10.16.4",
