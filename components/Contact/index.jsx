@@ -1,36 +1,39 @@
-"use client"
+"use client";
 
-import { useRef } from 'react'
-import emailjs from '@emailjs/browser';
+import { useRef } from "react";
+import emailjs from "@emailjs/browser";
 import ContactInfo from "./ContactInfo";
 import NewsLetter from "./NewsLetter";
 import Map from "./Map";
 
-
 const Contact = () => {
-  const formRef = useRef(null)
+  const formRef = useRef(null);
   const handleSubmit = (event) => {
     event.preventDefault();
 
     const formData = event.target;
+    const senderName = formRef.current.elements.from_name.value;
     emailjs
       .sendForm(
         "service_4pzcntf",
         "template_uujlgs9",
         formData,
-        "DPGDAD-VswlhMnw7_"
+        "DPGDAD-VswlhMnw7_",
+        {
+          to_name: "Faith import & trade",
+          from_name: senderName,
+        }
       )
       .then((response) => {
-        console.log("Your email was sent succesfully. ", response.text)
+        console.log("Your email was sent succesfully. ", response.text);
         alert("Thank you for reaching us.");
       })
       .catch((error) => {
         console.log("Error sending ", error);
-        alert("Sorry, something went wrong.")
+        alert("Sorry, something went wrong.");
       });
 
-
-      formRef.current.reset()
+    formRef.current.reset();
   };
 
   return (
@@ -58,6 +61,8 @@ const Contact = () => {
                       </label>
                       <input
                         type="text"
+                        id="from_name"
+                        name="from_name"
                         placeholder="Enter your name"
                         className="w-full rounded-md border border-transparent py-3 px-6 text-base text-body-color placeholder-body-color shadow-one outline-none border-1 focus:border-secondary/[60%] focus-visible:shadow-none dark:bg-[#242B51] dark:shadow-signUp"
                       />
