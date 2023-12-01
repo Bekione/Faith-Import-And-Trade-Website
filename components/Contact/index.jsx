@@ -1,6 +1,6 @@
 "use client";
 
-import { useRef } from "react";
+import { useRef, useState } from "react";
 import emailjs from "@emailjs/browser";
 import ContactInfo from "./ContactInfo";
 import NewsLetter from "./NewsLetter";
@@ -8,13 +8,18 @@ import Map from "./Map";
 
 const Contact = () => {
   const formRef = useRef(null);
-  const handleSubmit = (event) => {
-    event.preventDefault();
+  const [submitting, setSubmitting] = useState(false);
+  const [isSent, setIsSent] = useState(false)
 
+  const handleSubmit = async (event) => {
+    event.preventDefault();
+    setSubmitting(true);
     const formData = event.target;
     const senderName = formRef.current.elements.from_name.value;
-    emailjs
-      .sendForm(
+    const senderEmail = formRef.current.elements.reply_to.value;
+
+    try {
+      await emailjs.sendForm(
         "service_4pzcntf",
         "template_uujlgs9",
         formData,
@@ -22,18 +27,25 @@ const Contact = () => {
         {
           to_name: "Faith import & trade",
           from_name: senderName,
+          reply_to: senderEmail,
         }
-      )
-      .then((response) => {
-        console.log("Your email was sent succesfully. ", response.text);
-        alert("Thank you for reaching us.");
-      })
-      .catch((error) => {
-        console.log("Error sending ", error);
-        alert("Sorry, something went wrong.");
-      });
+      );
 
-    formRef.current.reset();
+      console.log("Your email was sent succesfully. ");
+      alert("Thank you for reaching us.");
+
+      setIsSent(true)
+      setTimeout(() => {
+        setIsSent(false);
+      }, 3000);
+      formRef.current.reset();
+      setSubmitting(false);
+    } catch (error) {
+      console.log("Error sending ", error);
+      alert("Sorry, something went wrong.");
+    } finally {
+      setSubmitting(false);
+    }
   };
 
   return (
@@ -50,6 +62,7 @@ const Contact = () => {
                 We would love to hear from you.
               </p>
               <form ref={formRef} onSubmit={handleSubmit}>
+              {isSent && (<p className="mb-4 text-[rgb(20, 210, 10)]">Message sent succesfully!</p>)}
                 <div className="-mx-4 flex flex-wrap">
                   <div className="w-full px-4 md:w-1/2">
                     <div className="mb-8">
@@ -65,6 +78,7 @@ const Contact = () => {
                         name="from_name"
                         placeholder="Enter your name"
                         className="w-full rounded-md border border-transparent py-3 px-6 text-base text-body-color placeholder-body-color shadow-one outline-none border-1 focus:border-secondary/[60%] focus-visible:shadow-none dark:bg-[#242B51] dark:shadow-signUp"
+                        required
                       />
                     </div>
                   </div>
@@ -78,8 +92,11 @@ const Contact = () => {
                       </label>
                       <input
                         type="email"
+                        id="reply_to"
+                        name="reply_to"
                         placeholder="Enter your email"
                         className="w-full rounded-md border border-transparent py-3 px-6 text-base text-body-color placeholder-body-color shadow-one outline-none border-1 focus:border-secondary/[60%] focus-visible:shadow-none dark:bg-[#242B51] dark:shadow-signUp"
+                        required
                       />
                     </div>
                   </div>
@@ -96,6 +113,7 @@ const Contact = () => {
                         rows={5}
                         placeholder="Enter your Message"
                         className="w-full resize-none rounded-md border border-transparent py-3 px-6 text-base text-body-color placeholder-body-color shadow-one outline-none border-1 focus:border-secondary/[60%] focus-visible:shadow-none dark:bg-[#242B51] dark:shadow-signUp"
+                        required
                       ></textarea>
                     </div>
                   </div>
@@ -106,7 +124,7 @@ const Contact = () => {
                     >
                       <span className="absolute w-0 h-0 transition-all duration-300 ease-out bg-white rounded-full group-hover:w-[300px] group-hover:h-[300px] opacity-5"></span>
                       <span className="relative text-center text-base font-medium text-white">
-                        Send
+                        {submitting ? "Sending..." : "Send"}
                       </span>
                     </button>
                   </div>
