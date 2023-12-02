@@ -29,6 +29,7 @@ const Footer = () => {
               <div className="flex items-center">
                 <a
                   href="https://www.facebook.com/faithimports"
+                  target="_blank"
                   aria-label="social-link"
                   className="mr-6 text-secondary hover:opacity-80 relative transform hover:rotate-y-[360deg]"
                 >
@@ -70,7 +71,7 @@ const Footer = () => {
                 </a>
                 <a
                   href="https://www.linkedin.com/in/faithimports"
-                  targer="_blank"
+                  target="_blank"
                   aria-label="social-link"
                   className="mr-6 text-secondary hover:opacity-80"
                 >
