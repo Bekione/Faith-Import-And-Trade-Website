@@ -20,7 +20,7 @@ const SingleService = ({ title, text, pageUrl, ctx, classes }) => {
       )}
       <div
         className={`w-10/12 sm:w-9/12 md:w-6/12 mx-auto mdPlus:mx-none ${
-          ctx === "stationery" ? "ml-auto mr-16" : "ml-16"
+          ctx === "stationery" ? "md:ml-auto md:mr-16 " : "md:ml-16"
         } p-4 rounded-lg bg-white/30 backdrop-blur-sm mdPlus:bg-white/0 mdPlus:backdrop-blur-none`}
       >
         <h2
