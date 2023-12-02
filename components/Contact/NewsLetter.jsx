@@ -1,6 +1,7 @@
 "use client";
 
 import emailjs from "@emailjs/browser";
+import { verifyEmail } from "@utils/emailValidator";
 import { useState, useRef } from "react";
 
 const NewsLetter = () => {
@@ -8,6 +9,8 @@ const NewsLetter = () => {
   const [submitting, setSubmitting] = useState(false);
   const [subscribed, setSubscribed] = useState(false);
   const [notSubscribed, setNotSubscribed] = useState(false);
+  const [error, setError] = useState(false)
+  const [errorText, setErrorText] = useState("")
 
   const handleSubscription = async (event) => {
     event.preventDefault();
@@ -17,20 +20,43 @@ const NewsLetter = () => {
     const senderEmail = formRef.current.elements.reply_to.value;
     const senderName = formRef.current.elements.from_name.value;
 
+    if (!senderEmail || !senderName) {
+      setError(true)
+      setErrorText("Please enter a valid value!")
+      setTimeout(() => {
+        setError(false);
+        setErrorText('')
+      }, 3000);
+      console.log("Please enter a valid name and email address.");
+      return;
+    }
+
     try {
+      const isEmailValid = await verifyEmail(senderEmail);
+      if (!isEmailValid) {
+        setError(true)
+        setErrorText("Invalid email address.")
+      setTimeout(() => {
+        setError(false);
+        setErrorText('')
+      }, 3000);
+        console.log("Invalid email address.");
+        return;
+      }
+  
       await emailjs.sendForm(
-        "service_ma95etu",
-        "template_apt5x5s",
+        "service_cxsd813",
+        "template_610o2cl",
         formData,
-        "DPGDAD-VswlhMnw7_",
+        "pNd3jgceqxQXm4Ux7",
         {
           from_name: senderName,
           reply_to: senderEmail,
         }
       );
-
+  
       console.log("Subscription added successfully. ");
-
+  
       setSubscribed(true);
       setTimeout(() => {
         setSubscribed(false);
@@ -62,8 +88,13 @@ const NewsLetter = () => {
         className="outline-primary"
       >
         <p className="leading-6 text-center h-4 mb-3">
+        {error && (
+                  <span className="mb-4 text-[#ff0000]">
+                    {errorText}
+                  </span>
+                )}
           {subscribed && (
-            <span className="mb-4 text-[#4BB543]">Thanks for subscribing!</span>
+            <span className="mb-4 text-secondary">Thanks for subscribing!</span>
           )}
           {notSubscribed && (
             <span className="mb-4 text-[#ff0000]">
@@ -91,7 +122,7 @@ const NewsLetter = () => {
         <button
           disabled={submitting}
           type="submit"
-          className="w-full h-[48px] sm:w-fit lg:w-full rounded-md relative inline-flex group items-center justify-center px-9 cursor-pointer border-b-4 border-l-2 active:border-b-6 outline-0 active:outline-primary hover:shadow-signUp focus-visible:shadow-none bg-gradient-to-tr from-primary to-secondary border-primary overflow-hidden"
+          className={`${submitting ? 'cursor-not-allowed' : 'cursor-pointer'} w-full h-[48px] sm:w-fit lg:w-full rounded-md relative inline-flex group items-center justify-center px-9 border-b-4 border-l-2 active:border-b-6 outline-0 active:outline-primary hover:shadow-signUp focus-visible:shadow-none bg-gradient-to-tr from-primary to-secondary border-primary overflow-hidden`}
         >
           <span className="absolute w-0 h-0 transition-all duration-300 ease-out bg-#151f34 rounded-full group-hover:w-[300px] group-hover:h-[300px] opacity-5"></span>
           <span className="relative text-center text-base font-medium text-white">

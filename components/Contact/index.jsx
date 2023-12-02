@@ -1,6 +1,7 @@
 "use client";
 
 import { useRef, useState } from "react";
+import { verifyEmail } from "@utils/emailValidator";
 import emailjs from "@emailjs/browser";
 import ContactInfo from "./ContactInfo";
 import NewsLetter from "./NewsLetter";
@@ -11,6 +12,8 @@ const Contact = () => {
   const [submitting, setSubmitting] = useState(false);
   const [isSent, setIsSent] = useState(false);
   const [isNotSent, setIsNotSent] = useState(false);
+  const [error, setError] = useState(false)
+  const [errorText, setErrorText] = useState("")
 
   const handleSubmit = async (event) => {
     event.preventDefault();
@@ -18,13 +21,37 @@ const Contact = () => {
     const formData = event.target;
     const senderName = formRef.current.elements.from_name.value;
     const senderEmail = formRef.current.elements.reply_to.value;
+    const senderMessage = formRef.current.elements.text_message.value;
+
+    if (!senderEmail || !senderName || !senderMessage) {
+      setError(true)
+      setErrorText("Please enter a valid value!")
+      setTimeout(() => {
+        setError(false);
+        setErrorText('')
+      }, 3000);
+      console.log("Please enter a valid name and email address.");
+      return;
+    }
 
     try {
+      const isEmailValid = await verifyEmail(senderEmail);
+      if (!isEmailValid) {
+        setError(true)
+        setErrorText("Invalid email address.")
+      setTimeout(() => {
+        setError(false);
+        setErrorText('')
+      }, 3000);
+        console.log("Invalid email address.");
+        return;
+      }
+
       await emailjs.sendForm(
-        "service_4pzcntf",
-        "template_uujlgs9",
+        "service_cmwm698",
+        "template_2uh6kw9",
         formData,
-        "DPGDAD-VswlhMnw7_",
+        "pNd3jgceqxQXm4Ux7",
         {
           to_name: "Faith import & trade",
           from_name: senderName,
@@ -50,7 +77,6 @@ const Contact = () => {
       setSubmitting(false);
     }
   };
-
   return (
     <section id="contact" className=" py-10 md:py-16 lg:py-20">
       <ContactInfo />
@@ -105,13 +131,14 @@ const Contact = () => {
                   <div className="w-full px-4">
                     <div className="mb-8">
                       <label
-                        htmlFor="message"
+                        htmlFor="text_message"
                         className="mb-3 block text-sm font-medium text-dark dark:text-white"
                       >
                         Your Message
                       </label>
                       <textarea
-                        name="message"
+                        name="text_message"
+                        id="text_message"
                         rows={5}
                         placeholder="Enter your Message"
                         className="w-full resize-none rounded-md border border-transparent py-3 px-6 text-base text-body-color placeholder-body-color shadow-one outline-none border-1 focus:border-secondary/[60%] focus-visible:shadow-none dark:bg-[#242B51] dark:shadow-signUp"
@@ -121,8 +148,9 @@ const Contact = () => {
                   </div>
                   <div className="w-full px-4">
                     <button
+                    disabled={submitting}
                       type="submit"
-                      className="w-full h-[44px] sm:w-fit rounded-md relative inline-flex group items-center justify-center px-12 cursor-pointer border-b-4 border-l-2 active:border-b-6 outline-0 active:outline-primary hover:shadow-signUp focus-visible:shadow-none bg-gradient-to-tr from-primary to-secondary border-primary overflow-hidden"
+                      className={`${submitting ? 'cursor-not-allowed' : 'cursor-pointer'} w-full h-[44px] sm:w-fit min-w-[137px] rounded-md relative inline-flex group items-center justify-center px-12 border-b-4 border-l-2 active:border-b-6 outline-0 active:outline-primary hover:shadow-signUp focus-visible:shadow-none bg-gradient-to-tr from-primary to-secondary border-primary overflow-hidden`}
                     >
                       <span className="absolute w-0 h-0 transition-all duration-300 ease-out bg-white rounded-full group-hover:w-[300px] group-hover:h-[300px] opacity-5"></span>
                       <span className="relative text-center text-base font-medium text-white">
@@ -132,8 +160,13 @@ const Contact = () => {
                   </div>
                 </div>
                 <p className="mt-4 h-4">
+                {error && (
+                  <span className="mb-4 text-[#ff0000]">
+                    {errorText}
+                  </span>
+                )}
                   {isSent && (
-                    <span className="text-[#4BB543]">
+                    <span className="text-secondary">
                       Message sent succesfully!
                     </span>
                   )}

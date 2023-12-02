@@ -69,7 +69,7 @@ const ContactInfo = () => {
         </div>
         <div className="mx-2 flex-1 flex items-center ustify-center sm:mx-[1.5rem]">
           <p className="text-base text-center text-body-dark leading-relaxed">
-            xxx Building, Lem hotel, Addis Abeba, Ethiopia
+            Fenace Building 2nd floor - 203, Lem hotel, Addis Abeba, Ethiopia
           </p>
         </div>
       </div>
