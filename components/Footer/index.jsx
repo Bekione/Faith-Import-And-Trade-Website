@@ -1,6 +1,7 @@
 import Image from "next/image";
 import Link from "next/link";
 import NewsLetterForm from "./NewsLetterForm";
+import DevLinkTooltip from "./DevLinkTooltip";
 
 const Footer = () => {
   return (
@@ -229,9 +230,10 @@ const Footer = () => {
           <span className="mx-2 block text-center">•</span>
           <p className="text-center text-base text-body-color ">
             Crafted by{" "}
-            <a href="#" className="transition hover:text-secondary">
-              Bereket
-            </a>
+            <span className="group relative transition text-secondary hover:text-white transition-all cursor-default">
+              Bereket K.
+              <DevLinkTooltip />
+            </span>
           </p>
         </div>
       </div>

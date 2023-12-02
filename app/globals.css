@@ -79,6 +79,14 @@
   }
 }
 
+.svg-container {
+  transition: fill 0.3s ease; /* Add transition property */
+}
+
+.svg-container:hover {
+  fill: #00ff4c; /* Change the fill color on hover */
+}
+
 .shadow-corner-r {
   box-shadow: -2px -2px 25px 7px rgba(4, 170, 130, 0.1);
 }
