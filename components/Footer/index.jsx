@@ -1,3 +1,5 @@
+"use client"
+
 import Image from "next/image";
 import Link from "next/link";
 import NewsLetterForm from "./NewsLetterForm";
@@ -67,7 +69,7 @@ const Footer = () => {
                   </svg>
                 </a>
                 <a
-                  href="www.linkedin.com/in/faithimports"
+                  href="https://www.linkedin.com/in/faithimports"
                   targer="_blank"
                   aria-label="social-link"
                   className="mr-6 text-secondary hover:opacity-80"
@@ -228,13 +230,13 @@ const Footer = () => {
             All right reserved.
           </p>
           <span className="mx-2 block text-center">•</span>
-          <p className="text-center text-base text-body-color ">
+          <div className="inline text-center text-base text-body-color ">
             Crafted by{" "}
-            <span className="group relative transition text-secondary hover:text-white transition-all cursor-default">
+            <div className="inline group relative transition text-secondary hover:text-white transition-all cursor-default">
               Bereket K.
               <DevLinkTooltip />
-            </span>
-          </p>
+            </div>
+          </div>
         </div>
       </div>
 
