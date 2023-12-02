@@ -3,6 +3,11 @@ import Breadcrumb from "@components/Common/Breadcrumb";
 import ServiceHero from "../ServiceHero";
 import Stationary from "@components/Services/Stationary";
 
+export const metadata = {
+  title: "Faith | Stationary Supplies",
+  description: "Explore our collection of premium stationary materials that will inspire your creativity and keep you organized. From elegant notebooks to vibrant pens and markers, we offer the tools to bring your ideas to life.",
+};
+
 const page = () => {
   const introText =
     "Welcome to our Stationery section! Explore a wide range of essential items to enhance your productivity and creativity. From writing instruments to desk organization solutions, our curated selection has everything you need to stay organized and inspired. Browse through our categories and find the perfect stationery items to make your workspace a reflection of your unique style. Enjoy exploring!";

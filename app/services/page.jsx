@@ -3,6 +3,12 @@ import Breadcrumb from "@components/Common/Breadcrumb";
 import ServiceHero from "./ServiceHero";
 import Services from "@components/Services";
 
+export const metadata = {
+  title: "Faith | Services",
+  description: "",
+};
+
+
 const page = () => {
   const introText =
     "Welcome to Faith Import and Trade, where we bring you a wide range of professional services designed to meet your diverse needs. With a steadfast commitment to excellence, we strive to provide exceptional solutions that enhance your business operations and elevate your success. Our comprehensive service offerings encompass various areas, including computers, stationery supplies, and maintenance services. At Faith Import and Trade, we combine expertise, reliability, and a customer-centric approach to deliver tailored solutions that drive efficiency and productivity. Explore our services below and discover how we can help you achieve your business goals.";

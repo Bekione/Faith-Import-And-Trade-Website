@@ -3,6 +3,11 @@ import Breadcrumb from "@components/Common/Breadcrumb";
 import ServiceHero from "../ServiceHero";
 import Computers from "@components/Services/Computers";
 
+export const metadata = {
+  title: "Faith | Computer and Accessories",
+  description: "Discover a wide range of high-quality computers and accessories to enhance your productivity. From powerful laptops to cutting-edge peripherals, we have got you covered.",
+};
+
 const page = () => {
   const introText =
     "Discover our wide range of computer solutions and equipment designed to meet your technology needs. We offer top-quality computers and laptops from leading brands like HP, Toshiba, IBM, Dell, and more. Enhance your productivity with our selection of monitors and multimedia displays. Find all the essential accessories you need, including cables, outlets, jacks, and racks. We also provide trusted software products from Microsoft, Symantec, and Adobe Systems. From networking equipment to power solutions, office equipment such as printers, copiers, and scanners, we have you covered. Explore our reliable data storage solutions and a variety of consumables like cartridges and toners. Experience the latest in technology with our comprehensive computer and accessories solutions.";

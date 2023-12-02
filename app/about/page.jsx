@@ -5,6 +5,11 @@ import Manifesto from "@components/About/Manifesto";
 import Slogan from "@components/About/Slogan";
 import AboutCards from "@components/About/AboutCards";
 import AboutCustomers from "@components/About/AboutCustomers";
+
+export const metadata = {
+  title: "Faith | Services",
+  description: "Faith Import and Trade: Where Trust, Excellence, and Global Reach meet. Welcome to a world of IT solutions, stationary, and maintenance services provided by Faith Import and Trade.",
+};
 const page = () => {
   return (
     <section className="relative z-10 overflow-hidden pb-16 md:pb-[120px] xl:pb-[140px] 2xl:pb-[160px]">
