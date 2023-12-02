@@ -1,34 +1,18 @@
-"use client";
-
-import { useRef } from "react";
 import { devLinksData } from "./devLinksData";
 
 const DevLinkTooltip = () => {
-  const svgRef = useRef(null);
-  const handleMouseEnter = () => {
-    if (svgRef.current) {
-      svgRef.current.style.fill = "#ff0000";
-    }
-  };
-
-  const handleMouseLeave = () => {
-    if (svgRef.current) {
-      svgRef.current.style.fill = "";
-    }
-  };
   return (
     <div className="invisible opacity-0 group-hover:visible group-hover:opacity-100 absolute -top-16 left-1/2 transform -translate-x-1/2 min-w-[220px] h-12 group-hover:h-16 transition-all duration-300">
       <div
-        style={{ boxShadow: "2px 2px 6px rgba(255,255,255,.4" }}
-        className="absolute top-0 left-0 w-full h-12 bg-secondary rounded-md z-1 grid grid-cols-[repeat(5,1fr)] justify-around"
+        style={{ boxShadow: "2px 2px 6px #04aa83c9" }}
+        className="absolute top-0 left-0 w-full h-12 bg-gradient-to-b from-primary to-secondary rounded-md grid grid-cols-[repeat(5,1fr)] justify-around"
       >
         <div
-          style={{ boxShadow: "3px 3px 6px -3px rgba(255,255,255,.4" }}
-          className="absolute -bottom-2 left-1/2 transform -translate-x-1/2 w-5 h-5 bg-secondary rotate-[45deg] z-[0]"
-        />
+          style={{ boxShadow: "3px 3px 6px -3px #04aa83c9", zIndex: "-1" }}
+          className="absolute -bottom-2 left-1/2 transform -translate-x-1/2 w-5 h-5 bg-gradient-to-br from-[rgba(0,0,0,1)] via-secondary to-secondary rotate-[45deg] rounded-sm"></div>
         {devLinksData.map((devLink) => (
           <div
-            className="z-[20] flex items-center justify-center text-white hover:text-primary transition-all duration-300"
+            className=" flex items-center justify-center text-white hover:text-primary transition-all duration-300"
             key={devLink.id}
           >
             <a

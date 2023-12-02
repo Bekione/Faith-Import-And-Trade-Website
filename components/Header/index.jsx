@@ -77,7 +77,7 @@ const Header = () => {
                   width={200}
                   height={85}
                   quality={100}
-                  className={`${sticky ? "hidden" : ""}`}
+                  className={`w-auto ${sticky ? "hidden" : ""}`}
                   priority
                 />
                 <Image
@@ -86,7 +86,7 @@ const Header = () => {
                   width={200}
                   height={85}
                   quality={100}
-                  className={`hidden ${sticky ? "!block" : ""}`}
+                  className={`hidden w-auto ${sticky ? "!block" : ""}`}
                   priority
                 />
               </Link>
