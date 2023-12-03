@@ -1,4 +1,5 @@
 "use client";
+
 import Image from "next/image";
 import Link from "next/link";
 import { useEffect, useState } from "react";
@@ -20,6 +21,7 @@ const Header = () => {
     "/contact",
   ];
   useEffect(() => {
+    setNavbarOpen(false);
     if (pagePaths.includes(currentRoute)) {
       setActiveLinkClass("!text-secondary font-bold");
     } else setActiveLinkClass("");
@@ -63,11 +65,11 @@ const Header = () => {
             : "absolute z-[20]"
         }`}
       >
-        <div className="container">
-          <div className="relative -mx-4 flex items-center justify-between">
+        <div className="w-full">
+          <div className="relative mx-4 flex items-center justify-between">
             <div
-              className={`w-65 max-w-full px-4 xl:mr-12 ${
-                sticky ? "py-5 lg:py-2" : "py-8"
+              className={`w-46 sm:w-65 max-w-full px-4 xl:mr-12 ${
+                sticky ? "py-2" : "py-4"
               }`}
             >
               <Link href="/" className={`header-logo block `}>

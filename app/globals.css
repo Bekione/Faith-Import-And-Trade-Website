@@ -61,6 +61,18 @@
   }
 }
 
+.loading_screen {
+  animation: bg_pulse 2s infinite alternate ease-in-out;
+}
+@keyframes bg_pulse {
+  from {
+    background-color: #04aa831a;
+  }
+  to {
+    background-color: #04aa839a;
+  }
+}
+
 .spinner,
 .spinner_page {
   width: 20px;
@@ -70,7 +82,7 @@
   border-radius: 50%;
   animation: rotate 1s infinite linear;
 }
-.spinner_page{
+.spinner_page {
   width: 60px;
   height: 60px;
 }

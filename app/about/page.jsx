@@ -7,7 +7,7 @@ import AboutCards from "@components/About/AboutCards";
 import AboutCustomers from "@components/About/AboutCustomers";
 
 export const metadata = {
-  title: "Faith | Services",
+  title: "Faith | About Us",
   description: "Faith Import and Trade: Where Trust, Excellence, and Global Reach meet. Welcome to a world of IT solutions, stationary, and maintenance services provided by Faith Import and Trade.",
 };
 const page = () => {

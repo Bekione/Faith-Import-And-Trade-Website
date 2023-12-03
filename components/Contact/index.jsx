@@ -12,8 +12,8 @@ const Contact = () => {
   const [submitting, setSubmitting] = useState(false);
   const [isSent, setIsSent] = useState(false);
   const [isNotSent, setIsNotSent] = useState(false);
-  const [error, setError] = useState(false)
-  const [errorText, setErrorText] = useState("")
+  const [error, setError] = useState(false);
+  const [errorText, setErrorText] = useState("");
 
   const handleSubmit = async (event) => {
     event.preventDefault();
@@ -24,11 +24,11 @@ const Contact = () => {
     const senderMessage = formRef.current.elements.text_message.value;
 
     if (!senderEmail || !senderName || !senderMessage) {
-      setError(true)
-      setErrorText("Please enter a valid value!")
+      setError(true);
+      setErrorText("Please enter a valid value!");
       setTimeout(() => {
         setError(false);
-        setErrorText('')
+        setErrorText("");
       }, 3000);
       console.log("Please enter a valid name and email address.");
       return;
@@ -37,12 +37,12 @@ const Contact = () => {
     try {
       const isEmailValid = await verifyEmail(senderEmail);
       if (!isEmailValid) {
-        setError(true)
-        setErrorText("Invalid email address.")
-      setTimeout(() => {
-        setError(false);
-        setErrorText('')
-      }, 3000);
+        setError(true);
+        setErrorText("Invalid email address.");
+        setTimeout(() => {
+          setError(false);
+          setErrorText("");
+        }, 3000);
         console.log("Invalid email address.");
         return;
       }
@@ -148,9 +148,11 @@ const Contact = () => {
                   </div>
                   <div className="w-full px-4">
                     <button
-                    disabled={submitting}
+                      disabled={submitting}
                       type="submit"
-                      className={`${submitting ? 'cursor-not-allowed' : 'cursor-pointer'} w-full h-[44px] sm:w-fit min-w-[137px] rounded-md relative inline-flex group items-center justify-center px-12 border-b-4 border-l-2 active:border-b-6 outline-0 active:outline-primary hover:shadow-signUp focus-visible:shadow-none bg-gradient-to-tr from-primary to-secondary border-primary overflow-hidden`}
+                      className={`${
+                        submitting ? "cursor-not-allowed" : "cursor-pointer"
+                      } w-full h-[44px] sm:w-fit min-w-[137px] rounded-md relative inline-flex group items-center justify-center px-12 border-b-4 border-l-2 active:border-b-6 outline-0 active:outline-primary hover:shadow-signUp focus-visible:shadow-none bg-gradient-to-tr from-primary to-secondary border-primary overflow-hidden`}
                     >
                       <span className="absolute w-0 h-0 transition-all duration-300 ease-out bg-white rounded-full group-hover:w-[300px] group-hover:h-[300px] opacity-5"></span>
                       <span className="relative text-center text-base font-medium text-white">
@@ -160,11 +162,9 @@ const Contact = () => {
                   </div>
                 </div>
                 <p className="mt-4 h-4">
-                {error && (
-                  <span className="mb-4 text-[#ff0000]">
-                    {errorText}
-                  </span>
-                )}
+                  {error && (
+                    <span className="mb-4 text-[#ff0000]">{errorText}</span>
+                  )}
                   {isSent && (
                     <span className="text-secondary">
                       Message sent succesfully!

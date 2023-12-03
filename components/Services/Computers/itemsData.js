@@ -68,7 +68,7 @@ export const MonitorsDisplays = [
     image: "/images/computers/monitor-2.webp",
   },
   {
-    id: "item002",
+    id: "item003",
     itemName: "Projectors",
     brand: "Various brands",
     description:

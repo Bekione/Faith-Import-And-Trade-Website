@@ -9,8 +9,8 @@ const NewsLetter = () => {
   const [submitting, setSubmitting] = useState(false);
   const [subscribed, setSubscribed] = useState(false);
   const [notSubscribed, setNotSubscribed] = useState(false);
-  const [error, setError] = useState(false)
-  const [errorText, setErrorText] = useState("")
+  const [error, setError] = useState(false);
+  const [errorText, setErrorText] = useState("");
 
   const handleSubscription = async (event) => {
     event.preventDefault();
@@ -21,11 +21,11 @@ const NewsLetter = () => {
     const senderName = formRef.current.elements.from_name.value;
 
     if (!senderEmail || !senderName) {
-      setError(true)
-      setErrorText("Please enter a valid value!")
+      setError(true);
+      setErrorText("Please enter a valid value!");
       setTimeout(() => {
         setError(false);
-        setErrorText('')
+        setErrorText("");
       }, 3000);
       console.log("Please enter a valid name and email address.");
       return;
@@ -34,16 +34,16 @@ const NewsLetter = () => {
     try {
       const isEmailValid = await verifyEmail(senderEmail);
       if (!isEmailValid) {
-        setError(true)
-        setErrorText("Invalid email address.")
-      setTimeout(() => {
-        setError(false);
-        setErrorText('')
-      }, 3000);
+        setError(true);
+        setErrorText("Invalid email address.");
+        setTimeout(() => {
+          setError(false);
+          setErrorText("");
+        }, 3000);
         console.log("Invalid email address.");
         return;
       }
-  
+
       await emailjs.sendForm(
         "service_cxsd813",
         "template_610o2cl",
@@ -54,9 +54,9 @@ const NewsLetter = () => {
           reply_to: senderEmail,
         }
       );
-  
+
       console.log("Subscription added successfully. ");
-  
+
       setSubscribed(true);
       setTimeout(() => {
         setSubscribed(false);
@@ -88,11 +88,7 @@ const NewsLetter = () => {
         className="outline-primary"
       >
         <p className="leading-6 text-center h-4 mb-3">
-        {error && (
-                  <span className="mb-4 text-[#ff0000]">
-                    {errorText}
-                  </span>
-                )}
+          {error && <span className="mb-4 text-[#ff0000]">{errorText}</span>}
           {subscribed && (
             <span className="mb-4 text-secondary">Thanks for subscribing!</span>
           )}
@@ -122,7 +118,9 @@ const NewsLetter = () => {
         <button
           disabled={submitting}
           type="submit"
-          className={`${submitting ? 'cursor-not-allowed' : 'cursor-pointer'} w-full h-[48px] sm:w-fit lg:w-full rounded-md relative inline-flex group items-center justify-center px-9 border-b-4 border-l-2 active:border-b-6 outline-0 active:outline-primary hover:shadow-signUp focus-visible:shadow-none bg-gradient-to-tr from-primary to-secondary border-primary overflow-hidden`}
+          className={`${
+            submitting ? "cursor-not-allowed" : "cursor-pointer"
+          } w-full h-[48px] sm:w-fit lg:w-full rounded-md relative inline-flex group items-center justify-center px-9 border-b-4 border-l-2 active:border-b-6 outline-0 active:outline-primary hover:shadow-signUp focus-visible:shadow-none bg-gradient-to-tr from-primary to-secondary border-primary overflow-hidden`}
         >
           <span className="absolute w-0 h-0 transition-all duration-300 ease-out bg-#151f34 rounded-full group-hover:w-[300px] group-hover:h-[300px] opacity-5"></span>
           <span className="relative text-center text-base font-medium text-white">
