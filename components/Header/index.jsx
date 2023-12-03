@@ -59,7 +59,7 @@ const Header = () => {
   return (
     <>
       <header
-        className={`header top-0 left-0 z-40 flex w-full items-center bg-transparent ${
+        className={`header top-0 left-0 z-40 flex w-full items-center !bg-[#151f34] !bg-opacity-80 ${
           sticky
             ? "!fixed !z-[9999] !bg-[#151f34] !bg-opacity-80 shadow-sticky backdrop-blur-sm !transition dark:!bg-primary dark:!bg-opacity-20"
             : "absolute z-[20]"
@@ -67,28 +67,15 @@ const Header = () => {
       >
         <div className="w-full">
           <div className="relative mx-4 flex items-center justify-between">
-            <div
-              className={`w-46 sm:w-65 max-w-full px-4 xl:mr-12 ${
-                sticky ? "py-2" : "py-4"
-              }`}
-            >
+            <div className={`w-46 sm:w-65 max-w-full px-4 xl:mr-12 py-2`}>
               <Link href="/" className={`header-logo block `}>
-                <Image
-                  src="/images/logo/logo-dark.png"
-                  alt="logo"
-                  width={200}
-                  height={85}
-                  quality={100}
-                  className={`w-auto ${sticky ? "hidden" : ""}`}
-                  priority
-                />
                 <Image
                   src="/images/logo/logo-light.png"
                   alt="logo"
                   width={200}
                   height={85}
                   quality={100}
-                  className={`hidden w-auto ${sticky ? "!block" : ""}`}
+                  className={`w-auto`}
                   priority
                 />
               </Link>
@@ -103,17 +90,17 @@ const Header = () => {
                 >
                   <span
                     className={`relative my-1.5 block h-0.5 w-[30px] transition-all duration-300 ${
-                      sticky ? "bg-white" : "bg-primary"
+                      sticky ? "bg-white" : "bg-white"
                     } ${navbarOpen ? " top-[8px] rotate-45" : " "}`}
                   />
                   <span
                     className={`relative my-1.5 block h-0.5 w-[30px] transition-all duration-300 ${
-                      sticky ? "bg-white" : "bg-primary"
+                      sticky ? "bg-white" : "bg-white"
                     } ${navbarOpen ? "opacity-0 " : " "}`}
                   />
                   <span
                     className={`relative my-1.5 block h-0.5 w-[30px] transition-all duration-300 ${
-                      sticky ? "bg-white" : "bg-primary"
+                      sticky ? "bg-white" : "bg-white"
                     } ${navbarOpen ? " top-[-8px] -rotate-45" : " "}`}
                   />
                 </button>
@@ -131,8 +118,8 @@ const Header = () => {
                         {!menuItem.hasSubMenu ? (
                           <Link
                             href={menuItem.path}
-                            className={`flex my-1 py-1 text-base hover:opacity-70 lg:mr-0 lg:inline-flex lg:my-4 lg:py-2 lg:px-0 ${
-                              sticky ? "text-dark lg:text-white" : "text-dark"
+                            className={`flex my-1 py-1 text-base text-primary lg:text-white text-md hover:opacity-70 lg:mr-0 lg:inline-flex lg:my-4 lg:py-2 lg:px-0 ${
+                              sticky ? "" : ""
                             } ${
                               menuItem.path == currentRoute
                                 ? "active-link !text-secondary font-bold"
@@ -146,10 +133,8 @@ const Header = () => {
                             <span>
                               <Link
                                 href={menuItem.path}
-                                className={`flex cursor-pointer items-center justify-between my-1 py-1 text-base hover:opacity-70 lg:mr-0 lg:inline-flex lg:my-4 lg:py-2 lg:px-0 ${
-                                  sticky
-                                    ? "text-dark lg:text-white"
-                                    : "text-dark"
+                                className={`flex cursor-pointer text-primary lg:text-white text-md items-center justify-between my-1 py-1 text-base hover:opacity-70 lg:mr-0 lg:inline-flex lg:my-4 lg:py-2 lg:px-0 ${
+                                  sticky ? "" : ""
                                 } ${
                                   menuItem.path == currentRoute
                                     ? "!text-secondary font-bold"
@@ -165,8 +150,8 @@ const Header = () => {
                                   }}
                                 >
                                   <svg
-                                    width="15"
-                                    height="14"
+                                    width="18"
+                                    height="17"
                                     viewBox="0 0 15 14"
                                   >
                                     <path
@@ -186,7 +171,7 @@ const Header = () => {
                                 <Link
                                   href={submenuItem.path}
                                   key={submenuItem.id}
-                                  className={`block rounded pl-3 lg:pl-0 py-2.5 text-sm text-dark hover:opacity-70 dark:text-white lg:px-3 ${
+                                  className={`block rounded pl-3 lg:pl-0 py-2.5 text-dark hover:opacity-70 dark:text-white lg:px-3 ${
                                     submenuItem.path == currentRoute
                                       ? "!text-secondary font-bold"
                                       : ""
