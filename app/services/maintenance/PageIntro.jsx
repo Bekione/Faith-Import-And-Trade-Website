@@ -4,7 +4,7 @@ const PageIntro = () => {
   const handleSmoothScroll = (event, targetId) => {
     event.preventDefault();
     const targetElement = document.getElementById(targetId);
-    let headerHeight = 105;
+    let headerHeight = 125;
     if (window.innerWidth <= 1024) {
       headerHeight = 128;
     }
