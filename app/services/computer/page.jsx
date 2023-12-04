@@ -5,7 +5,7 @@ import Computers from "@components/Services/Computers";
 
 export const metadata = {
   title: "Faith | Computer and Accessories",
-  description: "Discover a wide range of high-quality computers and accessories to enhance your productivity. From powerful laptops to cutting-edge peripherals, we have got you covered.",
+  description: "Explore our wide selection of imported computer systems, laptops, peripherals, and accessories. We provide cutting-edge technology, reliable performance, and exceptional value. Trust our expertise in sourcing the best computer products to enhance your productivity and meet your business requirements.",
 };
 
 const page = () => {

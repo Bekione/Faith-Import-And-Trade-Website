@@ -8,7 +8,7 @@ import AboutCustomers from "@components/About/AboutCustomers";
 
 export const metadata = {
   title: "Faith | About Us",
-  description: "Faith Import and Trade: Where Trust, Excellence, and Global Reach meet. Welcome to a world of IT solutions, stationary, and maintenance services provided by Faith Import and Trade.",
+  description: "Faith Import & Trade is a leading import and trade company specializing in computer accessories, stationery supplies, and maintenance services. With years of experience, we prioritize trust, deliver excellence, and extend our global reach. Learn more about our mission, values, and dedication to customer satisfaction.",
 };
 const page = () => {
   return (

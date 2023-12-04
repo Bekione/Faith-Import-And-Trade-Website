@@ -5,7 +5,7 @@ import Services from "@components/Services";
 
 export const metadata = {
   title: "Faith | Services",
-  description: "",
+  description: "Our comprehensive range of services includes importing top-notch computer accessories and stationery supplies. We also offer expert maintenance services to keep your equipment running smoothly. Trust us for reliable solutions, excellent support, and a global reach that meets your business needs.",
 };
 
 

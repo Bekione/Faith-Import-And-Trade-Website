@@ -5,7 +5,7 @@ import Stationary from "@components/Services/Stationary";
 
 export const metadata = {
   title: "Faith | Stationary Supplies",
-  description: "Explore our collection of premium stationary materials that will inspire your creativity and keep you organized. From elegant notebooks to vibrant pens and markers, we offer the tools to bring your ideas to life.",
+  description: "Browse our extensive collection of imported stationery supplies, including paper, pens, notebooks, and more. We offer premium quality products that cater to your office and personal needs. With our global reach, we ensure you have access to a wide range of stationery options to inspire creativity and organization.",
 };
 
 const page = () => {

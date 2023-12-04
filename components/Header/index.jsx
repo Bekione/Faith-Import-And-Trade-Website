@@ -59,7 +59,11 @@ const Header = () => {
   return (
     <>
       <header
-        className={`header top-0 left-0 z-40 flex w-full items-center !bg-[#151f34] !bg-opacity-80 ${
+        className={`header top-0 left-0 z-40 flex w-full items-center ${
+          currentRoute === "/"
+            ? "!bg-[#151f34] !bg-opacity-80"
+            : "bg-transparent"
+        } ${
           sticky
             ? "!fixed !z-[9999] !bg-[#151f34] !bg-opacity-80 shadow-sticky backdrop-blur-sm !transition dark:!bg-primary dark:!bg-opacity-20"
             : "absolute z-[20]"

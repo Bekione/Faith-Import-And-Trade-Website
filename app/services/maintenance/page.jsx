@@ -2,11 +2,12 @@ import PageHeader from "@components/Common/PageHeader";
 import Breadcrumb from "@components/Common/Breadcrumb";
 import ServiceHero from "../ServiceHero";
 import Maintenance from "@components/Services/Maintenance";
-import PageIntro from './PageIntro'
+import PageIntro from "./PageIntro";
 
 export const metadata = {
   title: "Faith | Maintenace service",
-  description: "Ensure your equipment and devices are in top condition with our professional maintenance services. Our experienced technicians will provide reliable support and keep your systems running smoothly.",
+  description:
+    "Our skilled technicians provide professional maintenance services for computer systems and peripherals. Trust us to keep your equipment in optimal condition, minimizing downtime and maximizing productivity. With our commitment to excellence and global reach, you can rely on us for efficient and reliable maintenance solutions.",
 };
 
 const page = () => {

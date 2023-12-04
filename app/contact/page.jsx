@@ -4,7 +4,7 @@ import Contact from "@components/Contact";
 
 export const metadata = {
   title: "Faith | Contact Us",
-  description: "Faith Import And Trade: We are always ready to serve you, don't hesitate to contact us for any needs.",
+  description: "Faith Import And  Trade: We are always ready to serve you, don't hesitate to contact us for any needs.",
 };
 
 const page = () => {
