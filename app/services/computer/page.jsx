@@ -17,6 +17,7 @@ const page = () => {
         title="Computers"
         titleExtra="Accessories"
         classes="bg-[url('/images/pages-head/bg-computer.webp')]"
+        ctx="computer"
       />
 
       <div className="pt-5 ">

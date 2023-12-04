@@ -16,6 +16,7 @@ const page = () => {
     <section className="relative z-10 overflow-hidden pb-16 md:pb-[120px] xl:pb-[140px] 2xl:pb-[160px]">
       <PageHeader
         title="Stationery"
+        titleExtra="Supplies"
         classes="bg-[url('/images/pages-head/bg-stationery.webp')]"
       />
 

@@ -118,7 +118,7 @@ const Manifesto = () => {
         </div>
         <div className="">
           <h3 className="text-primary text-xl font-bold">Our Target</h3>
-          <p className="text-base !leading-relaxed text-body-dark md:text-lg">
+          <p className="text-base !leading-relaxed text-primary/70 md:text-lg">
             Delivering quality solutions and services as a trusted provider in
             the industry.
           </p>
@@ -203,7 +203,7 @@ const Manifesto = () => {
         </div>
         <div className="">
           <h3 className="text-primary text-xl font-bold">Our Vision</h3>
-          <p className="text-base !leading-relaxed text-body-dark md:text-lg">
+          <p className="text-base !leading-relaxed text-primary/70 md:text-lg">
             Ensuring 100% customer satisfaction through affordable, top-quality
             products and services.
           </p>
@@ -323,7 +323,7 @@ const Manifesto = () => {
         </div>
         <div className="">
           <h3 className="text-primary text-xl font-bold">Our Values</h3>
-          <p className="text-base !leading-relaxed text-body-dark md:text-lg">
+          <p className="text-base !leading-relaxed text-primary/70 md:text-lg">
             Quality | Reliability | Customer Satisfaction | Integriy |
             Continious Improvment
           </p>

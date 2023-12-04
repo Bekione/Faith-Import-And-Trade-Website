@@ -22,9 +22,8 @@ const Footer = () => {
                   quality={100}
                 />
               </Link>
-              <p className="mb-9 text-base font-medium leading-relaxed text-body-color">
-                We strive to always serve you. <br />- Trust, Excellence, Global
-                Reach -
+              <p className="mb-9 text-base font-medium leading-relaxed text-primary/90">
+                - Trust, Excellence, Global Reach -
               </p>
               <div className="flex items-center">
                 <a
@@ -226,9 +225,9 @@ const Footer = () => {
           <p className="text-center text-base text-body-color ">
             &copy;
             <a href="https://faithimports.com" rel="nofollow noopener">
-              2023 faith import and trade.
+              2023 Faith Import and Trade.
             </a>{" "}
-            All right reserved.
+            All Rights Reserved.
           </p>
           <span className="mx-2 block text-center">•</span>
           <div className="inline text-center text-base text-body-color ">

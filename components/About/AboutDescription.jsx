@@ -11,7 +11,7 @@ const AboutDescription = () => {
         Faith Import and Trade: Your Source for Quality IT Solutions,
         Stationary, and Maintenance Services
       </h2>
-      <p className="first-parag mb-5 text-justify  text-base font-normal leading-[1.5] text-body-dark sm:text-lg sm:leading-[1.5]">
+      <p className="first-parag mb-5 text-justify  text-base font-normal leading-[1.5] text-primary/70 sm:text-lg sm:leading-[1.5]">
         <span className={`${mokoto.className} text-secondary font-bold`}>
           F
         </span>
@@ -35,7 +35,7 @@ const AboutDescription = () => {
         preventive maintenance services, we are your one-stop solution provider.
       </p>
 
-      <p className="mb-5 text-justify text-base font-normal leading-[1.5] text-body-dark sm:text-lg sm:leading-[1.5]">
+      <p className="mb-5 text-justify text-base font-normal leading-[1.5] text-primary/70 sm:text-lg sm:leading-[1.5]">
         At Faith Import and Trade, we embody our company slogan of Trust,
         Excellence, and Global Reach. We prioritize building trust with our
         customers, ensuring that every interaction is characterized by
@@ -54,7 +54,7 @@ const AboutDescription = () => {
         with you.
       </p> */}
 
-      <p className="mb-5 text-justify  text-base font-normal leading-[1.5] text-body-dark sm:text-lg sm:leading-[1.5]">
+      <p className="mb-5 text-justify  text-base font-normal leading-[1.5] text-primary/70 sm:text-lg sm:leading-[1.5]">
         Choose Faith Import and Trade and embark on a journey built on Trust,
         Excellence, and Global Reach. Let us empower your business with the best
         IT solutions, stationary supplies, and maintenance services, tailored to

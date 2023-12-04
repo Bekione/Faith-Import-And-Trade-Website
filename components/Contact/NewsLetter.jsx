@@ -110,17 +110,12 @@ const NewsLetter = () => {
           placeholder="Enter your email"
           className="mb-4 w-full bg-[#fff] rounded-md border border-body-color border-opacity-10 py-3 px-6 text-base font-medium text-body-color placeholder-body-color outline-none focus:border-primary focus:border-opacity-100 focus-visible:shadow-none  dark:border-opacity-10 dark:bg-[#242B51] focus:dark:border-opacity-50"
         />
-        {/* <input
-          type="submit"
-          value="Subscribe"
-          className="duration-80 mb-4 w-full cursor-pointer rounded-md border border-transparent bg-primary py-3 px-6 text-center text-base font-medium text-#151f34 outline-none transition ease-in-out hover:bg-opacity-80 hover:shadow-signUp focus-visible:shadow-none"
-        /> */}
         <button
           disabled={submitting}
           type="submit"
           className={`${
             submitting ? "cursor-not-allowed" : "cursor-pointer"
-          } w-full h-[48px] sm:w-fit lg:w-full rounded-md relative inline-flex group items-center justify-center px-9 border-b-4 border-l-2 active:border-b-6 outline-0 active:outline-primary hover:shadow-signUp focus-visible:shadow-none bg-gradient-to-tr from-primary to-secondary border-primary overflow-hidden`}
+          } w-full h-[48px] sm:w-fit lg:w-full rounded-md relative inline-flex group items-center justify-center px-9 shadow-secondary hover:shadow-primary focus:shadow-secondary bg-secondary hover:bg-primary focus:bg-primary overflow-hidden transition-all duration-300 ease-in-out`}
         >
           <span className="absolute w-0 h-0 transition-all duration-300 ease-out bg-#151f34 rounded-full group-hover:w-[300px] group-hover:h-[300px] opacity-5"></span>
           <span className="relative text-center text-base font-medium text-white">

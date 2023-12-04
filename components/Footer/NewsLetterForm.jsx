@@ -132,7 +132,7 @@ const NewsLetterForm = () => {
                 type="submit"
                 className={`${
                   submitting ? "cursor-not-allowed" : "cursor-pointer"
-                } w-full h-[46px] rounded relative inline-flex group items-center justify-center border-b-4 border-l-2 active:border-b-6 outline-0 active:outline-primary  active:shadow-none shadow-lg bg-gradient-to-tr from-primary to-secondary border-primary text-white overflow-hidden`}
+                } w-full h-[46px] rounded relative inline-flex group items-center justify-center bg-transparent border border-primary active:shadow-none shadow-lg border-primary outline-none focus:outline-4 focus:outline-primary hover:bg-primary focus:bg-primary hover:text-white focus:text-white text-primary overflow-hidden transition-all duration-300 ease-in-out`}
               >
                 <span className="absolute w-0 h-0 transition-all duration-300 ease-out bg-white rounded-full group-hover:w-[300px] group-hover:h-[300px] opacity-10"></span>
                 <span className="relative">

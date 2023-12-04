@@ -1,6 +1,6 @@
-import Link from "next/link";
 import { mokoto } from "@utils/font/font";
 import { servicesData } from "./servicesData";
+import PrimaryButton from "@components/Common/PrimaryButton";
 
 const SingleService = ({ title, text, pageUrl, ctx, classes }) => {
   return (
@@ -32,15 +32,7 @@ const SingleService = ({ title, text, pageUrl, ctx, classes }) => {
           {text}
         </p>
         {pageUrl && (
-          <Link
-            href={pageUrl}
-            className="block w-fit rounded-md relative inline-flex group items-center justify-center mt-8 px-12 py-3 border-b-4 border-l-2 active:border-b-6 outline-0 active:outline-primary hover:shadow-signUp focus-visible:shadow-none bg-gradient-to-tr from-secondary to-primary border-primary overflow-hidden"
-          >
-            <span className="absolute w-0 h-0 transition-all duration-300 ease-out bg-white rounded-full group-hover:w-[300px] group-hover:h-[300px] opacity-5"></span>
-            <span className="relative whitespace-nowrap text-center text-base font-medium text-white">
-              See more
-            </span>
-          </Link>
+          <PrimaryButton path={pageUrl} text="See More" classes="!px-12" />
         )}
       </div>
     </div>

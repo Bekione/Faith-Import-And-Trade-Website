@@ -1,6 +1,6 @@
 import { mokoto } from "@utils/font/font";
 
-const PageHeader = ({ title, titleExtra, classes }) => {
+const PageHeader = ({ title, titleExtra, classes, ctx }) => {
   return (
     <div
       className={`relative h-[300px] md:h-[500px] w-full p-10 flex items-center justify-center mb-5 ${classes} bg-cover !bg-top  bg-fixed`}
@@ -19,11 +19,14 @@ const PageHeader = ({ title, titleExtra, classes }) => {
           </h1>
           {titleExtra && (
             <>
-              <p
-                className={`${mokoto.className} page-title -mt-2 text-white text-base !text-center !text-[1rem] sm:!text-[1.25rem] md:!text-[2.25rem] lg:!text-[3rem] font-bold  tracking-[.25rem] md:tracking-wider leading-none z-[9]`}
-              >
-                &
-              </p>
+              {ctx && (
+                <p
+                  className={`${mokoto.className} page-title -mt-2 text-white text-base !text-center !text-[1rem] sm:!text-[1.25rem] md:!text-[2.25rem] lg:!text-[3rem] font-bold  tracking-[.25rem] md:tracking-wider leading-none z-[9]`}
+                >
+                  &
+                </p>
+              )}
+
               <h1
                 className={`${mokoto.className} page-title text-white text-base !text-center !text-[2rem] sm:!text-[2.5rem] md:!text-[4.5rem] lg:!text-[6rem] font-bold  tracking-[.25rem] md:tracking-wider leading-none z-[9]`}
               >

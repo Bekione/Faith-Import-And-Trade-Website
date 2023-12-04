@@ -152,7 +152,7 @@ const Contact = () => {
                       type="submit"
                       className={`${
                         submitting ? "cursor-not-allowed" : "cursor-pointer"
-                      } w-full h-[44px] sm:w-fit min-w-[137px] rounded-md relative inline-flex group items-center justify-center px-12 border-b-4 border-l-2 active:border-b-6 outline-0 active:outline-primary hover:shadow-signUp focus-visible:shadow-none bg-gradient-to-tr from-primary to-secondary border-primary overflow-hidden`}
+                      } w-full h-[44px] sm:w-fit min-w-[137px] rounded-md relative inline-flex group items-center justify-center px-12 shadow-secondary hover:shadow-primary focus:shadow-secondary bg-secondary hover:bg-primary focus:bg-primary overflow-hidden transition-all duration-300 ease-in-out`}
                     >
                       <span className="absolute w-0 h-0 transition-all duration-300 ease-out bg-white rounded-full group-hover:w-[300px] group-hover:h-[300px] opacity-5"></span>
                       <span className="relative text-center text-base font-medium text-white">

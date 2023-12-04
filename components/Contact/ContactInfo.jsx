@@ -18,13 +18,13 @@ const ContactInfo = () => {
         </div>
         <div className="mx-2 sm:mx-[1.5rem] flex-1 flex items-center justify-center mt-2">
           <ul>
-            <li className="text-base text-body-dark leading-relaxed">
+            <li className="text-base text-[#000000c4] leading-relaxed">
               +251-11 659 0727
             </li>
-            <li className="text-base text-body-dark leading-relaxed">
+            <li className="text-base text-[#000000c4] leading-relaxed">
               +251-903-182-736
             </li>
-            <li className="text-base text-body-dark leading-relaxed">
+            <li className="text-base text-[#000000c4] leading-relaxed">
               +251-978-367-844
             </li>
           </ul>
@@ -42,11 +42,11 @@ const ContactInfo = () => {
           </svg>
         </div>
         <div className="mx-2 flex-1 flex items-center justify-center sm:mx-[1.5rem]">
-        <ul>
-            <li className="text-base text-body-dark leading-relaxed">
+          <ul>
+            <li className="text-base text-[#ffffffc4] leading-relaxed">
               contact@faithimporttrade.com
             </li>
-            <li className="text-base text-body-dark leading-relaxed">
+            <li className="text-base text-[#ffffffc4] leading-relaxed">
               faithimporttrade@gmail.com
             </li>
           </ul>
@@ -68,7 +68,7 @@ const ContactInfo = () => {
           </svg>
         </div>
         <div className="mx-2 flex-1 flex items-center ustify-center sm:mx-[1.5rem]">
-          <p className="text-base text-center text-body-dark leading-relaxed">
+          <p className="text-base text-center text-[#000000c4] leading-relaxed">
             Fenace Building 2nd floor - 203, Lem hotel, Addis Abeba, Ethiopia
           </p>
         </div>
