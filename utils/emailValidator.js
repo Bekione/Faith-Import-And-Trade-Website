@@ -1,6 +1,6 @@
 export const verifyEmail = async (email) => {
   try {
-    const apiKey = "35eaa8e1454c4ed99404fc80b1a6a7ce";
+    const apiKey = process.env.NEXT_PUBLIC_EMAILJS_API_KEY;
     const response = await fetch(
       `https://emailvalidation.abstractapi.com/v1/?api_key=${apiKey}&email=${email}`
     );
