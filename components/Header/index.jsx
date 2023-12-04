@@ -61,25 +61,36 @@ const Header = () => {
       <header
         className={`header top-0 left-0 z-40 flex w-full items-center ${
           currentRoute === "/"
-            ? "!bg-[#151f34] !bg-opacity-80"
+            ? "!bg-[#151f34] !bg-opacity-70"
             : "bg-transparent"
         } ${
           sticky
-            ? "!fixed !z-[9999] !bg-[#151f34] !bg-opacity-80 shadow-sticky backdrop-blur-sm !transition dark:!bg-primary dark:!bg-opacity-20"
+            ? "!fixed !z-[9999] !bg-[#151f34] !bg-opacity-80 shadow-sticky backdrop-blur-sm !transition"
             : "absolute z-[20]"
         }`}
       >
         <div className="w-full">
           <div className="relative mx-4 flex items-center justify-between">
-            <div className={`w-46 sm:w-65 max-w-full px-4 xl:mr-12 py-2`}>
-              <Link href="/" className={`header-logo block `}>
+            <div className="w-46 sm:w-65 max-w-full px-4 xl:mr-12 py-2">
+              <Link href="/" className="header-logo hidden sm:block">
                 <Image
                   src="/images/logo/logo-light.png"
                   alt="logo"
                   width={200}
                   height={85}
                   quality={100}
-                  className={`w-auto`}
+                  className="w-auto"
+                  priority
+                />
+              </Link>
+              <Link href="/" className="header-logo !w-52 block sm:hidden">
+                <Image
+                  src="/images/logo/logo-light.png"
+                  alt="logo"
+                  width={130}
+                  height={55}
+                  quality={100}
+                  className="w-auto"
                   priority
                 />
               </Link>
@@ -93,19 +104,19 @@ const Header = () => {
                   className="absolute right-4 top-1/2 block translate-y-[-50%] rounded-lg px-3 py-[6px] ring-primary focus:ring-2 lg:hidden"
                 >
                   <span
-                    className={`relative my-1.5 block h-0.5 w-[30px] transition-all duration-300 ${
-                      sticky ? "bg-white" : "bg-white"
-                    } ${navbarOpen ? " top-[8px] rotate-45" : " "}`}
+                    className={`relative my-1.5 block h-0.5 w-[30px] transition-all duration-300 bg-white ${
+                      navbarOpen ? " top-[8px] rotate-45" : " "
+                    }`}
                   />
                   <span
-                    className={`relative my-1.5 block h-0.5 w-[30px] transition-all duration-300 ${
-                      sticky ? "bg-white" : "bg-white"
-                    } ${navbarOpen ? "opacity-0 " : " "}`}
+                    className={`relative my-1.5 block h-0.5 w-[30px] transition-all duration-300 bg-white ${
+                      navbarOpen ? "opacity-0 " : " "
+                    }`}
                   />
                   <span
-                    className={`relative my-1.5 block h-0.5 w-[30px] transition-all duration-300 ${
-                      sticky ? "bg-white" : "bg-white"
-                    } ${navbarOpen ? " top-[-8px] -rotate-45" : " "}`}
+                    className={`relative my-1.5 block h-0.5 w-[30px] transition-all duration-300 bg-white ${
+                      navbarOpen ? " top-[-8px] -rotate-45" : " "
+                    }`}
                   />
                 </button>
                 <nav
@@ -123,8 +134,6 @@ const Header = () => {
                           <Link
                             href={menuItem.path}
                             className={`flex my-1 py-1 text-base text-primary lg:text-white text-md hover:opacity-70 lg:mr-0 lg:inline-flex lg:my-4 lg:py-2 lg:px-0 ${
-                              sticky ? "" : ""
-                            } ${
                               menuItem.path == currentRoute
                                 ? "active-link !text-secondary font-bold"
                                 : ""
@@ -138,8 +147,6 @@ const Header = () => {
                               <Link
                                 href={menuItem.path}
                                 className={`flex cursor-pointer text-primary lg:text-white text-md items-center justify-between my-1 py-1 text-base hover:opacity-70 lg:mr-0 lg:inline-flex lg:my-4 lg:py-2 lg:px-0 ${
-                                  sticky ? "" : ""
-                                } ${
                                   menuItem.path == currentRoute
                                     ? "!text-secondary font-bold"
                                     : ""
@@ -175,7 +182,7 @@ const Header = () => {
                                 <Link
                                   href={submenuItem.path}
                                   key={submenuItem.id}
-                                  className={`block rounded pl-3 lg:pl-0 py-2.5 text-dark hover:opacity-70 dark:text-white lg:px-3 ${
+                                  className={`block rounded pl-3 lg:pl-0 py-2.5 text-dark text-sm hover:opacity-70 dark:text-white lg:px-3 ${
                                     submenuItem.path == currentRoute
                                       ? "!text-secondary font-bold"
                                       : ""
