@@ -36,6 +36,16 @@
   }
 }
 
+@layer utilities {
+  .shadow-primary {
+    box-shadow: 3px 10px 20px 1px rgba(21, 31, 52, 0.3);
+  }
+
+  .shadow-secondary {
+    box-shadow: 3px 10px 20px 1px rgba(4, 169, 114, 0.25);
+  }
+}
+
 @layer components {
   input[type="checkbox"]:checked ~ label span svg {
     @apply inline-flex;

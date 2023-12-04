@@ -1,5 +1,5 @@
-import Link from "next/link";
 import { essenseData } from "./essenseData";
+import PrimaryButton from "@components/Common/PrimaryButton";
 
 const Technician = () => {
   return (
@@ -14,15 +14,7 @@ const Technician = () => {
             Our technicians are experts who will make sure that your device is
             running smoothly and securely at all times.
           </p>
-          <Link
-            href="/contact"
-            className="block w-fit mt-5 sm:mt-8 px-6 py-4 rounded-lg font-bold text-white bg-secondary hover:bg-primary transition duration-500"
-            style={{
-              boxShadow: "3px 10px 20px 1px rgba(4, 169, 114, 0.2)",
-            }}
-          >
-            Contact Us
-          </Link>
+          <PrimaryButton path="/contact" text="Contact Us" />
         </div>
       </div>
       <div className="relative w-full mdPlus:w-6/12 min-h-[28rem] flex items-center justify-center p-8 sm:p-12 md:p-16 lg:p-20 bg-[url('/images/maintenance/maintenance-technician-2.webp')] bg-cover bg-right">

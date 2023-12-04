@@ -1,6 +1,6 @@
 import Image from "next/image";
-import Link from "next/link";
 import SectionTitle from "@components/Common/SectionTitle";
+import PrimaryButton from "@components/Common/PrimaryButton";
 
 const HomeAboutUs = () => {
   return (
@@ -23,15 +23,7 @@ const HomeAboutUs = () => {
               preventive maintenance services, we are your one-stop solution
               provider.
             </p>{" "}
-            <Link
-              href="/about"
-              className="block w-fit mt-5 sm:mt-8 px-6 py-4 rounded-xl font-bold text-white hover:bg-secondary bg-primary transition duration-500"
-              style={{
-                boxShadow: "3px 10px 20px 1px rgba(4, 169, 114, 0.2)",
-              }}
-            >
-              Read More
-            </Link>
+            <PrimaryButton path="/about" />
           </div>
 
           <div className="md:absolute z-0 -mt-20 md:mt-0 -bottom-20 right-0 w-[350px] sm:w-[450px] md:w-[500px] lg:w-[600px] flex items-center justify-center">

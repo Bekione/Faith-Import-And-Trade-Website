@@ -3,8 +3,8 @@
 import { useState, useRef } from "react";
 import { HomeSliderData } from "./Carousel/HomeSliderData";
 import SectionTitle from "@components/Common/SectionTitle";
+import PrimaryButton from "@components/Common/PrimaryButton";
 import Image from "next/image";
-import Link from "next/link";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Autoplay, Pagination, Mousewheel } from "swiper/modules";
 // Import Swiper styles
@@ -163,15 +163,7 @@ const HomeServices = () => {
                   <p className="text-justify text-base font-normal leading-[1.5] text-body-dark sm:text-lg sm:leading-[1.5]">
                     {data.bodyText}
                   </p>
-                  <Link
-                    href={data.actionPath}
-                    className="block w-fit mt-5 sm:mt-8 px-6 py-4 rounded-xl font-bold text-white bg-secondary hover:bg-primary transition duration-500"
-                    style={{
-                      boxShadow: "3px 10px 20px 1px rgba(4, 169, 114, 0.2)",
-                    }}
-                  >
-                    Read More
-                  </Link>
+                  <PrimaryButton path={data.actionPath} />
                 </div>
               </SwiperSlide>
             );

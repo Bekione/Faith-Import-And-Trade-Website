@@ -5,9 +5,7 @@ const ItemCategories = ({ category, items }) => {
     <div className="my-10 px-10">
       <div className="relative py-8 mb-4">
         <div className="sm:ml-32 text-3xl font-extrabold capitalize">
-          <h1 className="bg-clip-text w-fit text-transparent bg-gradient-to-r from-primary to-secondary">
-            {category}
-          </h1>
+          <h1 className="w-fit text-primary">{category}</h1>
         </div>
         <div className="absolute bottom-4 sm:bottom-6  sm:top-1/2 transform sm:-transform-y-1/2 h-1 w-[65%] sm:w-28 bg-secondary transform skew-x-[40deg]"></div>
       </div>
