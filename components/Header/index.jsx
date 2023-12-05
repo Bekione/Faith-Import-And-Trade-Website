@@ -65,7 +65,7 @@ const Header = () => {
             : "bg-transparent py-4"
         } ${
           sticky
-            ? "!fixed !z-[9999] py-0 !bg-[#151f34] !bg-opacity-80 shadow-sticky backdrop-blur-sm !transition"
+            ? "!fixed !z-[9999] !py-0 !bg-[#151f34] !bg-opacity-80 shadow-sticky backdrop-blur-sm !transition"
             : "absolute z-[20]"
         }`}
       >
