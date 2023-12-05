@@ -5,7 +5,8 @@ import Computers from "@components/Services/Computers";
 
 export const metadata = {
   title: "Faith | Computer and Accessories",
-  description: "Explore our wide selection of imported computer systems, laptops, peripherals, and accessories. We provide cutting-edge technology, reliable performance, and exceptional value. Trust our expertise in sourcing the best computer products to enhance your productivity and meet your business requirements.",
+  description:
+    "Explore our wide selection of imported computer systems, laptops, peripherals, and accessories. We provide cutting-edge technology, reliable performance, and exceptional value. Trust our expertise in sourcing the best computer products to enhance your productivity and meet your business requirements.",
 };
 
 const page = () => {
@@ -24,7 +25,7 @@ const page = () => {
         <Breadcrumb paths={["services", "computer"]} classes="pr-16" />
         <ServiceHero
           Intro={introText}
-          imgPath="/images/computers/laptop-mock.png"
+          imgPath="/images/computers/laptop-mock.webp"
           imgAlt="Faith import & trade webpage in a laptop"
         />
         <Computers />
