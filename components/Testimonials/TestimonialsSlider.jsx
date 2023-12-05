@@ -104,7 +104,7 @@ const TestimonialsSlider = () => {
               >
                 <svg
                   viewBox="0.00 0.00 130.00 130.00"
-                  className="h-[20px] w-[20px] fill-[#231f20] group-hover/link:fill-white"
+                  className="h-[30px] w-[30px] fill-[#231f20] group-hover/link:fill-white"
                 >
                   <path
                     d="

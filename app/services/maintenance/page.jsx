@@ -15,7 +15,7 @@ const page = () => {
     <section className="relative z-10 overflow-hidden pb-16 md:pb-[120px] xl:pb-[140px] 2xl:pb-[160px]">
       <PageHeader
         title="Maintenance"
-        classes="bg-[url('/images/pages-head/bg-maintenance.webp')]"
+        classes="bg-[url('https://res.cloudinary.com/dzhobawko/image/upload/f_auto,c_limit,q_100/images/pages-head/bg-maintenance.webp')]"
       />
 
       <div className="pt-5 ">

@@ -6,7 +6,7 @@ export const servicesData = [
     imageUrl: "/images/services/bg-computer.webp",
     pageUrl: "/services/computer",
     ctx: "computer",
-    classes: "bg-[url('/images/services/bg-computer.webp')]",
+    classes: "bg-[url('https://res.cloudinary.com/dzhobawko/image/upload/f_auto,c_limit,q_100/images/services/bg-computer.webp')]",
   },
   {
     id: 101,
@@ -15,7 +15,7 @@ export const servicesData = [
     imageUrl: "/images/services/bg-stationery.webp",
     pageUrl: "/services/stationery",
     ctx: "stationery",
-    classes: "bg-[url('/images/services/bg-stationery.webp')]",
+    classes: "bg-[url('https://res.cloudinary.com/dzhobawko/image/upload/f_auto,c_limit,q_100/images/services/bg-stationery.webp')]",
   },
   {
     id: 102,
@@ -24,7 +24,7 @@ export const servicesData = [
     imageUrl: "/images/services/bg-maintenance.png",
     pageUrl: "/services/maintenance",
     ctx: "maintenance",
-    classes: "bg-[url('/images/services/bg-maintenance.png')]",
+    classes: "bg-[url('https://res.cloudinary.com/dzhobawko/image/upload/f_auto,c_limit,q_100/images/services/bg-maintenance.png')]",
   },
   {
     id: 103,

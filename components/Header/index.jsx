@@ -62,10 +62,10 @@ const Header = () => {
         className={`header top-0 left-0 z-40 flex w-full items-center ${
           currentRoute === "/"
             ? "!bg-[#151f34] !bg-opacity-70"
-            : "bg-transparent"
+            : "bg-transparent py-4"
         } ${
           sticky
-            ? "!fixed !z-[9999] !bg-[#151f34] !bg-opacity-80 shadow-sticky backdrop-blur-sm !transition"
+            ? "!fixed !z-[9999] py-0 !bg-[#151f34] !bg-opacity-80 shadow-sticky backdrop-blur-sm !transition"
             : "absolute z-[20]"
         }`}
       >

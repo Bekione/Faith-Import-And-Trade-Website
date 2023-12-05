@@ -17,7 +17,7 @@ const page = () => {
       <PageHeader
         title="Stationery"
         titleExtra="Supplies"
-        classes="bg-[url('/images/pages-head/bg-stationery.webp')]"
+        classes="bg-[url('https://res.cloudinary.com/dzhobawko/image/upload/f_auto,c_limit,q_100/images/pages-head/bg-stationery.webp')]"
       />
 
       <div className="pt-5 ">
