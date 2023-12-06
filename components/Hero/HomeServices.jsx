@@ -76,7 +76,7 @@ const HomeServices = () => {
     <section className="home_services mt-20 w-11/12  h-fit md:h-[430px] lg:h-[400px] xl:h-[380px] mx-auto flex flex-col justify-center">
       <SectionTitle title="Our Services" />
       <div
-        className="relative rounded-xl w-10/12 lg:w-9/12 min-h-[450px] md:min-h-fit h-auto md:h-full mx-auto flex flex-col md:flex-row justify-center items-center gap-5"
+        className="relative rounded-xl w-full sm:w-10/12 lg:w-9/12 min-h-[450px] md:min-h-fit h-auto md:h-full mx-auto flex flex-col md:flex-row justify-center items-center gap-5"
         style={{ boxShadow: "0px 14px 80px rgba(34, 35, 58, 0.2)" }}
       >
         <div

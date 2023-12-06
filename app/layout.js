@@ -10,12 +10,12 @@ export const metadata = {
   title: "Faith Import And Trade",
   description: "Welcome to Faith Import & Trade, your trusted source for importing high-quality computer accessories and stationery supplies. We provide reliable maintenance services to ensure your equipment operates at its best. Discover our commitment to trust, excellence, and global reach.",
   icons: {
-    icon: ['/favicon.icon'],
+    icon: ['./favicon.icon'],
     apple: [
-      '/apple-touch-icon.png?v=4'
+      './apple-touch-icon.png?v=4'
     ],
     shortcut: [
-      '/apple-touch-icon.png'
+      './apple-touch-icon.png'
     ]
   },
   metadataBase: new URL('https://faithimporttrade.com'),
