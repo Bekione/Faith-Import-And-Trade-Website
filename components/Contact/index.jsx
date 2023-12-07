@@ -21,7 +21,7 @@ const Contact = () => {
     const formData = event.target;
     const senderName = formRef.current.elements.from_name.value;
     const senderEmail = formRef.current.elements.reply_to.value;
-    const senderMessage = formRef.current.elements.text_message.value;
+    const senderMessage = formRef.current.elements.message.value;
 
     if (!senderEmail || !senderName || !senderMessage) {
       setError(true);
@@ -56,6 +56,7 @@ const Contact = () => {
           to_name: "Faith import & trade",
           from_name: senderName,
           reply_to: senderEmail,
+          message: senderMessage,
         }
       );
 
@@ -131,14 +132,14 @@ const Contact = () => {
                   <div className="w-full px-4">
                     <div className="mb-8">
                       <label
-                        htmlFor="text_message"
+                        htmlFor="message"
                         className="mb-3 block text-sm font-medium text-dark dark:text-white"
                       >
                         Your Message
                       </label>
                       <textarea
-                        name="text_message"
-                        id="text_message"
+                        name="message"
+                        id="message"
                         rows={5}
                         placeholder="Enter your Message"
                         className="w-full resize-none rounded-md border border-transparent py-3 px-6 text-base text-body-color placeholder-body-color shadow-one outline-none border-1 focus:border-secondary/[60%] focus-visible:shadow-none dark:bg-[#242B51] dark:shadow-signUp"
