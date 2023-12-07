@@ -5,7 +5,7 @@ import Stationary from "@components/Services/Stationary";
 
 export const metadata = {
   title: "Faith | Stationary Supplies",
-  description: "Browse our extensive collection of imported stationery supplies, including paper, pens, notebooks, and more. We offer premium quality products that cater to your office and personal needs. With our global reach, we ensure you have access to a wide range of stationery options to inspire creativity and organization.",
+  description: "Browse our extensive collection of imported stationery supplies, including paper, pens, notebooks, and more. We offer premium quality products that cater to your office and personal needs.",
 };
 
 const page = () => {
@@ -21,7 +21,7 @@ const page = () => {
       />
 
       <div className="pt-5 ">
-        <Breadcrumb paths={["services", "stationary"]} classes="pr-16" />
+        <Breadcrumb paths={["services", "stationary"]} classes="pr-10 sm:pr-16" />
        
         <ServiceHero
           Intro={introText}

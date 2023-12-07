@@ -62,7 +62,7 @@ const Header = () => {
         className={`header top-0 left-0 z-40 flex w-full items-center ${
           currentRoute === "/"
             ? "!bg-[#151f34] !bg-opacity-70"
-            : "bg-transparent py-4"
+            : "bg-transparent py-2 sm:py-4"
         } ${
           sticky
             ? "!fixed !z-[9999] !py-0 !bg-[#151f34] !bg-opacity-80 shadow-sticky backdrop-blur-sm !transition"
@@ -70,7 +70,7 @@ const Header = () => {
         }`}
       >
         <div className="w-full">
-          <div className="relative mx-4 flex items-center justify-between">
+          <div className="relative sm:mx-4 flex items-center justify-between">
             <div className="w-46 sm:w-65 max-w-full px-4 xl:mr-12 py-2">
               <Link href="/" className="header-logo hidden sm:block">
                 <Image

@@ -41,7 +41,7 @@ const TestimonialsSlider = () => {
     document.head.appendChild(customStyles);
   }, []);
   return (
-    <div className="testimonials_slider w-9/12 2xl:w-8/12 h-[30rem] mx-auto bg-primary/10 backdrop-blur-lg rounded-lg pt-12">
+    <div className="testimonials_slider w-11/12 sm:w-9/12 2xl:w-8/12 h-[30rem] mx-auto bg-primary/10 backdrop-blur-lg rounded-lg pt-12">
       <Swiper
         effect={"coverflow"}
         grabCursor={true}
