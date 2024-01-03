@@ -23,7 +23,7 @@ Welcome to the Faith Import And Trade Company portfolio website! This is a fully
 
 ## Installation
 
-1. Clone the repository: `git clone https://github.com/Bekione/faithimports`
+1. Clone the repository: `git clone https://github.com/Bekione/Faith-Import-And-Trade-Website.git`
 2. Install dependencies: `npm install`
 3. Set up your environment variables for Cloudinary and Emailjs API keys and credentials.
 4. Start the development server: `npm run dev`
