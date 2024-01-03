@@ -2,6 +2,9 @@
 
 Welcome to the Faith Import And Trade Company portfolio website! This is a fully functional portfolio website showcasing the company's services and products. 
 
+![image](https://github.com/Bekione/faithimports/assets/112067722/d502b904-0ed7-4592-94c9-23edb154f06e)
+
+
 ## Technologies Used
 
 - Next.js 13.5
@@ -10,13 +13,13 @@ Welcome to the Faith Import And Trade Company portfolio website! This is a fully
 
 ## Features
 
-- Home: Get an overview of the company and the services they offer.
-- About Us: Know more about the company's philosophy and history.
-- Services: Navigate through the services the company offer.
-- Computer & Accessories: Explore a wide range of computer hardware and accessories available for import.
-- Stationery Supplies: Browse through our collection of high-quality stationery supplies.
-- Maintenance Services: Learn about our reliable maintenance services for computers and peripherals.
-- Contact Us: Find our contact information to get in touch with their team.
+- **Home:** Get an overview of the company and the services they offer.
+- **About Us:** Know more about the company's philosophy and history.
+- **Services:** Navigate through the services the company offer.
+- **Computer & Accessories:** Explore a wide range of computer hardware and accessories available for import.
+- **Stationery Supplies:** Browse through our collection of high-quality stationery supplies.
+- **Maintenance Services:** Learn about our reliable maintenance services for computers and peripherals.
+- **Contact Us:** Find our contact information to get in touch with their team.
 
 ## Installation
 
