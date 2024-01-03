@@ -65,4 +65,10 @@ export const TestimonialsData = [
     imgPath: "/images/testimonials/letter-11.webp",
     alt: "GIZ Framework Agreement",
   },
+  {
+    id: "t12",
+    company: "GIZ",
+    imgPath: "/images/testimonials/letter-12.webp",
+    alt: "GIZ Reccommendation letter",
+  },
 ];
