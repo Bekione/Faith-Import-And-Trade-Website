@@ -5,7 +5,7 @@ import Image from "next/image";
 
 const HomeManifesto = () => {
   return (
-    <section className="w-full px-10 sm:px-0 pb-12 pt-12 sm:pb-0 mt-20 flex flex-col sm:flex-row  bg-primary">
+    <section className="w-full px-10 sm:px-0 pb-12 pt-12 sm:pb-0 mt-28 flex flex-col sm:flex-row  bg-primary">
       <div
         className="sm:w-1/2 self-start flex items-center justify-center flex-col top-[110px] sm:top-[98.03px] sm:sticky"
         style={{ minHeight: "calc(100vh - 98.03px)" }}

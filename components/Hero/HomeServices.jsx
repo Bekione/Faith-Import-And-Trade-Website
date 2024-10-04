@@ -139,7 +139,7 @@ const HomeServices = () => {
           }}
           modules={[Autoplay, Pagination, Mousewheel]}
           onTransitionStart={handleTransitionStart}
-          className="min-h-[350px] md:min-h-[250px] max-h-fit h-full w-full"
+          className="min-h-[350px] md:min-h-[250px] h-fit md:h-[430px] lg:h-[400px] xl:h-[380px] w-full"
           style={{
             "--swiper-pagination-color": "#04AA82",
             "--swiper-pagination-bullet-inactive-color": "#151f34",
