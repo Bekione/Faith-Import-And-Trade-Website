@@ -225,7 +225,7 @@ const Footer = () => {
           <p className="text-center text-base text-body-color ">
             &copy;
             <a href="https://faithimports.com" rel="nofollow noopener">
-              2023 Faith Import and Trade.
+              2024 Faith Import and Trade.
             </a>{" "}
             All Rights Reserved.
           </p>
